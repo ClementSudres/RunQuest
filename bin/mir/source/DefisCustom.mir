@@ -1,0 +1,53 @@
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisCustom.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisCustom.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisCustom.mc"; @line = 3; ]
+import Toybox.Graphics;
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisCustom.mc"; @line = 5; ]
+class DefisCustom extends WatchUi.CustomMenuItem{
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisCustom.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisCustom.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisCustom.mc"; @line = 7; ]
+    function initialize(nom) as Void {
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_DefisCustom_mc_7_28_9_4_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisCustom.mc" 8 8 ]
+        %tmp.2 = getv ? :CustomMenuItem;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        %tmp.5 = lgetv %nom;
+        %tmp.6 = newd 0;
+        invoke %tmp.2 %tmp.3(%tmp.5, %tmp.6);
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_DefisCustom_mc_7_28_9_4_stop:
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisCustom.mc"; @line = 11; ]
+    function draw(dc as Graphics.Dc) {
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_DefisCustom_mc_11_36_14_4_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisCustom.mc" 12 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :drawRectangle;
+        %tmp.3 = 0;
+        %tmp.4 = 0;
+        %tmp.5 = 70;
+        %tmp.6 = 4;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.5, %tmp.6);
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisCustom.mc" 13 8 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :fillRectangle;
+        %tmp.9 = 2;
+        %tmp.10 = 2;
+        %tmp.11 = 70;
+        %tmp.12 = 0.70;
+        %tmp.13 = mul %tmp.11 %tmp.12;
+        %tmp.14 = 2;
+        invoke %tmp.7 %tmp.8(%tmp.9, %tmp.10, %tmp.13, %tmp.14);
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_DefisCustom_mc_11_36_14_4_stop:
+    }
+}
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisCustom.mc"; @line = 1; ]
+<init> {
+}

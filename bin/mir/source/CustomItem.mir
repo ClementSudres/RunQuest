@@ -1,0 +1,156 @@
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc"; @line = 4; ]
+class CustomItem extends WatchUi.Drawable{
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc"; @line = 5; @position = 8; ]
+    var title;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc"; @line = 6; @position = 8; ]
+    var bitmap;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc"; @line = 7; @position = 8; ]
+    var pourcent;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc"; @line = 9; ]
+    function initialize(titre, image, progress) as Void {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_CustomItem_mc_9_48_20_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 10 8 ]
+        %tmp.2 = getv ? :Drawable;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        %tmp.4 = newd 6;
+        %tmp.6 = const :identifier;
+        %tmp.8 = const :drawable;
+        %tmp.9 = dup %tmp.4;
+        %tmp.10 = aputv %tmp.9 %tmp.6 %tmp.8;
+        %tmp.12 = const :locX;
+        %tmp.13 = 0;
+        %tmp.14 = dup %tmp.10;
+        %tmp.15 = aputv %tmp.14 %tmp.12 %tmp.13;
+        %tmp.17 = const :locY;
+        %tmp.18 = 0;
+        %tmp.19 = dup %tmp.15;
+        %tmp.20 = aputv %tmp.19 %tmp.17 %tmp.18;
+        %tmp.22 = const :width;
+        %tmp.23 = 208;
+        %tmp.24 = dup %tmp.20;
+        %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+        %tmp.27 = const :height;
+        %tmp.28 = 208;
+        %tmp.29 = dup %tmp.25;
+        %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+        %tmp.32 = const :visible;
+        %tmp.33 = true;
+        %tmp.34 = dup %tmp.30;
+        %tmp.35 = aputv %tmp.34 %tmp.32 %tmp.33;
+        invoke %tmp.2 %tmp.3(%tmp.35);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 17 8 ]
+        %tmp.37 = lgetv %titre;
+        putv self :title %tmp.37;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 18 8 ]
+        %tmp.39 = lgetv %image;
+        putv self :bitmap %tmp.39;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 19 8 ]
+        %tmp.41 = lgetv %progress;
+        putv self :pourcent %tmp.41;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_CustomItem_mc_9_48_20_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc"; @line = 22; ]
+    function draw(dc as Graphics.Dc) {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_CustomItem_mc_22_37_36_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 23 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :drawBitmap;
+        %tmp.3 = 10;
+        %tmp.4 = 26;
+        %tmp.5 = getm $.Toybox.WatchUi;
+        %tmp.6 = getv function %tmp.5 :loadResource;
+        %tmp.8 = getv ? :bitmap;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.9);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 26 8 ]
+        %tmp.10 = lgetv %dc;
+        %tmp.11 = getv function %tmp.10 :setColor;
+        %tmp.12 = getm $.Toybox.Graphics;
+        %tmp.13 = getv %tmp.12 :COLOR_WHITE;
+        %tmp.14 = getm $.Toybox.Graphics;
+        %tmp.15 = getv %tmp.14 :COLOR_TRANSPARENT;
+        invoke %tmp.10 %tmp.11(%tmp.13, %tmp.15);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 27 8 ]
+        %tmp.16 = lgetv %dc;
+        %tmp.17 = getv function %tmp.16 :drawText;
+        %tmp.18 = 110;
+        %tmp.19 = 40;
+        %tmp.20 = getm $.Toybox.Graphics;
+        %tmp.21 = getv %tmp.20 :FONT_SMALL;
+        %tmp.23 = getv ? :title;
+        %tmp.24 = getm $.Toybox.Graphics;
+        %tmp.25 = getv %tmp.24 :TEXT_JUSTIFY_VCENTER;
+        invoke %tmp.16 %tmp.17(%tmp.18, %tmp.19, %tmp.21, %tmp.23, %tmp.25);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 28 8 ]
+        %tmp.26 = lgetv %dc;
+        %tmp.27 = getv function %tmp.26 :drawText;
+        %tmp.28 = 145;
+        %tmp.29 = 30;
+        %tmp.30 = getm $.Toybox.Graphics;
+        %tmp.31 = getv %tmp.30 :FONT_XTINY;
+        %tmp.32 = "0km";
+        %tmp.33 = getm $.Toybox.Graphics;
+        %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_VCENTER;
+        invoke %tmp.26 %tmp.27(%tmp.28, %tmp.29, %tmp.31, %tmp.32, %tmp.34);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 29 8 ]
+        %tmp.35 = lgetv %dc;
+        %tmp.36 = getv function %tmp.35 :drawText;
+        %tmp.37 = 200;
+        %tmp.38 = 30;
+        %tmp.39 = getm $.Toybox.Graphics;
+        %tmp.40 = getv %tmp.39 :FONT_XTINY;
+        %tmp.41 = "100";
+        %tmp.42 = getm $.Toybox.Graphics;
+        %tmp.43 = getv %tmp.42 :TEXT_JUSTIFY_VCENTER;
+        invoke %tmp.35 %tmp.36(%tmp.37, %tmp.38, %tmp.40, %tmp.41, %tmp.43);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 31 8 ]
+        %tmp.44 = lgetv %dc;
+        %tmp.45 = getv function %tmp.44 :setColor;
+        %tmp.46 = getm $.Toybox.Graphics;
+        %tmp.47 = getv %tmp.46 :COLOR_WHITE;
+        %tmp.48 = getm $.Toybox.Graphics;
+        %tmp.49 = getv %tmp.48 :COLOR_WHITE;
+        invoke %tmp.44 %tmp.45(%tmp.47, %tmp.49);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 32 8 ]
+        %tmp.50 = lgetv %dc;
+        %tmp.51 = getv function %tmp.50 :drawRectangle;
+        %tmp.52 = -20;
+        %tmp.53 = 0;
+        %tmp.54 = 250;
+        %tmp.55 = 80;
+        invoke %tmp.50 %tmp.51(%tmp.52, %tmp.53, %tmp.54, %tmp.55);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 34 8 ]
+        %tmp.56 = lgetv %dc;
+        %tmp.57 = getv function %tmp.56 :drawRectangle;
+        %tmp.58 = 125;
+        %tmp.59 = 39;
+        %tmp.60 = 70;
+        %tmp.61 = 8;
+        invoke %tmp.56 %tmp.57(%tmp.58, %tmp.59, %tmp.60, %tmp.61);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc" 35 8 ]
+        %tmp.62 = lgetv %dc;
+        %tmp.63 = getv function %tmp.62 :fillRectangle;
+        %tmp.64 = 125;
+        %tmp.65 = 39;
+        %tmp.66 = 70;
+        %tmp.68 = getv ? :pourcent;
+        %tmp.69 = mul %tmp.66 %tmp.68;
+        %tmp.70 = 8;
+        invoke %tmp.62 %tmp.63(%tmp.64, %tmp.65, %tmp.69, %tmp.70);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_CustomItem_mc_22_37_36_4_stop:
+    }
+}
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\CustomItem.mc"; @line = 1; ]
+<init> {
+}

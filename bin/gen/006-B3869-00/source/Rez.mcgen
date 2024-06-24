@@ -6,48 +6,77 @@ using Toybox.Graphics as Gfx;
 
 module Rez {
     module Drawables {
+        (:initialized) var Defis_Cal_badges as ResourceId;
+        (:initialized) var Defis_Runner_badges as ResourceId;
+        (:initialized) var Defis_Quizz_badges as ResourceId;
         (:initialized) var Cal_logo as ResourceId;
         (:initialized) var Bpm_logo as ResourceId;
         (:initialized) var Pas_logo as ResourceId;
         (:initialized) var Cal_badges as ResourceId;
         (:initialized) var Runner_badges as ResourceId;
         (:initialized) var Quizz_badges as ResourceId;
+        (:initialized) var Niveau_UP as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 
     module Layouts {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_Heure = new WatchUi.Text({:identifier=>"Heure", :color=>Graphics.COLOR_BLUE, :locX=>(208 * (25 / 100.0)), :locY=>(208 * (20 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_MEDIUM});
+            var rez_cmp_local_text_Heure = new WatchUi.Text({:identifier=>"Heure", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (30 / 100.0)), :locY=>(208 * (18 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_MEDIUM});
 
-            var rez_cmp_local_text_Minute = new WatchUi.Text({:identifier=>"Minute", :color=>Graphics.COLOR_BLUE, :locX=>(208 * (25 / 100.0)), :locY=>(208 * (45 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_MEDIUM});
+            var rez_cmp_local_text_Minute = new WatchUi.Text({:identifier=>"Minute", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (30 / 100.0)), :locY=>(208 * (43 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_MEDIUM});
 
-            var rez_cmp_local_text_Date = new WatchUi.Text({:identifier=>"Date", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (25 / 100.0)), :locY=>(208 * (15 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
+            var rez_cmp_local_text_Date = new WatchUi.Text({:identifier=>"Date", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (33 / 100.0)), :locY=>(208 * (16 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_bitmap_Cal_logo = new WatchUi.Bitmap({:identifier=>"Cal_logo", :rezId=>$.Rez.Drawables.Cal_logo, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>(208 * (40 / 100.0))});
-            rez_cmp_local_bitmap_Cal_logo.setLocation(((208 - rez_cmp_local_bitmap_Cal_logo.width) * 0.5), (208 * (40 / 100.0)));
+            var rez_cmp_local_bitmap_Cal_logo = new WatchUi.Bitmap({:identifier=>"Cal_logo", :rezId=>$.Rez.Drawables.Cal_logo, :locX=>(208 * (50 / 100.0)), :locY=>(208 * (40 / 100.0))});
+            rez_cmp_local_bitmap_Cal_logo.setLocation((208 * (50 / 100.0)), (208 * (40 / 100.0)));
 
-            var rez_cmp_local_bitmap_Bpm_logo = new WatchUi.Bitmap({:identifier=>"Bpm_logo", :rezId=>$.Rez.Drawables.Bpm_logo, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>(208 * (50 / 100.0))});
-            rez_cmp_local_bitmap_Bpm_logo.setLocation(((208 - rez_cmp_local_bitmap_Bpm_logo.width) * 0.5), (208 * (50 / 100.0)));
+            var rez_cmp_local_bitmap_Bpm_logo = new WatchUi.Bitmap({:identifier=>"Bpm_logo", :rezId=>$.Rez.Drawables.Bpm_logo, :locX=>(208 * (50 / 100.0)), :locY=>(208 * (50 / 100.0))});
+            rez_cmp_local_bitmap_Bpm_logo.setLocation((208 * (50 / 100.0)), (208 * (50 / 100.0)));
 
-            var rez_cmp_local_bitmap_Pas_logo = new WatchUi.Bitmap({:identifier=>"Pas_logo", :rezId=>$.Rez.Drawables.Pas_logo, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>(208 * (60 / 100.0))});
-            rez_cmp_local_bitmap_Pas_logo.setLocation(((208 - rez_cmp_local_bitmap_Pas_logo.width) * 0.5), (208 * (60 / 100.0)));
+            var rez_cmp_local_bitmap_Pas_logo = new WatchUi.Bitmap({:identifier=>"Pas_logo", :rezId=>$.Rez.Drawables.Pas_logo, :locX=>(208 * (50 / 100.0)), :locY=>(208 * (60 / 100.0))});
+            rez_cmp_local_bitmap_Pas_logo.setLocation((208 * (50 / 100.0)), (208 * (60 / 100.0)));
 
-            var rez_cmp_local_text_Calories = new WatchUi.Text({:identifier=>"Calories", :color=>Graphics.COLOR_BLUE, :locX=>(208 * (60 / 100.0)), :locY=>(208 * (38 / 100.0)), :text=>"1278", :font=>Graphics.FONT_SMALL});
+            var rez_cmp_local_text_Calories = new WatchUi.Text({:identifier=>"Calories", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (65 / 100.0)), :locY=>(208 * (38 / 100.0)), :text=>"1278", :font=>Graphics.FONT_SMALL});
 
-            var rez_cmp_local_text_Bpm = new WatchUi.Text({:identifier=>"Bpm", :color=>Graphics.COLOR_RED, :locX=>(208 * (60 / 100.0)), :locY=>(208 * (48 / 100.0)), :text=>"162", :font=>Graphics.FONT_SMALL});
+            var rez_cmp_local_text_Bpm = new WatchUi.Text({:identifier=>"Bpm", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (65 / 100.0)), :locY=>(208 * (48 / 100.0)), :text=>"162", :font=>Graphics.FONT_SMALL});
 
-            var rez_cmp_local_text_Pas = new WatchUi.Text({:identifier=>"Pas", :color=>Graphics.COLOR_GREEN, :locX=>(208 * (60 / 100.0)), :locY=>(208 * (58 / 100.0)), :text=>"4789", :font=>Graphics.FONT_SMALL});
+            var rez_cmp_local_text_Pas = new WatchUi.Text({:identifier=>"Pas", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (65 / 100.0)), :locY=>(208 * (58 / 100.0)), :text=>"4789", :font=>Graphics.FONT_SMALL});
 
-            var rez_cmp_local_bitmap_Cal_badges = new WatchUi.Bitmap({:identifier=>"Cal_badges", :rezId=>$.Rez.Drawables.Cal_badges, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>(208 * (80 / 100.0))});
-            rez_cmp_local_bitmap_Cal_badges.setLocation(((208 - rez_cmp_local_bitmap_Cal_badges.width) * 0.5), (208 * (80 / 100.0)));
+            var rez_cmp_local_bitmap_Cal_badges = new WatchUi.Bitmap({:identifier=>"Cal_badges", :rezId=>$.Rez.Drawables.Cal_badges, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>(208 * (75 / 100.0))});
+            rez_cmp_local_bitmap_Cal_badges.setLocation(((208 - rez_cmp_local_bitmap_Cal_badges.width) * 0.5), (208 * (75 / 100.0)));
 
-            var rez_cmp_local_bitmap_Runner_badges = new WatchUi.Bitmap({:identifier=>"Runner_badges", :rezId=>$.Rez.Drawables.Runner_badges, :locX=>(208 * (20 / 100.0)), :locY=>(208 * (80 / 100.0))});
-            rez_cmp_local_bitmap_Runner_badges.setLocation((208 * (20 / 100.0)), (208 * (80 / 100.0)));
+            var rez_cmp_local_bitmap_Runner_badges = new WatchUi.Bitmap({:identifier=>"Runner_badges", :rezId=>$.Rez.Drawables.Runner_badges, :locX=>(208 * (20 / 100.0)), :locY=>(208 * (75 / 100.0))});
+            rez_cmp_local_bitmap_Runner_badges.setLocation((208 * (20 / 100.0)), (208 * (75 / 100.0)));
 
-            var rez_cmp_local_bitmap_Quizz_badges = new WatchUi.Bitmap({:identifier=>"Quizz_badges", :rezId=>$.Rez.Drawables.Quizz_badges, :locX=>(208 * (65 / 100.0)), :locY=>(208 * (80 / 100.0))});
-            rez_cmp_local_bitmap_Quizz_badges.setLocation((208 * (65 / 100.0)), (208 * (80 / 100.0)));
+            var rez_cmp_local_bitmap_Quizz_badges = new WatchUi.Bitmap({:identifier=>"Quizz_badges", :rezId=>$.Rez.Drawables.Quizz_badges, :locX=>(208 * (65 / 100.0)), :locY=>(208 * (75 / 100.0))});
+            rez_cmp_local_bitmap_Quizz_badges.setLocation((208 * (65 / 100.0)), (208 * (75 / 100.0)));
 
-            return [rez_cmp_local_text_Heure, rez_cmp_local_text_Minute, rez_cmp_local_text_Date, rez_cmp_local_bitmap_Cal_logo, rez_cmp_local_bitmap_Bpm_logo, rez_cmp_local_bitmap_Pas_logo, rez_cmp_local_text_Calories, rez_cmp_local_text_Bpm, rez_cmp_local_text_Pas, rez_cmp_local_bitmap_Cal_badges, rez_cmp_local_bitmap_Runner_badges, rez_cmp_local_bitmap_Quizz_badges] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_Programme_fav = new WatchUi.Text({:identifier=>"Programme_fav", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (65 / 100.0)), :locY=>(208 * (20 / 100.0)), :text=>"Start !", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_Niveau = new WatchUi.Text({:identifier=>"Niveau", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (35 / 100.0)), :locY=>(208 * (5 / 100.0)), :text=>"Nv.104", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_bitmap_Niveau_UP = new WatchUi.Bitmap({:identifier=>"Niveau_UP", :rezId=>$.Rez.Drawables.Niveau_UP, :locX=>(208 * (60 / 100.0)), :locY=>(208 * (5 / 100.0))});
+            rez_cmp_local_bitmap_Niveau_UP.setLocation((208 * (60 / 100.0)), (208 * (5 / 100.0)));
+
+            return [rez_cmp_local_text_Heure, rez_cmp_local_text_Minute, rez_cmp_local_text_Date, rez_cmp_local_bitmap_Cal_logo, rez_cmp_local_bitmap_Bpm_logo, rez_cmp_local_bitmap_Pas_logo, rez_cmp_local_text_Calories, rez_cmp_local_text_Bpm, rez_cmp_local_text_Pas, rez_cmp_local_bitmap_Cal_badges, rez_cmp_local_bitmap_Runner_badges, rez_cmp_local_bitmap_Quizz_badges, rez_cmp_local_text_Programme_fav, rez_cmp_local_text_Niveau, rez_cmp_local_bitmap_Niveau_UP] as Array<WatchUi.Drawable>;
+        }
+
+        function Programme(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_Programme = new WatchUi.Text({:identifier=>"Programme", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>((208 - dc.getFontHeight(Graphics.FONT_XTINY)) * 0.5), :text=>"Programme", :font=>Graphics.FONT_XTINY});
+
+            return [rez_cmp_local_text_Programme] as Array<WatchUi.Drawable>;
+        }
+
+        function RunWalk(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_RunWalk = new WatchUi.Text({:identifier=>"RunWalk", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>((208 - dc.getFontHeight(Graphics.FONT_XTINY)) * 0.5), :text=>"RunWalk", :font=>Graphics.FONT_XTINY});
+
+            return [rez_cmp_local_text_RunWalk] as Array<WatchUi.Drawable>;
+        }
+
+        function Stats(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_Stats = new WatchUi.Text({:identifier=>"Stats", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>((208 - dc.getFontHeight(Graphics.FONT_XTINY)) * 0.5), :text=>"Stats", :font=>Graphics.FONT_XTINY});
+
+            return [rez_cmp_local_text_Stats] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
@@ -55,8 +84,10 @@ module Rez {
         class MainMenu extends WatchUi.Menu {
             function initialize() {
                 Menu.initialize();
-                addItem((WatchUi.loadResource($.Rez.Strings.menu_label_1) as String), :item_1);
-                addItem((WatchUi.loadResource($.Rez.Strings.menu_label_2) as String), :item_2);
+                addItem("Programme", :Programme);
+                addItem("Statistiques", :Statistiques);
+                addItem("Défis", :Defis);
+                addItem("Annuler", :Annuler);
             }
         }
     } // Menus
