@@ -50,7 +50,7 @@ class RunQuestView extends WatchUi.View {
         View.onUpdate(dc);
 
         //Dessiner la progress bar 
-        dc.setPenWidth(2);
+        dc.setPenWidth(3);
         dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_BLACK);
         System.println(dc.getWidth()/2);
         dc.drawArc(dc.getWidth()/2, dc.getWidth()/2, dc.getWidth()/2-2, Graphics.ARC_CLOCKWISE, 90, 130);

@@ -4,14 +4,25 @@ import Toybox.Lang;
 import Toybox.System;
 
 class RunWalkView extends WatchUi.View {
+    var timer;
+    var message;
+    var temps;
 
-    function initialize() {
+    function initialize(chrono) {
         View.initialize();
+
+        temps=chrono;
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.RunWalk(dc));
+
+        timer = View.findDrawableById("Timer") as Text;
+        message = View.findDrawableById("Message") as Text;
+        
+        setTimer(temps);
+        setMessage("Prêt ?");
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -30,6 +41,28 @@ class RunWalkView extends WatchUi.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
+    }
+
+    function setTimer(temps) as Void{
+        var heures = temps / 3600;
+        var minutes = (temps % 3600) / 60;
+        var secondes = temps % 60;
+
+        if(heures==0){
+            // Formater les minutes et secondes avec deux chiffres
+            var formattedTime = minutes.format("%02d") + ":" + secondes.format("%02d");
+            timer.setText(formattedTime.toString());
+        }else{
+            // Formater les heures, minutes et secondes avec deux chiffres
+            var formattedTime = heures.format("%02d") + ":" + minutes.format("%02d") + ":" + secondes.format("%02d");
+            timer.setText(formattedTime.toString());
+        }
+        WatchUi.requestUpdate();
+    }
+
+    function setMessage(mess) as Void{
+        message.setText(mess.toString());
+        WatchUi.requestUpdate();
     }
 
 }
