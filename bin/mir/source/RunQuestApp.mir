@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestApp.mc"; @line = 1; ]
 import Toybox.Application;
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestApp.mc"; @line = 2; ]
@@ -44,6 +45,59 @@ _Users_hugoams_Documents_Stage_RunQuest_source_RunQuestApp_mc_22_68_26_4_start:
         %tmp.5 = newc %tmp.8 ();
         putv self :delegate %tmp.5;
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestApp.mc" 25 8 ]
+=======
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 5; ]
+class RunQuestApp extends Application.AppBase{
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 6; @position = 8; ]
+    var view;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 7; @position = 8; ]
+    var delegate;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 9; ]
+    function initialize() as Void {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestApp_mc_9_26_12_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc" 10 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc" 11 8 ]
+        %tmp.5 = getv ? :System;
+        %tmp.6 = getv function %tmp.5 :println;
+        %tmp.7 = "RunQuestApp init";
+        invoke %tmp.5 %tmp.6(%tmp.7);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestApp_mc_9_26_12_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 15; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 19; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 23; ]
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestApp_mc_23_68_27_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc" 24 8 ]
+        %tmp.4 = getv ? :RunQuestView;
+        %tmp.1 = newc %tmp.4 ();
+        putv self :view %tmp.1;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc" 25 8 ]
+        %tmp.8 = getv ? :RunQuestDelegate;
+        %tmp.5 = newc %tmp.8 ();
+        putv self :delegate %tmp.5;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc" 26 8 ]
+>>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
         %tmp.9 = newa 2;
         %tmp.11 = getv ? :view;
         %tmp.12 = dup %tmp.9;
@@ -52,6 +106,7 @@ _Users_hugoams_Documents_Stage_RunQuest_source_RunQuestApp_mc_22_68_26_4_start:
         %tmp.16 = dup %tmp.13;
         %tmp.17 = aputv %tmp.16 1 %tmp.15;
         ret %tmp.17;
+<<<<<<< HEAD
 _Users_hugoams_Documents_Stage_RunQuest_source_RunQuestApp_mc_22_68_26_4_stop:
     }
     [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestApp.mc"; @line = 28; ]
@@ -75,13 +130,44 @@ _Users_hugoams_Documents_Stage_RunQuest_source_RunQuestApp_mc_32_29_34_4_stop:
 function getApp() as RunQuestApp {
 _Users_hugoams_Documents_Stage_RunQuest_source_RunQuestApp_mc_38_33_40_0_start:
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestApp.mc" 39 4 ]
+=======
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestApp_mc_23_68_27_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 29; ]
+    function getAppView() {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestApp_mc_29_25_31_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc" 30 8 ]
+        %tmp.2 = getv ? :view;
+        ret %tmp.2;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestApp_mc_29_25_31_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 33; ]
+    function getAppDelegate() {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestApp_mc_33_29_35_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc" 34 8 ]
+        %tmp.2 = getv ? :delegate;
+        ret %tmp.2;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestApp_mc_33_29_35_4_stop:
+    }
+}
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 39; ]
+function getApp() as RunQuestApp {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestApp_mc_39_33_41_0_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc" 40 4 ]
+>>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 RunQuestApp;
     ret %tmp.4;
+<<<<<<< HEAD
 _Users_hugoams_Documents_Stage_RunQuest_source_RunQuestApp_mc_38_33_40_0_stop:
 }
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestApp.mc"; @line = 1; ]
+=======
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestApp_mc_39_33_41_0_stop:
+}
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestApp.mc"; @line = 1; ]
+>>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
 <init> {
 }

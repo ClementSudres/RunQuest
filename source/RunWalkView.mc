@@ -29,6 +29,7 @@ class RunWalkView extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
+        System.println("RunWalkView est visible");
     }
 
     // Update the view
@@ -41,6 +42,7 @@ class RunWalkView extends WatchUi.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
+        System.println("RunWalkView est masquée");
     }
 
     function setTimer(temps) as Void{

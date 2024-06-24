@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 1; ]
 import Toybox.Lang;
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 2; ]
@@ -5,8 +6,54 @@ import Toybox.WatchUi;
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 4; ]
 class ProgrammeDelegate extends WatchUi.BehaviorDelegate{
     [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 4; ]
+=======
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 4; ]
+import Toybox.Timer;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 6; ]
+class ProgrammeDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 6; ]
+>>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
     <init> {
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 8 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = getv function %tmp.3 :getAppView;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        putv self :appView %tmp.5;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 9 8 ]
+        %tmp.6 = self;
+        %tmp.7 = getv function %tmp.6 :getApp;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = getv function %tmp.8 :getAppDelegate;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        putv self :appDelegate %tmp.10;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 11 8 ]
+        %tmp.11 = self;
+        %tmp.12 = getv function %tmp.11 :getApp;
+        %tmp.13 = invoke %tmp.11 %tmp.12();
+        %tmp.14 = getv function %tmp.13 :getAppDelegate;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        %tmp.16 = getv function %tmp.15 :getMainMenu;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        putv self :mainMenu %tmp.17;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 12 8 ]
+        %tmp.18 = self;
+        %tmp.19 = getv function %tmp.18 :getApp;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        %tmp.21 = getv function %tmp.20 :getAppDelegate;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        %tmp.23 = getv function %tmp.22 :getRunQuestMenuDelegate;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        putv self :runQuestMenuDelegate %tmp.24;
     }
+<<<<<<< HEAD
     [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 4; ]
     static
     <init> {
@@ -74,5 +121,293 @@ _Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_20_21_23_4_s
     }
 }
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 1; ]
+=======
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 8; @position = 8; ]
+    var appView;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 9; @position = 8; ]
+    var appDelegate;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 11; @position = 8; ]
+    var mainMenu;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 12; @position = 8; ]
+    var runQuestMenuDelegate;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 14; @position = 8; ]
+    var keyPressTimer;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 15; @position = 8; ]
+    var isKeyEscDown;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 16; @position = 8; ]
+    var keyCode;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 17; @position = 8; ]
+    var longPressTriggered;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 19; ]
+    function initialize() as Void {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_19_26_26_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 20 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 21 8 ]
+        %tmp.4 = getm $.Toybox.System;
+        %tmp.5 = getv function %tmp.4 :println;
+        %tmp.6 = "ProgrammeDelegate init";
+        invoke %tmp.4 %tmp.5(%tmp.6);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 23 8 ]
+        %tmp.7 = null;
+        putv self :keyPressTimer %tmp.7;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 24 8 ]
+        %tmp.8 = false;
+        putv self :isKeyEscDown %tmp.8;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 25 8 ]
+        %tmp.9 = false;
+        putv self :longPressTriggered %tmp.9;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_19_26_26_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 28; ]
+    function onMenu() as Boolean {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_28_33_31_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 29 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :switchToView;
+        %tmp.4 = getv ? :mainMenu;
+        %tmp.6 = getv ? :runQuestMenuDelegate;
+        %tmp.7 = getm $.Toybox.WatchUi;
+        %tmp.8 = getv %tmp.7 :SLIDE_UP;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6, %tmp.8);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 30 8 ]
+        %tmp.9 = true;
+        ret %tmp.9;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_28_33_31_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 33; ]
+    function onStart() as Boolean {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_33_34_36_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 35 8 ]
+        %tmp.1 = true;
+        ret %tmp.1;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_33_34_36_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 38; ]
+    function onBack() {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_38_21_40_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 39 8 ]
+        %tmp.1 = true;
+        ret %tmp.1;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_38_21_40_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 42; ]
+    function onKeyPressed(key) {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_42_30_48_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 43 8 ]
+        %tmp.1 = lgetv %key;
+        %tmp.2 = getv function %tmp.1 :getKey;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        putv self :keyCode %tmp.3;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 44 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_44_8_46_8_if_stmt:
+        %tmp.5 = getv ? :keyCode;
+        %tmp.6 = getm $.Toybox.WatchUi;
+        %tmp.7 = getv %tmp.6 :KEY_ESC;
+        %tmp.8 = eq %tmp.5 %tmp.7;
+        bf %tmp.8 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_44_8_46_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_44_8_46_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_44_40_46_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 45 12 ]
+        %tmp.9 = self;
+        %tmp.10 = getv function %tmp.9 :handleKeyEscDown;
+        invoke %tmp.9 %tmp.10();
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_44_40_46_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_44_8_46_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_44_8_46_8_if_end:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 47 8 ]
+        %tmp.11 = true;
+        ret %tmp.11;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_42_30_48_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 51; ]
+    function checkKeyPressDuration() as Void {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_51_45_56_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 52 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_8_55_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_12_52_29_begin:
+        %tmp.2 = getv ? :isKeyEscDown;
+        bf %tmp.2 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_8_55_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_28_52_29_true:
+        %tmp.4 = getv ? :longPressTriggered;
+        %tmp.5 = not %tmp.4;
+        push %tmp.5;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_28_52_29_end:
+        %tmp.6 = phi [%tmp.2 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_12_52_29_begin] [%tmp.5 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_28_52_29_true] [%tmp.6 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_28_52_29_end];
+        bf %tmp.6 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_8_55_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_8_55_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_49_55_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 53 12 ]
+        %tmp.7 = true;
+        putv self :longPressTriggered %tmp.7;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 54 12 ]
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :forceHome;
+        invoke %tmp.8 %tmp.9();
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_49_55_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_8_55_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_52_8_55_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_51_45_56_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 59; ]
+    function onKeyReleased(key) {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_59_32_65_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 60 8 ]
+        %tmp.1 = lgetv %key;
+        %tmp.2 = getv function %tmp.1 :getKey;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        putv self :keyCode %tmp.3;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 61 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_61_8_63_8_if_stmt:
+        %tmp.5 = getv ? :keyCode;
+        %tmp.6 = getm $.Toybox.WatchUi;
+        %tmp.7 = getv %tmp.6 :KEY_ESC;
+        %tmp.8 = eq %tmp.5 %tmp.7;
+        bf %tmp.8 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_61_8_63_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_61_8_63_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_61_40_63_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 62 12 ]
+        %tmp.9 = self;
+        %tmp.10 = getv function %tmp.9 :handleKeyEscUp;
+        invoke %tmp.9 %tmp.10();
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_61_40_63_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_61_8_63_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_61_8_63_8_if_end:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 64 8 ]
+        %tmp.11 = true;
+        ret %tmp.11;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_59_32_65_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 68; ]
+    function handleKeyEscDown() {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_68_32_72_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 69 8 ]
+        %tmp.1 = true;
+        putv self :isKeyEscDown %tmp.1;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 70 8 ]
+        %tmp.2 = false;
+        putv self :longPressTriggered %tmp.2;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 71 8 ]
+        %tmp.3 = self;
+        %tmp.4 = getv function %tmp.3 :startKeyPressTimer;
+        invoke %tmp.3 %tmp.4();
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_68_32_72_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 75; ]
+    function handleKeyEscUp() {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_75_30_81_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 76 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_76_8_78_8_if_stmt:
+        %tmp.2 = getv ? :longPressTriggered;
+        %tmp.3 = not %tmp.2;
+        bf %tmp.3 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_76_8_78_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_76_8_78_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_76_33_78_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 77 12 ]
+        %tmp.4 = self;
+        %tmp.5 = getv function %tmp.4 :forceBack;
+        invoke %tmp.4 %tmp.5();
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_76_33_78_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_76_8_78_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_76_8_78_8_if_end:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 79 8 ]
+        %tmp.6 = false;
+        putv self :isKeyEscDown %tmp.6;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 80 8 ]
+        %tmp.7 = self;
+        %tmp.8 = getv function %tmp.7 :stopKeyPressTimer;
+        invoke %tmp.7 %tmp.8();
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_75_30_81_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 84; ]
+    function startKeyPressTimer() {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_84_34_89_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 85 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_85_8_88_8_if_stmt:
+        %tmp.2 = getv ? :keyPressTimer;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_85_8_88_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_85_8_88_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_85_35_88_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 86 12 ]
+        %tmp.7 = getm $.Toybox.Timer;
+        %tmp.8 = getv function ? %tmp.7 :Timer;
+        %tmp.5 = newc %tmp.8 ();
+        putv self :keyPressTimer %tmp.5;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 87 12 ]
+        %tmp.10 = getv ? :keyPressTimer;
+        %tmp.11 = getv function %tmp.10 :start;
+        %tmp.12 = self;
+        %tmp.13 = getv function %tmp.12 :method;
+        %tmp.15 = const :checkKeyPressDuration;
+        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+        %tmp.17 = 1000;
+        %tmp.18 = false;
+        invoke %tmp.10 %tmp.11(%tmp.16, %tmp.17, %tmp.18);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_85_35_88_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_85_8_88_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_85_8_88_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_84_34_89_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 92; ]
+    function stopKeyPressTimer() {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_92_33_97_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 93 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_93_8_96_8_if_stmt:
+        %tmp.2 = getv ? :keyPressTimer;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_93_8_96_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_93_8_96_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_93_35_96_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 94 12 ]
+        %tmp.6 = getv ? :keyPressTimer;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 95 12 ]
+        %tmp.9 = null;
+        putv self :keyPressTimer %tmp.9;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_93_35_96_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_93_8_96_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_93_8_96_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_92_33_97_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 100; ]
+    function forceBack() {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_100_24_102_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 101 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :switchToView;
+        %tmp.4 = getv ? :mainMenu;
+        %tmp.6 = getv ? :runQuestMenuDelegate;
+        %tmp.7 = getm $.Toybox.WatchUi;
+        %tmp.8 = getv %tmp.7 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6, %tmp.8);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_100_24_102_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 105; ]
+    function forceHome() {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_105_24_107_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 106 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :switchToView;
+        %tmp.4 = getv ? :appView;
+        %tmp.6 = getv ? :appDelegate;
+        %tmp.7 = getm $.Toybox.WatchUi;
+        %tmp.8 = getv %tmp.7 :SLIDE_UP;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6, %tmp.8);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_105_24_107_4_stop:
+    }
+}
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 1; ]
+>>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
 <init> {
 }

@@ -2,12 +2,13 @@ import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
 
-class RunQuestMenuDelegate extends WatchUi.MenuInputDelegate {
+class RunQuestMenuDelegate extends WatchUi.Menu2InputDelegate {
     var appView = getApp().getAppView();
     var appDelegate = getApp().getAppDelegate();
 
     function initialize() {
-        MenuInputDelegate.initialize();
+        Menu2InputDelegate.initialize();
+        System.println("RunQuestMenuDelegate init");
     }
 
     function createMenu(){
@@ -45,5 +46,4 @@ class RunQuestMenuDelegate extends WatchUi.MenuInputDelegate {
             WatchUi.switchToView(appView, appDelegate, WatchUi.SLIDE_DOWN);
         }
     }
-
 }

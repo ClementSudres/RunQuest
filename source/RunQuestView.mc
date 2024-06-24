@@ -19,6 +19,7 @@ class RunQuestView extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
+        System.println("RunQuestView est visible");
     }
 
     // Update the view
@@ -52,7 +53,7 @@ class RunQuestView extends WatchUi.View {
         //Dessiner la progress bar 
         dc.setPenWidth(3);
         dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_BLACK);
-        System.println(dc.getWidth()/2);
+        //System.println(dc.getWidth()/2);
         dc.drawArc(dc.getWidth()/2, dc.getWidth()/2, dc.getWidth()/2-2, Graphics.ARC_CLOCKWISE, 90, 130);
         
         //Indiquer le menu
@@ -66,6 +67,7 @@ class RunQuestView extends WatchUi.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
+        System.println("RunQuestView est masquée");
     }
 
 }

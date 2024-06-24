@@ -8,6 +8,7 @@ class RunQuestApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
+        System.println("RunQuestApp init");
     }
 
     // onStart() is called on application start up
