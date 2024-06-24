@@ -18,7 +18,6 @@ class ProgrammeView extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
-        System.println("ProgrammeView est visible");
     }
 
     // Update the view
@@ -31,7 +30,6 @@ class ProgrammeView extends WatchUi.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
-        System.println("ProgrammeView est masquée");
     }
 
 }

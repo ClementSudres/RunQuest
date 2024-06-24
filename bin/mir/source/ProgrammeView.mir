@@ -40,33 +40,19 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeView_mc_13_4
     }
     [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeView.mc"; @line = 20; ]
     function onShow() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeView_mc_20_30_22_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeView.mc" 21 8 ]
-        %tmp.1 = getm $.Toybox.System;
-        %tmp.2 = getv function %tmp.1 :println;
-        %tmp.3 = "ProgrammeView est visible";
-        invoke %tmp.1 %tmp.2(%tmp.3);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeView_mc_20_30_22_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeView.mc"; @line = 25; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeView.mc"; @line = 24; ]
     function onUpdate(dc as Dc) as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeView_mc_25_40_28_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeView.mc" 27 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeView_mc_24_40_27_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeView.mc" 26 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.5 = lgetv %dc;
         invoke %tmp.2 %tmp.3(%tmp.5);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeView_mc_25_40_28_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeView_mc_24_40_27_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeView.mc"; @line = 33; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeView.mc"; @line = 32; ]
     function onHide() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeView_mc_33_30_35_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeView.mc" 34 8 ]
-        %tmp.1 = getm $.Toybox.System;
-        %tmp.2 = getv function %tmp.1 :println;
-        %tmp.3 = "ProgrammeView est masquée";
-        invoke %tmp.1 %tmp.2(%tmp.3);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeView_mc_33_30_35_4_stop:
     }
 }
 [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeView.mc"; @line = 1; ]
