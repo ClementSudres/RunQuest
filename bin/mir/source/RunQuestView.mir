@@ -1,0 +1,162 @@
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 5; ]
+using Toybox.Time.Gregorian as :Calendar;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 7; ]
+class RunQuestView extends WatchUi.View{
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 9; ]
+    function initialize() as Void {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_9_26_11_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 10 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_9_26_11_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 14; ]
+    function onLayout(dc as Dc) as Void {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_14_40_16_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 15 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :MainLayout;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_14_40_16_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 21; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 25; ]
+    function onUpdate(dc as Dc) as Void {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 26 8 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_stop" ]
+        %clockTime.1 = local;
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clockTime.1 %tmp.3;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 27 8 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_stop" ]
+        %heures.2 = local;
+        %tmp.4 = lgetv %clockTime.1;
+        %tmp.5 = getv %tmp.4 :hour;
+        %tmp.6 = getv function %tmp.5 :toString;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        lputv %heures.2 %tmp.7;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 28 8 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_stop" ]
+        %minutes.3 = local;
+        %tmp.8 = lgetv %clockTime.1;
+        %tmp.9 = getv %tmp.8 :min;
+        %tmp.10 = getv function %tmp.9 :format;
+        %tmp.11 = "%02d";
+        %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+        lputv %minutes.3 %tmp.12;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 29 8 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_stop" ]
+        %hour.4 = local;
+        %tmp.14 = getv ? :View;
+        %tmp.15 = getv function %tmp.14 :findDrawableById;
+        %tmp.16 = "Heure";
+        %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+        %tmp.18 = as %tmp.17 Text;
+        lputv %hour.4 %tmp.18;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 30 8 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_stop" ]
+        %min.5 = local;
+        %tmp.20 = getv ? :View;
+        %tmp.21 = getv function %tmp.20 :findDrawableById;
+        %tmp.22 = "Minute";
+        %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
+        %tmp.24 = as %tmp.23 Text;
+        lputv %min.5 %tmp.24;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 31 8 ]
+        %tmp.25 = lgetv %hour.4;
+        %tmp.26 = getv function %tmp.25 :setText;
+        %tmp.28 = lgetv %heures.2;
+        invoke %tmp.25 %tmp.26(%tmp.28);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 32 8 ]
+        %tmp.29 = lgetv %min.5;
+        %tmp.30 = getv function %tmp.29 :setText;
+        %tmp.32 = lgetv %minutes.3;
+        invoke %tmp.29 %tmp.30(%tmp.32);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 34 8 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_stop" ]
+        %now.6 = local;
+        %tmp.34 = getv ? :Time;
+        %tmp.35 = getv function %tmp.34 :now;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        lputv %now.6 %tmp.36;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 35 8 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_stop" ]
+        %time.7 = local;
+        %tmp.37 = getm $.Toybox.Time.Gregorian;
+        %tmp.38 = getv function %tmp.37 :info;
+        %tmp.40 = lgetv %now.6;
+        %tmp.42 = getv ? :Time;
+        %tmp.43 = getv %tmp.42 :FORMAT_MEDIUM;
+        %tmp.44 = invoke %tmp.37 %tmp.38(%tmp.40, %tmp.43);
+        lputv %time.7 %tmp.44;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 36 8 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_stop" ]
+        %dateString.8 = local;
+        %tmp.45 = getm $.Toybox.Lang;
+        %tmp.46 = getv function %tmp.45 :format;
+        %tmp.47 = "$1$ $2$";
+        %tmp.48 = newa 2;
+        %tmp.49 = lgetv %time.7;
+        %tmp.50 = getv %tmp.49 :day_of_week;
+        %tmp.51 = dup %tmp.48;
+        %tmp.52 = aputv %tmp.51 0 %tmp.50;
+        %tmp.53 = lgetv %time.7;
+        %tmp.54 = getv %tmp.53 :day;
+        %tmp.55 = dup %tmp.52;
+        %tmp.56 = aputv %tmp.55 1 %tmp.54;
+        %tmp.57 = invoke %tmp.45 %tmp.46(%tmp.47, %tmp.56);
+        lputv %dateString.8 %tmp.57;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 43 8 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_stop" ]
+        %view3.9 = local;
+        %tmp.59 = getv ? :View;
+        %tmp.60 = getv function %tmp.59 :findDrawableById;
+        %tmp.61 = "Date";
+        %tmp.62 = invoke %tmp.59 %tmp.60(%tmp.61);
+        %tmp.63 = as %tmp.62 Text;
+        lputv %view3.9 %tmp.63;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 44 8 ]
+        %tmp.64 = lgetv %view3.9;
+        %tmp.65 = getv function %tmp.64 :setText;
+        %tmp.67 = lgetv %dateString.8;
+        invoke %tmp.64 %tmp.65(%tmp.67);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc" 46 8 ]
+        %tmp.69 = getv ? :View;
+        %tmp.70 = getv function %tmp.69 :onUpdate;
+        %tmp.72 = lgetv %dc;
+        invoke %tmp.69 %tmp.70(%tmp.72);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestView_mc_25_40_47_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 52; ]
+    function onHide() as Void {
+    }
+}
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestView.mc"; @line = 1; ]
+<init> {
+}

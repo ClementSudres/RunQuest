@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestDelegate.mc" id="1" lineNum="4" parent="globals/RunQuestDelegate" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestApp.mc" id="2" lineNum="26" parent="globals" pc="268435479" symbol="getApp"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestApp.mc" id="2" lineNum="27" parent="globals" pc="268435489" symbol="getApp"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestMenuDelegate.mc" id="3" lineNum="5" parent="globals/RunQuestMenuDelegate" pc="268435505" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="4" lineNum="7" parent="globals/RunQuestView" pc="268435524" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="5" lineNum="7" parent="globals/Rez" pc="268435543" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestApp.mc" id="6" lineNum="5" parent="globals/RunQuestApp" pc="268435567" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestDelegate.mc" id="7" lineNum="10" parent="globals/RunQuestDelegate" pc="268435586" symbol="onMenu"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestDelegate.mc" id="7" lineNum="11" parent="globals/RunQuestDelegate" pc="268435588" symbol="onMenu"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestDelegate.mc" id="7" lineNum="12" parent="globals/RunQuestDelegate" pc="268435673" symbol="onMenu"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestDelegate.mc" id="8" lineNum="6" parent="globals/RunQuestDelegate" pc="268435676" symbol="initialize"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestDelegate.mc" id="8" lineNum="7" parent="globals/RunQuestDelegate" pc="268435678" symbol="initialize"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestMenuDelegate.mc" id="9" lineNum="11" parent="globals/RunQuestMenuDelegate" pc="268435697" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestMenuDelegate.mc" id="9" lineNum="12" parent="globals/RunQuestMenuDelegate" pc="268435699" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestMenuDelegate.mc" id="9" lineNum="13" parent="globals/RunQuestMenuDelegate" pc="268435710" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestMenuDelegate.mc" id="9" lineNum="14" parent="globals/RunQuestMenuDelegate" pc="268435734" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestMenuDelegate.mc" id="9" lineNum="15" parent="globals/RunQuestMenuDelegate" pc="268435745" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestMenuDelegate.mc" id="10" lineNum="7" parent="globals/RunQuestMenuDelegate" pc="268435770" symbol="initialize"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestMenuDelegate.mc" id="10" lineNum="8" parent="globals/RunQuestMenuDelegate" pc="268435772" symbol="initialize"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="12" lineNum="14" parent="globals/RunQuestView" pc="268435791" symbol="onLayout"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="12" lineNum="15" parent="globals/RunQuestView" pc="268435793" symbol="onLayout"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="13" lineNum="9" parent="globals/RunQuestView" pc="268435835" symbol="initialize"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="13" lineNum="10" parent="globals/RunQuestView" pc="268435837" symbol="initialize"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="25" parent="globals/RunQuestView" pc="268435856" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="26" parent="globals/RunQuestView" pc="268435860" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="27" parent="globals/RunQuestView" pc="268435877" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="28" parent="globals/RunQuestView" pc="268435896" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="29" parent="globals/RunQuestView" pc="268435920" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="30" parent="globals/RunQuestView" pc="268435944" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="31" parent="globals/RunQuestView" pc="268435968" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="32" parent="globals/RunQuestView" pc="268435982" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="34" parent="globals/RunQuestView" pc="268435996" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="35" parent="globals/RunQuestView" pc="268436015" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="36" parent="globals/RunQuestView" pc="268436039" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="43" parent="globals/RunQuestView" pc="268436099" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="44" parent="globals/RunQuestView" pc="268436123" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestView.mc" id="15" lineNum="46" parent="globals/RunQuestView" pc="268436137" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestApp.mc" id="16" lineNum="12" parent="globals/RunQuestApp" pc="268436158" symbol="onStart"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestApp.mc" id="17" lineNum="20" parent="globals/RunQuestApp" pc="268436161" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestApp.mc" id="17" lineNum="21" parent="globals/RunQuestApp" pc="268436163" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestApp.mc" id="18" lineNum="7" parent="globals/RunQuestApp" pc="268436238" symbol="initialize"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestApp.mc" id="18" lineNum="8" parent="globals/RunQuestApp" pc="268436240" symbol="initialize"/>
+        <entry filename="C:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\source\\RunQuestApp.mc" id="19" lineNum="16" parent="globals/RunQuestApp" pc="268436259" symbol="onStop"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="19" parent="globals/Rez/Layouts" pc="268436262" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="20" parent="globals/Rez/Layouts" pc="268436274" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="22" parent="globals/Rez/Layouts" pc="268436386" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="24" parent="globals/Rez/Layouts" pc="268436498" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="26" parent="globals/Rez/Layouts" pc="268436610" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="27" parent="globals/Rez/Layouts" pc="268436715" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="29" parent="globals/Rez/Layouts" pc="268436752" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="30" parent="globals/Rez/Layouts" pc="268436857" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="32" parent="globals/Rez/Layouts" pc="268436894" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="33" parent="globals/Rez/Layouts" pc="268436999" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="35" parent="globals/Rez/Layouts" pc="268437036" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="37" parent="globals/Rez/Layouts" pc="268437148" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="39" parent="globals/Rez/Layouts" pc="268437260" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="41" parent="globals/Rez/Layouts" pc="268437372" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="42" parent="globals/Rez/Layouts" pc="268437477" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="44" parent="globals/Rez/Layouts" pc="268437514" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="45" parent="globals/Rez/Layouts" pc="268437619" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="47" parent="globals/Rez/Layouts" pc="268437641" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="48" parent="globals/Rez/Layouts" pc="268437746" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="20" lineNum="50" parent="globals/Rez/Layouts" pc="268437768" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="21" lineNum="55" parent="globals/Rez/Menus/MainMenu" pc="268437895" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="22" lineNum="56" parent="globals/Rez/Menus/MainMenu" pc="268437914" symbol="initialize"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="22" lineNum="57" parent="globals/Rez/Menus/MainMenu" pc="268437916" symbol="initialize"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="22" lineNum="58" parent="globals/Rez/Menus/MainMenu" pc="268437934" symbol="initialize"/>
+        <entry filename="c:\\Users\\sudres\\Documents\\Stage 2024\\Garmin\\RunQuest\\bin\\gen\\006-B3869-00\\source\\Rez.mcgen" id="22" lineNum="59" parent="globals/Rez/Menus/MainMenu" pc="268437990" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry field="true" id="14" symbol="Cal_badges"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8389346" symbol="text"/>
+        <entry field="true" id="18" symbol="Quizz_badges"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="5" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="20" method="true" symbol="MainLayout"/>
+        <entry id="9" object="true" symbol="RunQuestMenuDelegate"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="22" symbol="AppName"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="8389345" symbol="rezId"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="25" symbol="prompt"/>
+        <entry field="true" id="13" symbol="Bpm_logo"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="27" symbol="item_2"/>
+        <entry id="26" symbol="item_1"/>
+        <entry id="12" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="15" symbol="Cal_logo"/>
+        <entry id="8" object="true" symbol="RunQuestDelegate"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="19" symbol="Runner_badges"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="21" object="true" symbol="MainMenu"/>
+        <entry field="true" id="17" symbol="Pas_logo"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="16" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="7" object="true" symbol="RunQuestApp"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry id="8389347" symbol="color"/>
+        <entry id="10" object="true" symbol="RunQuestView"/>
+        <entry id="11" module="true" symbol="Layouts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="24" symbol="menu_label_2"/>
+        <entry field="true" id="23" symbol="menu_label_1"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435769" name="item" stackId="1" startPc="268435697"/>
+        <entry arg="true" endPc="268435834" name="dc" stackId="1" startPc="268435791"/>
+        <entry arg="true" endPc="268436157" name="dc" stackId="1" startPc="268435856"/>
+        <entry endPc="268436156" name="clockTime" stackId="2" startPc="268435860"/>
+        <entry endPc="268436156" name="heures" stackId="3" startPc="268435860"/>
+        <entry endPc="268436156" name="minutes" stackId="4" startPc="268435860"/>
+        <entry endPc="268436156" name="hour" stackId="5" startPc="268435860"/>
+        <entry endPc="268436156" name="min" stackId="6" startPc="268435860"/>
+        <entry endPc="268436156" name="now" stackId="7" startPc="268435860"/>
+        <entry endPc="268436156" name="time" stackId="8" startPc="268435860"/>
+        <entry endPc="268436156" name="dateString" stackId="9" startPc="268435860"/>
+        <entry endPc="268436156" name="view3" stackId="10" startPc="268435860"/>
+        <entry arg="true" endPc="268437894" name="dc" stackId="1" startPc="268436262"/>
+        <entry endPc="268437894" name="rez_cmp_local_text_Heure" stackId="2" startPc="268436274"/>
+        <entry endPc="268437894" name="rez_cmp_local_text_Minute" stackId="3" startPc="268436274"/>
+        <entry endPc="268437894" name="rez_cmp_local_text_Date" stackId="4" startPc="268436274"/>
+        <entry endPc="268437894" name="rez_cmp_local_bitmap_Cal_logo" stackId="5" startPc="268436274"/>
+        <entry endPc="268437894" name="rez_cmp_local_bitmap_Bpm_logo" stackId="6" startPc="268436274"/>
+        <entry endPc="268437894" name="rez_cmp_local_bitmap_Pas_logo" stackId="7" startPc="268436274"/>
+        <entry endPc="268437894" name="rez_cmp_local_text_Calories" stackId="8" startPc="268436274"/>
+        <entry endPc="268437894" name="rez_cmp_local_text_Bpm" stackId="9" startPc="268436274"/>
+        <entry endPc="268437894" name="rez_cmp_local_text_Pas" stackId="10" startPc="268436274"/>
+        <entry endPc="268437894" name="rez_cmp_local_bitmap_Cal_badges" stackId="11" startPc="268436274"/>
+        <entry endPc="268437894" name="rez_cmp_local_bitmap_Runner_badges" stackId="12" startPc="268436274"/>
+        <entry endPc="268437894" name="rez_cmp_local_bitmap_Quizz_badges" stackId="13" startPc="268436274"/>
+    </localVars>
+    <deviceInfo partNumber="006-B3869-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Pas_logo"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Cal_logo"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Runner_badges"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Bpm_logo"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Quizz_badges"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Cal_badges"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/RunQuestDelegate" offset="158" parentId="globals" symbolId="RunQuestDelegate" type="class"/>
+        <dataEntry label="globals/RunQuestMenuDelegate" offset="213" parentId="globals" symbolId="RunQuestMenuDelegate" type="class"/>
+        <dataEntry label="globals/RunQuestView" offset="268" parentId="globals" symbolId="RunQuestView" type="class"/>
+        <dataEntry label="globals/Rez" offset="347" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/RunQuestApp" offset="410" parentId="globals" symbolId="RunQuestApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="481" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="568" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="607" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="646" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="709" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="RunQuestDelegate" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435504" name="getApp" startPc="268435479">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435523" name="&lt;init&gt;" parent="RunQuestMenuDelegate" startPc="268435505">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435542" name="&lt;init&gt;" parent="RunQuestView" startPc="268435524">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435566" name="&lt;init&gt;" parent="Rez" startPc="268435543">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435585" name="&lt;init&gt;" parent="RunQuestApp" startPc="268435567">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435675" name="onMenu" parent="RunQuestDelegate" startPc="268435586">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435696" name="initialize" parent="RunQuestDelegate" startPc="268435676">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435769" name="onMenuItem" parent="RunQuestMenuDelegate" startPc="268435697">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435790" name="initialize" parent="RunQuestMenuDelegate" startPc="268435770">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="RunQuestView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435834" name="onLayout" parent="RunQuestView" startPc="268435791">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435855" name="initialize" parent="RunQuestView" startPc="268435835">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="RunQuestView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436157" name="onUpdate" parent="RunQuestView" startPc="268435856">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436160" name="onStart" parent="RunQuestApp" startPc="268436158">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436237" name="getInitialView" parent="RunQuestApp" startPc="268436161">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436258" name="initialize" parent="RunQuestApp" startPc="268436238">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436261" name="onStop" parent="RunQuestApp" startPc="268436259">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437894" name="MainLayout" parent="Layouts" startPc="268436262">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437913" name="&lt;init&gt;" parent="MainMenu" startPc="268437895">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438046" name="initialize" parent="MainMenu" startPc="268437914">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

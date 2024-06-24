@@ -1,0 +1,24 @@
+<layout id="MainLayout">
+    <!--Date et Heure-->
+    <label id="Heure" x="25%" y="20%" font="Graphics.FONT_NUMBER_MEDIUM" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    <label id="Minute" x="25%" y="45%" font="Graphics.FONT_NUMBER_MEDIUM" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    <label id="Date" x="25%" y="15%" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+
+    <!--Data Journalière-->
+    <bitmap id="Cal_logo" x="center" y="40%" filename="../drawables/20px/calories_logo.png" />
+    <bitmap id="Bpm_logo" x="center" y="50%" filename="../drawables/20px/bpm_logo.png" />
+    <bitmap id="Pas_logo" x="center" y="60%" filename="../drawables/20px/pas_logo.png" />
+
+    <label id="Calories" x="60%" y="38%" text="1278" font="Graphics.FONT_SMALL" color="Graphics.COLOR_BLUE" />
+    <label id="Bpm" x="60%" y="48%" text="162" font="Graphics.FONT_SMALL" color="Graphics.COLOR_RED" />
+    <label id="Pas" x="60%" y="58%" text="4789" font="Graphics.FONT_SMALL" color="Graphics.COLOR_GREEN" />
+
+    <!--Badges-->
+    <bitmap id="Cal_badges" x="center" y="80%" filename="../drawables/calories_badge.png" />
+    <bitmap id="Runner_badges" x="20%" y="80%" filename="../drawables/runner_badge.png" />
+    <bitmap id="Quizz_badges" x="65%" y="80%" filename="../drawables/quizz_badge.png" />
+
+    <!--Programme-->
+
+    <!--Niveaux-->
+</layout>
