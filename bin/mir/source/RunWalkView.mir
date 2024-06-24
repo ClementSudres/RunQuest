@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc"; @line = 1; ]
 import Toybox.Graphics;
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc"; @line = 2; ]
@@ -38,38 +37,6 @@ _Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_11_32_15_4_stop:
     function onLayout(dc as Dc) as Void {
 _Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_18_40_26_4_start:
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 19 8 ]
-=======
-[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 1; ]
-import Toybox.Graphics;
-[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 2; ]
-import Toybox.WatchUi;
-[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 3; ]
-import Toybox.Lang;
-[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 4; ]
-import Toybox.System;
-[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 6; ]
-class RunWalkView extends WatchUi.View{
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 6; ]
-    <init> {
-    }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 6; ]
-    static
-    <init> {
-    }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 8; ]
-    function initialize() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkView_mc_8_26_10_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc" 9 8 ]
-        %tmp.2 = getv ? :View;
-        %tmp.3 = getv function %tmp.2 :initialize;
-        invoke %tmp.2 %tmp.3();
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkView_mc_8_26_10_4_stop:
-    }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 13; ]
-    function onLayout(dc as Dc) as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkView_mc_13_40_15_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc" 14 8 ]
->>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -78,7 +45,6 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkView_mc_13_40_
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-<<<<<<< HEAD
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 21 8 ]
         %tmp.11 = getv ? :View;
         %tmp.12 = getv function %tmp.11 :findDrawableById;
@@ -106,65 +72,47 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkView_mc_13_40_
 _Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_18_40_26_4_stop:
     }
     [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc"; @line = 31; ]
-=======
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkView_mc_13_40_15_4_stop:
-    }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 20; ]
->>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
     function onShow() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkView_mc_20_30_22_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc" 21 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_31_30_33_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 32 8 ]
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :println;
         %tmp.3 = "RunWalkView est visible";
         invoke %tmp.1 %tmp.2(%tmp.3);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkView_mc_20_30_22_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_31_30_33_4_stop:
     }
-<<<<<<< HEAD
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc"; @line = 35; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc"; @line = 36; ]
     function onUpdate(dc as Dc) as Void {
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_35_40_38_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 37 8 ]
-=======
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 25; ]
-    function onUpdate(dc as Dc) as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkView_mc_25_40_28_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc" 27 8 ]
->>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_36_40_39_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 38 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.5 = lgetv %dc;
         invoke %tmp.2 %tmp.3(%tmp.5);
-<<<<<<< HEAD
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_35_40_38_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_36_40_39_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc"; @line = 43; ]
-=======
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkView_mc_25_40_28_4_stop:
-    }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 33; ]
->>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc"; @line = 44; ]
     function onHide() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkView_mc_33_30_35_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc" 34 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_44_30_46_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 45 8 ]
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :println;
         %tmp.3 = "RunWalkView est masquée";
         invoke %tmp.1 %tmp.2(%tmp.3);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkView_mc_33_30_35_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_44_30_46_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc"; @line = 46; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc"; @line = 48; ]
     function setTimer(temps) as Void {
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_46_36_61_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 47 8 ]
-        [ "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_46_36_61_4_start" "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_46_36_61_4_stop" ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_48_36_63_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 49 8 ]
+        [ "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_48_36_63_4_start" "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_48_36_63_4_stop" ]
         %heures.1 = local;
         %tmp.2 = lgetv %temps;
         %tmp.3 = 3600;
         %tmp.4 = div %tmp.2 %tmp.3;
         lputv %heures.1 %tmp.4;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 48 8 ]
-        [ "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_46_36_61_4_start" "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_46_36_61_4_stop" ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 50 8 ]
+        [ "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_48_36_63_4_start" "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_48_36_63_4_stop" ]
         %minutes.2 = local;
         %tmp.6 = lgetv %temps;
         %tmp.7 = 3600;
@@ -172,23 +120,23 @@ _Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_46_36_61_4_start:
         %tmp.9 = 60;
         %tmp.10 = div %tmp.8 %tmp.9;
         lputv %minutes.2 %tmp.10;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 49 8 ]
-        [ "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_46_36_61_4_start" "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_46_36_61_4_stop" ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 51 8 ]
+        [ "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_48_36_63_4_start" "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_48_36_63_4_stop" ]
         %secondes.3 = local;
         %tmp.12 = lgetv %temps;
         %tmp.13 = 60;
         %tmp.14 = mod %tmp.12 %tmp.13;
         lputv %secondes.3 %tmp.14;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 51 8 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_51_8_59_8_if_stmt:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 53 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_53_8_61_8_if_stmt:
         %tmp.16 = lgetv %heures.1;
         %tmp.17 = 0;
         %tmp.18 = eq %tmp.16 %tmp.17;
-        bf %tmp.18 @_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_51_8_59_8_if_false;
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_51_8_59_8_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_51_21_55_8_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 53 12 ]
-        [ "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_51_21_55_8_start" "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_51_21_55_8_stop" ]
+        bf %tmp.18 @_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_53_8_61_8_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_53_8_61_8_if_true:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_53_21_57_8_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 55 12 ]
+        [ "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_53_21_57_8_start" "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_53_21_57_8_stop" ]
         %formattedTime.4 = local;
         %tmp.19 = lgetv %minutes.2;
         %tmp.20 = getv function %tmp.19 :format;
@@ -202,19 +150,19 @@ _Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_51_21_55_8_start:
         %tmp.28 = invoke %tmp.25 %tmp.26(%tmp.27);
         %tmp.29 = add %tmp.24 %tmp.28;
         lputv %formattedTime.4 %tmp.29;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 54 12 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 56 12 ]
         %tmp.31 = getv ? :timer;
         %tmp.32 = getv function %tmp.31 :setText;
         %tmp.33 = lgetv %formattedTime.4;
         %tmp.34 = getv function %tmp.33 :toString;
         %tmp.35 = invoke %tmp.33 %tmp.34();
         invoke %tmp.31 %tmp.32(%tmp.35);
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_51_21_55_8_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_51_8_59_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_51_8_59_8_if_false:
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_55_13_59_8_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 57 12 ]
-        [ "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_55_13_59_8_start" "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_55_13_59_8_stop" ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_53_21_57_8_stop:
+        goto @_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_53_8_61_8_if_end;
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_53_8_61_8_if_false:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_57_13_61_8_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 59 12 ]
+        [ "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_57_13_61_8_start" "_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_57_13_61_8_stop" ]
         %formattedTime.5 = local;
         %tmp.36 = lgetv %heures.1;
         %tmp.37 = getv function %tmp.36 :format;
@@ -235,42 +183,38 @@ _Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_55_13_59_8_start:
         %tmp.52 = invoke %tmp.49 %tmp.50(%tmp.51);
         %tmp.53 = add %tmp.48 %tmp.52;
         lputv %formattedTime.5 %tmp.53;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 58 12 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 60 12 ]
         %tmp.55 = getv ? :timer;
         %tmp.56 = getv function %tmp.55 :setText;
         %tmp.57 = lgetv %formattedTime.5;
         %tmp.58 = getv function %tmp.57 :toString;
         %tmp.59 = invoke %tmp.57 %tmp.58();
         invoke %tmp.55 %tmp.56(%tmp.59);
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_55_13_59_8_stop:
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_51_8_59_8_if_end:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 60 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_57_13_61_8_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_53_8_61_8_if_end:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 62 8 ]
         %tmp.60 = getm $.Toybox.WatchUi;
         %tmp.61 = getv function %tmp.60 :requestUpdate;
         invoke %tmp.60 %tmp.61();
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_46_36_61_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_48_36_63_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc"; @line = 63; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc"; @line = 65; ]
     function setMessage(mess) as Void {
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_63_37_66_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 64 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_65_37_68_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 66 8 ]
         %tmp.2 = getv ? :message;
         %tmp.3 = getv function %tmp.2 :setText;
         %tmp.4 = lgetv %mess;
         %tmp.5 = getv function %tmp.4 :toString;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         invoke %tmp.2 %tmp.3(%tmp.6);
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 65 8 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc" 67 8 ]
         %tmp.7 = getm $.Toybox.WatchUi;
         %tmp.8 = getv function %tmp.7 :requestUpdate;
         invoke %tmp.7 %tmp.8();
-_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_63_37_66_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunWalkView_mc_65_37_68_4_stop:
     }
 }
-<<<<<<< HEAD
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunWalkView.mc"; @line = 1; ]
-=======
-[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkView.mc"; @line = 1; ]
->>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
 <init> {
 }

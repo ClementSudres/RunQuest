@@ -2,8 +2,8 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 
 class RunQuestDelegate extends WatchUi.BehaviorDelegate {
-    var view; 
-    
+    var chronoView; 
+    var chronoDelegate;
 
     var mainMenu;
     var runQuestMenuDelegate;
@@ -22,14 +22,19 @@ class RunQuestDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onSelect() as Boolean {
-        view = new RunWalkView(10);
-        WatchUi.switchToView(view, new RunWalkDelegate(10, 5, 3), WatchUi.SLIDE_DOWN);
+        chronoView = new RunWalkView(10);
+        chronoDelegate = new RunWalkDelegate(10, 5, 3);
+        WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
         return true; 
     }
 
-    function getView(){
-        return view;
+    function getChronoView(){
+        return chronoView;
     }
+    function getChronoDelegate(){
+        return chronoDelegate;
+    }
+
     function getMainMenu(){
         return mainMenu;
     }
