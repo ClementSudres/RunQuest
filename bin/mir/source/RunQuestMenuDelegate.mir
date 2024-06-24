@@ -1,0 +1,209 @@
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc"; @line = 2; ]
+import Toybox.System;
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc"; @line = 5; ]
+class RunQuestMenuDelegate extends WatchUi.MenuInputDelegate{
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc"; @line = 5; ]
+    <init> {
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 6 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = getv function %tmp.3 :getAppView;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        putv self :appView %tmp.5;
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 7 8 ]
+        %tmp.6 = self;
+        %tmp.7 = getv function %tmp.6 :getApp;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = getv function %tmp.8 :getAppDelegate;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        putv self :appDelegate %tmp.10;
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc"; @line = 6; @position = 8; ]
+    var appView;
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc"; @line = 7; @position = 8; ]
+    var appDelegate;
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc"; @line = 9; ]
+    function initialize() as Void {
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_9_26_11_4_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 10 8 ]
+        %tmp.2 = getv ? :MenuInputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_9_26_11_4_stop:
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc"; @line = 13; ]
+    function createMenu() {
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_13_25_34_4_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 14 8 ]
+        [ "_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_13_25_34_4_start" "_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_13_25_34_4_stop" ]
+        %menu.1 = local;
+        %tmp.4 = getv ? :CustomMenu;
+        %tmp.5 = 80;
+        %tmp.7 = getv ? :Graphics;
+        %tmp.8 = getv %tmp.7 :COLOR_BLACK;
+        %tmp.9 = newd 0;
+        %tmp.1 = newc %tmp.4 (%tmp.5, %tmp.8, %tmp.9);
+        lputv %menu.1 %tmp.1;
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 15 8 ]
+        %tmp.10 = lgetv %menu.1;
+        %tmp.11 = getv function %tmp.10 :addItem;
+        %tmp.15 = getv ? :CustomMenuItem;
+        %tmp.17 = const :itemOne;
+        %tmp.18 = newd 1;
+        %tmp.20 = const :drawable;
+        %tmp.24 = getv ? :CustomItem;
+        %tmp.25 = "Runner";
+        %tmp.27 = getv ? :Rez;
+        %tmp.28 = getv %tmp.27 :Drawables;
+        %tmp.29 = getv %tmp.28 :Defis_Runner_badges;
+        %tmp.30 = 0.70;
+        %tmp.21 = newc %tmp.24 (%tmp.25, %tmp.29, %tmp.30);
+        %tmp.31 = dup %tmp.18;
+        %tmp.32 = aputv %tmp.31 %tmp.20 %tmp.21;
+        %tmp.12 = newc %tmp.15 (%tmp.17, %tmp.32);
+        invoke %tmp.10 %tmp.11(%tmp.12);
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 21 8 ]
+        %tmp.33 = lgetv %menu.1;
+        %tmp.34 = getv function %tmp.33 :addItem;
+        %tmp.38 = getv ? :CustomMenuItem;
+        %tmp.40 = const :itemTwo;
+        %tmp.41 = newd 1;
+        %tmp.43 = const :drawable;
+        %tmp.47 = getv ? :CustomItem;
+        %tmp.48 = "Calories";
+        %tmp.50 = getv ? :Rez;
+        %tmp.51 = getv %tmp.50 :Drawables;
+        %tmp.52 = getv %tmp.51 :Defis_Cal_badges;
+        %tmp.53 = 0.20;
+        %tmp.44 = newc %tmp.47 (%tmp.48, %tmp.52, %tmp.53);
+        %tmp.54 = dup %tmp.41;
+        %tmp.55 = aputv %tmp.54 %tmp.43 %tmp.44;
+        %tmp.35 = newc %tmp.38 (%tmp.40, %tmp.55);
+        invoke %tmp.33 %tmp.34(%tmp.35);
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 27 8 ]
+        %tmp.56 = lgetv %menu.1;
+        %tmp.57 = getv function %tmp.56 :addItem;
+        %tmp.61 = getv ? :CustomMenuItem;
+        %tmp.63 = const :itemTwo;
+        %tmp.64 = newd 1;
+        %tmp.66 = const :drawable;
+        %tmp.70 = getv ? :CustomItem;
+        %tmp.71 = "Quizz";
+        %tmp.73 = getv ? :Rez;
+        %tmp.74 = getv %tmp.73 :Drawables;
+        %tmp.75 = getv %tmp.74 :Defis_Quizz_badges;
+        %tmp.76 = 0.40;
+        %tmp.67 = newc %tmp.70 (%tmp.71, %tmp.75, %tmp.76);
+        %tmp.77 = dup %tmp.64;
+        %tmp.78 = aputv %tmp.77 %tmp.66 %tmp.67;
+        %tmp.58 = newc %tmp.61 (%tmp.63, %tmp.78);
+        invoke %tmp.56 %tmp.57(%tmp.58);
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 33 8 ]
+        %tmp.80 = lgetv %menu.1;
+        ret %tmp.80;
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_13_25_34_4_stop:
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc"; @line = 36; ]
+    function onMenuItem(item as Symbol) as Void {
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_36_48_47_4_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 38 8 ]
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_38_8_46_8_if_stmt:
+        %tmp.2 = lgetv %item;
+        %tmp.4 = const :Programme;
+        %tmp.5 = eq %tmp.2 %tmp.4;
+        bf %tmp.5 @_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_38_8_46_8_if_false;
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_38_8_46_8_if_true:
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_38_32_40_8_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 39 12 ]
+        %tmp.6 = getm $.Toybox.WatchUi;
+        %tmp.7 = getv function %tmp.6 :switchToView;
+        %tmp.11 = getv ? :ProgrammeView;
+        %tmp.8 = newc %tmp.11 ();
+        %tmp.15 = getv ? :ProgrammeDelegate;
+        %tmp.12 = newc %tmp.15 ();
+        %tmp.16 = getm $.Toybox.WatchUi;
+        %tmp.17 = getv %tmp.16 :SLIDE_DOWN;
+        invoke %tmp.6 %tmp.7(%tmp.8, %tmp.12, %tmp.17);
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_38_32_40_8_stop:
+        goto @_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_38_8_46_8_if_end;
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_38_8_46_8_if_false:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 40 15 ]
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_40_15_46_8_if_stmt:
+        %tmp.19 = lgetv %item;
+        %tmp.21 = const :Statistiques;
+        %tmp.22 = eq %tmp.19 %tmp.21;
+        bf %tmp.22 @_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_40_15_46_8_if_false;
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_40_15_46_8_if_true:
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_40_42_42_8_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 41 12 ]
+        %tmp.23 = getm $.Toybox.WatchUi;
+        %tmp.24 = getv function %tmp.23 :switchToView;
+        %tmp.28 = getv ? :StatsView;
+        %tmp.25 = newc %tmp.28 ();
+        %tmp.32 = getv ? :StatsDelegate;
+        %tmp.29 = newc %tmp.32 ();
+        %tmp.33 = getm $.Toybox.WatchUi;
+        %tmp.34 = getv %tmp.33 :SLIDE_DOWN;
+        invoke %tmp.23 %tmp.24(%tmp.25, %tmp.29, %tmp.34);
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_40_42_42_8_stop:
+        goto @_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_40_15_46_8_if_end;
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_40_15_46_8_if_false:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 42 14 ]
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_42_14_46_8_if_stmt:
+        %tmp.36 = lgetv %item;
+        %tmp.38 = const :Defis;
+        %tmp.39 = eq %tmp.36 %tmp.38;
+        bf %tmp.39 @_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_42_14_46_8_if_false;
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_42_14_46_8_if_true:
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_42_34_44_8_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 43 12 ]
+        %tmp.40 = getm $.Toybox.WatchUi;
+        %tmp.41 = getv function %tmp.40 :switchToView;
+        %tmp.42 = self;
+        %tmp.43 = getv function %tmp.42 :createMenu;
+        %tmp.44 = invoke %tmp.42 %tmp.43();
+        %tmp.48 = getv ? :DefisDelegate;
+        %tmp.45 = newc %tmp.48 ();
+        %tmp.49 = getm $.Toybox.WatchUi;
+        %tmp.50 = getv %tmp.49 :SLIDE_DOWN;
+        invoke %tmp.40 %tmp.41(%tmp.44, %tmp.45, %tmp.50);
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_42_34_44_8_stop:
+        goto @_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_42_14_46_8_if_end;
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_42_14_46_8_if_false:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 44 14 ]
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_44_14_46_8_if_stmt:
+        %tmp.52 = lgetv %item;
+        %tmp.54 = const :Annuler;
+        %tmp.55 = eq %tmp.52 %tmp.54;
+        bf %tmp.55 @_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_44_14_46_8_if_end;
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_44_14_46_8_if_true:
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_44_35_46_8_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" 45 12 ]
+        %tmp.56 = getm $.Toybox.WatchUi;
+        %tmp.57 = getv function %tmp.56 :switchToView;
+        %tmp.59 = getv ? :appView;
+        %tmp.61 = getv ? :appDelegate;
+        %tmp.62 = getm $.Toybox.WatchUi;
+        %tmp.63 = getv %tmp.62 :SLIDE_DOWN;
+        invoke %tmp.56 %tmp.57(%tmp.59, %tmp.61, %tmp.63);
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_44_35_46_8_stop:
+        goto @_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_44_14_46_8_if_end;
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_44_14_46_8_if_end:
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_42_14_46_8_if_end:
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_40_15_46_8_if_end:
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_38_8_46_8_if_end:
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestMenuDelegate_mc_36_48_47_4_stop:
+    }
+}
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc"; @line = 1; ]
+<init> {
+}

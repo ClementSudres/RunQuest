@@ -1,0 +1,60 @@
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 6; ]
+class StatsView extends WatchUi.View{
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 8; ]
+    function initialize() as Void {
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_StatsView_mc_8_26_10_4_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc" 9 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_StatsView_mc_8_26_10_4_stop:
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 13; ]
+    function onLayout(dc as Dc) as Void {
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_StatsView_mc_13_40_15_4_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc" 14 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :Stats;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_StatsView_mc_13_40_15_4_stop:
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 20; ]
+    function onShow() as Void {
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 24; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_StatsView_mc_24_40_27_4_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc" 26 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :onUpdate;
+        %tmp.5 = lgetv %dc;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_StatsView_mc_24_40_27_4_stop:
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 32; ]
+    function onHide() as Void {
+    }
+}
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc"; @line = 1; ]
+<init> {
+}

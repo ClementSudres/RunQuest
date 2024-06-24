@@ -1,0 +1,64 @@
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc"; @line = 4; ]
+class RunQuestDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc"; @line = 6; ]
+    function initialize() as Void {
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestDelegate_mc_6_26_8_4_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" 7 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestDelegate_mc_6_26_8_4_stop:
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc"; @line = 10; ]
+    function onMenu() as Boolean {
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestDelegate_mc_10_33_13_4_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" 11 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :switchToView;
+        %tmp.6 = getv ? :Rez;
+        %tmp.7 = getv %tmp.6 :Menus;
+        %tmp.8 = getv function ? %tmp.7 :MainMenu;
+        %tmp.3 = newc %tmp.8 ();
+        %tmp.12 = getv ? :RunQuestMenuDelegate;
+        %tmp.9 = newc %tmp.12 ();
+        %tmp.13 = getm $.Toybox.WatchUi;
+        %tmp.14 = getv %tmp.13 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.9, %tmp.14);
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" 12 8 ]
+        %tmp.15 = true;
+        ret %tmp.15;
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestDelegate_mc_10_33_13_4_stop:
+    }
+    [ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc"; @line = 15; ]
+    function onStart() as Boolean {
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestDelegate_mc_15_34_18_4_start:
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" 16 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :switchToView;
+        %tmp.6 = getv ? :RunWalkView;
+        %tmp.3 = newc %tmp.6 ();
+        %tmp.10 = getv ? :RunWalkDelegate;
+        %tmp.7 = newc %tmp.10 ();
+        %tmp.11 = getm $.Toybox.WatchUi;
+        %tmp.12 = getv %tmp.11 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.7, %tmp.12);
+[ "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" 17 8 ]
+        %tmp.13 = true;
+        ret %tmp.13;
+_Users_hugoams_Documents_Stage_Garmin_RunQuest_source_RunQuestDelegate_mc_15_34_18_4_stop:
+    }
+}
+[ @file = "/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc"; @line = 1; ]
+<init> {
+}

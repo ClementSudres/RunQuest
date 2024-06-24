@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc" id="1" lineNum="6" parent="globals/StatsView" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" id="2" lineNum="4" parent="globals/RunQuestDelegate" pc="268435479" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="3" lineNum="4" parent="globals/CustomItem" pc="268435498" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="4" lineNum="38" parent="globals" pc="268435517" symbol="getApp"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="4" lineNum="39" parent="globals" pc="268435527" symbol="getApp"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisDelegate.mc" id="5" lineNum="4" parent="globals/DefisDelegate" pc="268435543" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeDelegate.mc" id="6" lineNum="4" parent="globals/ProgrammeDelegate" pc="268435562" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkDelegate.mc" id="7" lineNum="4" parent="globals/RunWalkDelegate" pc="268435581" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="8" lineNum="7" parent="globals/Rez" pc="268435600" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkView.mc" id="9" lineNum="6" parent="globals/RunWalkView" pc="268435624" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeView.mc" id="10" lineNum="6" parent="globals/ProgrammeView" pc="268435643" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsDelegate.mc" id="11" lineNum="4" parent="globals/StatsDelegate" pc="268435662" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="12" lineNum="5" parent="globals/RunQuestMenuDelegate" pc="268435681" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="12" lineNum="6" parent="globals/RunQuestMenuDelegate" pc="268435699" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="12" lineNum="7" parent="globals/RunQuestMenuDelegate" pc="268435727" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="13" lineNum="7" parent="globals/RunQuestView" pc="268435756" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="14" lineNum="5" parent="globals/RunQuestApp" pc="268435775" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc" id="16" lineNum="13" parent="globals/StatsView" pc="268435794" symbol="onLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc" id="16" lineNum="14" parent="globals/StatsView" pc="268435796" symbol="onLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc" id="17" lineNum="8" parent="globals/StatsView" pc="268435838" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc" id="17" lineNum="9" parent="globals/StatsView" pc="268435840" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc" id="19" lineNum="24" parent="globals/StatsView" pc="268435859" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsView.mc" id="19" lineNum="26" parent="globals/StatsView" pc="268435861" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" id="20" lineNum="10" parent="globals/RunQuestDelegate" pc="268435882" symbol="onMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" id="20" lineNum="11" parent="globals/RunQuestDelegate" pc="268435884" symbol="onMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" id="20" lineNum="12" parent="globals/RunQuestDelegate" pc="268435969" symbol="onMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" id="21" lineNum="15" parent="globals/RunQuestDelegate" pc="268435972" symbol="onStart"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" id="21" lineNum="16" parent="globals/RunQuestDelegate" pc="268435974" symbol="onStart"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" id="21" lineNum="17" parent="globals/RunQuestDelegate" pc="268436047" symbol="onStart"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" id="22" lineNum="6" parent="globals/RunQuestDelegate" pc="268436050" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestDelegate.mc" id="22" lineNum="7" parent="globals/RunQuestDelegate" pc="268436052" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="23" lineNum="9" parent="globals/CustomItem" pc="268436071" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="23" lineNum="10" parent="globals/CustomItem" pc="268436073" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="23" lineNum="17" parent="globals/CustomItem" pc="268436172" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="23" lineNum="18" parent="globals/CustomItem" pc="268436182" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="23" lineNum="19" parent="globals/CustomItem" pc="268436192" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="24" lineNum="22" parent="globals/CustomItem" pc="268436203" symbol="draw"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="24" lineNum="23" parent="globals/CustomItem" pc="268436205" symbol="draw"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="24" lineNum="26" parent="globals/CustomItem" pc="268436250" symbol="draw"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="24" lineNum="27" parent="globals/CustomItem" pc="268436272" symbol="draw"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="24" lineNum="28" parent="globals/CustomItem" pc="268436312" symbol="draw"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="24" lineNum="29" parent="globals/CustomItem" pc="268436349" symbol="draw"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="24" lineNum="31" parent="globals/CustomItem" pc="268436386" symbol="draw"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="24" lineNum="32" parent="globals/CustomItem" pc="268436408" symbol="draw"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="24" lineNum="34" parent="globals/CustomItem" pc="268436440" symbol="draw"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/CustomItem.mc" id="24" lineNum="35" parent="globals/CustomItem" pc="268436472" symbol="draw"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisDelegate.mc" id="25" lineNum="15" parent="globals/DefisDelegate" pc="268436514" symbol="onBack"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisDelegate.mc" id="25" lineNum="16" parent="globals/DefisDelegate" pc="268436516" symbol="onBack"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisDelegate.mc" id="26" lineNum="10" parent="globals/DefisDelegate" pc="268436578" symbol="onStart"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisDelegate.mc" id="26" lineNum="12" parent="globals/DefisDelegate" pc="268436580" symbol="onStart"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisDelegate.mc" id="27" lineNum="6" parent="globals/DefisDelegate" pc="268436583" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/DefisDelegate.mc" id="27" lineNum="7" parent="globals/DefisDelegate" pc="268436585" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeDelegate.mc" id="28" lineNum="20" parent="globals/ProgrammeDelegate" pc="268436604" symbol="onBack"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeDelegate.mc" id="28" lineNum="21" parent="globals/ProgrammeDelegate" pc="268436606" symbol="onBack"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeDelegate.mc" id="28" lineNum="22" parent="globals/ProgrammeDelegate" pc="268436667" symbol="onBack"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeDelegate.mc" id="29" lineNum="10" parent="globals/ProgrammeDelegate" pc="268436670" symbol="onMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeDelegate.mc" id="29" lineNum="11" parent="globals/ProgrammeDelegate" pc="268436672" symbol="onMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeDelegate.mc" id="29" lineNum="12" parent="globals/ProgrammeDelegate" pc="268436757" symbol="onMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeDelegate.mc" id="30" lineNum="15" parent="globals/ProgrammeDelegate" pc="268436760" symbol="onStart"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeDelegate.mc" id="30" lineNum="17" parent="globals/ProgrammeDelegate" pc="268436762" symbol="onStart"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeDelegate.mc" id="31" lineNum="6" parent="globals/ProgrammeDelegate" pc="268436765" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeDelegate.mc" id="31" lineNum="7" parent="globals/ProgrammeDelegate" pc="268436767" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkDelegate.mc" id="32" lineNum="20" parent="globals/RunWalkDelegate" pc="268436786" symbol="onBack"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkDelegate.mc" id="32" lineNum="21" parent="globals/RunWalkDelegate" pc="268436788" symbol="onBack"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkDelegate.mc" id="32" lineNum="22" parent="globals/RunWalkDelegate" pc="268436849" symbol="onBack"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkDelegate.mc" id="33" lineNum="10" parent="globals/RunWalkDelegate" pc="268436852" symbol="onMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkDelegate.mc" id="33" lineNum="11" parent="globals/RunWalkDelegate" pc="268436854" symbol="onMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkDelegate.mc" id="33" lineNum="12" parent="globals/RunWalkDelegate" pc="268436939" symbol="onMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkDelegate.mc" id="34" lineNum="15" parent="globals/RunWalkDelegate" pc="268436942" symbol="onStart"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkDelegate.mc" id="34" lineNum="17" parent="globals/RunWalkDelegate" pc="268436944" symbol="onStart"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkDelegate.mc" id="35" lineNum="6" parent="globals/RunWalkDelegate" pc="268436947" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkDelegate.mc" id="35" lineNum="7" parent="globals/RunWalkDelegate" pc="268436949" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkView.mc" id="37" lineNum="13" parent="globals/RunWalkView" pc="268436968" symbol="onLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkView.mc" id="37" lineNum="14" parent="globals/RunWalkView" pc="268436970" symbol="onLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkView.mc" id="38" lineNum="8" parent="globals/RunWalkView" pc="268437012" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkView.mc" id="38" lineNum="9" parent="globals/RunWalkView" pc="268437014" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkView.mc" id="40" lineNum="24" parent="globals/RunWalkView" pc="268437033" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunWalkView.mc" id="40" lineNum="26" parent="globals/RunWalkView" pc="268437035" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeView.mc" id="42" lineNum="13" parent="globals/ProgrammeView" pc="268437056" symbol="onLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeView.mc" id="42" lineNum="14" parent="globals/ProgrammeView" pc="268437058" symbol="onLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeView.mc" id="43" lineNum="8" parent="globals/ProgrammeView" pc="268437100" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeView.mc" id="43" lineNum="9" parent="globals/ProgrammeView" pc="268437102" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeView.mc" id="45" lineNum="24" parent="globals/ProgrammeView" pc="268437121" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/ProgrammeView.mc" id="45" lineNum="26" parent="globals/ProgrammeView" pc="268437123" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsDelegate.mc" id="46" lineNum="20" parent="globals/StatsDelegate" pc="268437144" symbol="onBack"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsDelegate.mc" id="46" lineNum="21" parent="globals/StatsDelegate" pc="268437146" symbol="onBack"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsDelegate.mc" id="46" lineNum="22" parent="globals/StatsDelegate" pc="268437207" symbol="onBack"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsDelegate.mc" id="47" lineNum="10" parent="globals/StatsDelegate" pc="268437210" symbol="onMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsDelegate.mc" id="47" lineNum="11" parent="globals/StatsDelegate" pc="268437212" symbol="onMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsDelegate.mc" id="47" lineNum="12" parent="globals/StatsDelegate" pc="268437285" symbol="onMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsDelegate.mc" id="48" lineNum="15" parent="globals/StatsDelegate" pc="268437288" symbol="onStart"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsDelegate.mc" id="48" lineNum="17" parent="globals/StatsDelegate" pc="268437290" symbol="onStart"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsDelegate.mc" id="49" lineNum="6" parent="globals/StatsDelegate" pc="268437293" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/StatsDelegate.mc" id="49" lineNum="7" parent="globals/StatsDelegate" pc="268437295" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="50" lineNum="13" parent="globals/RunQuestMenuDelegate" pc="268437314" symbol="createMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="50" lineNum="14" parent="globals/RunQuestMenuDelegate" pc="268437318" symbol="createMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="50" lineNum="15" parent="globals/RunQuestMenuDelegate" pc="268437362" symbol="createMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="50" lineNum="21" parent="globals/RunQuestMenuDelegate" pc="268437479" symbol="createMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="50" lineNum="27" parent="globals/RunQuestMenuDelegate" pc="268437596" symbol="createMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="50" lineNum="33" parent="globals/RunQuestMenuDelegate" pc="268437713" symbol="createMenu"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="51" lineNum="36" parent="globals/RunQuestMenuDelegate" pc="268437716" symbol="onMenuItem"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="51" lineNum="38" parent="globals/RunQuestMenuDelegate" pc="268437718" symbol="onMenuItem"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="51" lineNum="39" parent="globals/RunQuestMenuDelegate" pc="268437729" symbol="onMenuItem"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="51" lineNum="40" parent="globals/RunQuestMenuDelegate" pc="268437805" symbol="onMenuItem"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="51" lineNum="41" parent="globals/RunQuestMenuDelegate" pc="268437816" symbol="onMenuItem"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="51" lineNum="42" parent="globals/RunQuestMenuDelegate" pc="268437892" symbol="onMenuItem"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="51" lineNum="43" parent="globals/RunQuestMenuDelegate" pc="268437903" symbol="onMenuItem"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="51" lineNum="44" parent="globals/RunQuestMenuDelegate" pc="268437964" symbol="onMenuItem"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="51" lineNum="45" parent="globals/RunQuestMenuDelegate" pc="268437975" symbol="onMenuItem"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="52" lineNum="9" parent="globals/RunQuestMenuDelegate" pc="268438016" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestMenuDelegate.mc" id="52" lineNum="10" parent="globals/RunQuestMenuDelegate" pc="268438018" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="54" lineNum="14" parent="globals/RunQuestView" pc="268438037" symbol="onLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="54" lineNum="15" parent="globals/RunQuestView" pc="268438039" symbol="onLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="55" lineNum="9" parent="globals/RunQuestView" pc="268438081" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="55" lineNum="10" parent="globals/RunQuestView" pc="268438083" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="25" parent="globals/RunQuestView" pc="268438102" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="27" parent="globals/RunQuestView" pc="268438106" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="28" parent="globals/RunQuestView" pc="268438123" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="29" parent="globals/RunQuestView" pc="268438147" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="30" parent="globals/RunQuestView" pc="268438171" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="31" parent="globals/RunQuestView" pc="268438195" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="32" parent="globals/RunQuestView" pc="268438219" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="33" parent="globals/RunQuestView" pc="268438233" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="36" parent="globals/RunQuestView" pc="268438247" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="37" parent="globals/RunQuestView" pc="268438266" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="38" parent="globals/RunQuestView" pc="268438290" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="46" parent="globals/RunQuestView" pc="268438350" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="47" parent="globals/RunQuestView" pc="268438374" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="50" parent="globals/RunQuestView" pc="268438388" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="53" parent="globals/RunQuestView" pc="268438408" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="54" parent="globals/RunQuestView" pc="268438425" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="55" parent="globals/RunQuestView" pc="268438447" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="56" parent="globals/RunQuestView" pc="268438480" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="59" parent="globals/RunQuestView" pc="268438564" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="60" parent="globals/RunQuestView" pc="268438586" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="61" parent="globals/RunQuestView" pc="268438618" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestView.mc" id="57" lineNum="62" parent="globals/RunQuestView" pc="268438650" symbol="onUpdate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="58" lineNum="32" parent="globals/RunQuestApp" pc="268438683" symbol="getAppDelegate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="58" lineNum="33" parent="globals/RunQuestApp" pc="268438685" symbol="getAppDelegate"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="59" lineNum="14" parent="globals/RunQuestApp" pc="268438694" symbol="onStart"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="60" lineNum="22" parent="globals/RunQuestApp" pc="268438697" symbol="getInitialView"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="60" lineNum="23" parent="globals/RunQuestApp" pc="268438699" symbol="getInitialView"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="60" lineNum="24" parent="globals/RunQuestApp" pc="268438733" symbol="getInitialView"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="60" lineNum="25" parent="globals/RunQuestApp" pc="268438767" symbol="getInitialView"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="61" lineNum="9" parent="globals/RunQuestApp" pc="268438806" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="61" lineNum="10" parent="globals/RunQuestApp" pc="268438808" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="62" lineNum="28" parent="globals/RunQuestApp" pc="268438827" symbol="getAppView"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="62" lineNum="29" parent="globals/RunQuestApp" pc="268438829" symbol="getAppView"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/source/RunQuestApp.mc" id="63" lineNum="18" parent="globals/RunQuestApp" pc="268438838" symbol="onStop"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="64" lineNum="64" parent="globals/Rez/Layouts" pc="268438841" symbol="Stats"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="64" lineNum="65" parent="globals/Rez/Layouts" pc="268438853" symbol="Stats"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="64" lineNum="67" parent="globals/Rez/Layouts" pc="268438988" symbol="Stats"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="65" lineNum="70" parent="globals/Rez/Layouts" pc="268439005" symbol="RunWalk"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="65" lineNum="71" parent="globals/Rez/Layouts" pc="268439017" symbol="RunWalk"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="65" lineNum="73" parent="globals/Rez/Layouts" pc="268439152" symbol="RunWalk"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="23" parent="globals/Rez/Layouts" pc="268439169" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="24" parent="globals/Rez/Layouts" pc="268439181" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="26" parent="globals/Rez/Layouts" pc="268439293" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="28" parent="globals/Rez/Layouts" pc="268439405" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="30" parent="globals/Rez/Layouts" pc="268439517" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="31" parent="globals/Rez/Layouts" pc="268439622" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="33" parent="globals/Rez/Layouts" pc="268439644" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="34" parent="globals/Rez/Layouts" pc="268439749" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="36" parent="globals/Rez/Layouts" pc="268439771" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="37" parent="globals/Rez/Layouts" pc="268439876" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="39" parent="globals/Rez/Layouts" pc="268439898" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="41" parent="globals/Rez/Layouts" pc="268440010" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="43" parent="globals/Rez/Layouts" pc="268440122" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="45" parent="globals/Rez/Layouts" pc="268440234" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="46" parent="globals/Rez/Layouts" pc="268440339" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="48" parent="globals/Rez/Layouts" pc="268440376" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="49" parent="globals/Rez/Layouts" pc="268440481" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="51" parent="globals/Rez/Layouts" pc="268440503" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="52" parent="globals/Rez/Layouts" pc="268440608" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="54" parent="globals/Rez/Layouts" pc="268440630" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="56" parent="globals/Rez/Layouts" pc="268440742" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="58" parent="globals/Rez/Layouts" pc="268440854" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="59" parent="globals/Rez/Layouts" pc="268440959" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="66" lineNum="61" parent="globals/Rez/Layouts" pc="268440981" symbol="MainLayout"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="67" lineNum="76" parent="globals/Rez/Layouts" pc="268441138" symbol="Programme"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="67" lineNum="77" parent="globals/Rez/Layouts" pc="268441150" symbol="Programme"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="67" lineNum="79" parent="globals/Rez/Layouts" pc="268441285" symbol="Programme"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="68" lineNum="84" parent="globals/Rez/Menus/MainMenu" pc="268441302" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="69" lineNum="85" parent="globals/Rez/Menus/MainMenu" pc="268441321" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="69" lineNum="86" parent="globals/Rez/Menus/MainMenu" pc="268441323" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="69" lineNum="87" parent="globals/Rez/Menus/MainMenu" pc="268441341" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="69" lineNum="88" parent="globals/Rez/Menus/MainMenu" pc="268441363" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="69" lineNum="89" parent="globals/Rez/Menus/MainMenu" pc="268441385" symbol="initialize"/>
+        <entry filename="/Users/hugoams/Documents/Stage/Garmin/RunQuest/bin/gen/006-B3869-00/source/Rez.mcgen" id="69" lineNum="90" parent="globals/Rez/Menus/MainMenu" pc="268441407" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="47" symbol="itemOne"/>
+        <entry field="true" id="29" symbol="Cal_badges"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="51" symbol="Annuler"/>
+        <entry id="8389346" symbol="text"/>
+        <entry field="true" id="37" symbol="Quizz_badges"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="8391333" symbol="delegate"/>
+        <entry id="5" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="39" method="true" symbol="MainLayout"/>
+        <entry id="18" object="true" symbol="StatsView"/>
+        <entry field="true" id="33" symbol="Defis_Runner_badges"/>
+        <entry id="48" symbol="itemTwo"/>
+        <entry id="13" object="true" symbol="RunQuestMenuDelegate"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="43" symbol="AppName"/>
+        <entry field="true" id="19" symbol="pourcent"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8391829" symbol="visible"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="8389345" symbol="rezId"/>
+        <entry id="8390756" symbol="drawable"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="16" object="true" symbol="RunWalkView"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="46" symbol="prompt"/>
+        <entry field="true" id="28" symbol="Bpm_logo"/>
+        <entry id="49" symbol="Statistiques"/>
+        <entry field="true" id="22" symbol="appDelegate"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry field="true" id="8389067" symbol="height"/>
+        <entry id="21" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry field="true" id="31" symbol="Defis_Cal_badges"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="15" object="true" symbol="RunWalkDelegate"/>
+        <entry field="true" id="8389066" symbol="width"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="30" symbol="Cal_logo"/>
+        <entry id="12" object="true" symbol="RunQuestDelegate"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="7" object="true" symbol="CustomItem"/>
+        <entry field="true" id="8391710" symbol="bitmap"/>
+        <entry field="true" id="38" symbol="Runner_badges"/>
+        <entry id="24" method="true" symbol="createMenu"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="17" object="true" symbol="StatsDelegate"/>
+        <entry id="42" object="true" symbol="MainMenu"/>
+        <entry field="true" id="36" symbol="Pas_logo"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8388710" method="true" object="true" symbol="Stats"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="34" symbol="LauncherIcon"/>
+        <entry id="25" method="true" symbol="getAppDelegate"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry field="true" id="35" symbol="Niveau_UP"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="26" method="true" symbol="getAppView"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="50" symbol="Defis"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="40" method="true" symbol="Programme"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="23" symbol="appView"/>
+        <entry id="11" object="true" symbol="RunQuestApp"/>
+        <entry field="true" id="27" symbol="view"/>
+        <entry id="10" object="true" symbol="ProgrammeView"/>
+        <entry field="true" id="32" symbol="Defis_Quizz_badges"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry id="8389347" symbol="color"/>
+        <entry id="14" object="true" symbol="RunQuestView"/>
+        <entry id="20" module="true" symbol="Layouts"/>
+        <entry id="9" object="true" symbol="ProgrammeDelegate"/>
+        <entry id="8" object="true" symbol="DefisDelegate"/>
+        <entry id="41" method="true" symbol="RunWalk"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="8389642" symbol="title"/>
+        <entry field="true" id="45" symbol="menu_label_2"/>
+        <entry field="true" id="44" symbol="menu_label_1"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435837" name="dc" stackId="1" startPc="268435794"/>
+        <entry arg="true" endPc="268435881" name="dc" stackId="1" startPc="268435859"/>
+        <entry arg="true" endPc="268436202" name="titre" stackId="1" startPc="268436071"/>
+        <entry arg="true" endPc="268436202" name="image" stackId="2" startPc="268436071"/>
+        <entry arg="true" endPc="268436202" name="progress" stackId="3" startPc="268436071"/>
+        <entry arg="true" endPc="268436513" name="dc" stackId="1" startPc="268436203"/>
+        <entry arg="true" endPc="268437011" name="dc" stackId="1" startPc="268436968"/>
+        <entry arg="true" endPc="268437055" name="dc" stackId="1" startPc="268437033"/>
+        <entry arg="true" endPc="268437099" name="dc" stackId="1" startPc="268437056"/>
+        <entry arg="true" endPc="268437143" name="dc" stackId="1" startPc="268437121"/>
+        <entry endPc="268437715" name="menu" stackId="1" startPc="268437318"/>
+        <entry arg="true" endPc="268438015" name="item" stackId="1" startPc="268437716"/>
+        <entry arg="true" endPc="268438080" name="dc" stackId="1" startPc="268438037"/>
+        <entry arg="true" endPc="268438682" name="dc" stackId="1" startPc="268438102"/>
+        <entry endPc="268438681" name="clockTime" stackId="2" startPc="268438106"/>
+        <entry endPc="268438681" name="heures" stackId="3" startPc="268438106"/>
+        <entry endPc="268438681" name="minutes" stackId="4" startPc="268438106"/>
+        <entry endPc="268438681" name="hour" stackId="5" startPc="268438106"/>
+        <entry endPc="268438681" name="min" stackId="6" startPc="268438106"/>
+        <entry endPc="268438681" name="now" stackId="7" startPc="268438106"/>
+        <entry endPc="268438681" name="time" stackId="8" startPc="268438106"/>
+        <entry endPc="268438681" name="dateString" stackId="9" startPc="268438106"/>
+        <entry endPc="268438681" name="view3" stackId="10" startPc="268438106"/>
+        <entry arg="true" endPc="268439004" name="dc" stackId="1" startPc="268438841"/>
+        <entry endPc="268439004" name="rez_cmp_local_text_Stats" stackId="2" startPc="268438853"/>
+        <entry arg="true" endPc="268439168" name="dc" stackId="1" startPc="268439005"/>
+        <entry endPc="268439168" name="rez_cmp_local_text_RunWalk" stackId="2" startPc="268439017"/>
+        <entry arg="true" endPc="268441137" name="dc" stackId="1" startPc="268439169"/>
+        <entry endPc="268441137" name="rez_cmp_local_text_Heure" stackId="2" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_text_Minute" stackId="3" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_text_Date" stackId="4" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_bitmap_Cal_logo" stackId="5" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_bitmap_Bpm_logo" stackId="6" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_bitmap_Pas_logo" stackId="7" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_text_Calories" stackId="8" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_text_Bpm" stackId="9" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_text_Pas" stackId="10" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_bitmap_Cal_badges" stackId="11" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_bitmap_Runner_badges" stackId="12" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_bitmap_Quizz_badges" stackId="13" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_text_Programme_fav" stackId="14" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_text_Niveau" stackId="15" startPc="268439181"/>
+        <entry endPc="268441137" name="rez_cmp_local_bitmap_Niveau_UP" stackId="16" startPc="268439181"/>
+        <entry arg="true" endPc="268441301" name="dc" stackId="1" startPc="268441138"/>
+        <entry endPc="268441301" name="rez_cmp_local_text_Programme" stackId="2" startPc="268441150"/>
+    </localVars>
+    <deviceInfo partNumber="006-B3869-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Cal_logo"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Runner_badges"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Bpm_logo"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Quizz_badges"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Cal_badges"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Defis_Cal_badges"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Pas_logo"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Niveau_UP"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Defis_Quizz_badges"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Defis_Runner_badges"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/StatsView" offset="222" parentId="globals" symbolId="StatsView" type="class"/>
+        <dataEntry label="globals/RunQuestDelegate" offset="301" parentId="globals" symbolId="RunQuestDelegate" type="class"/>
+        <dataEntry label="globals/CustomItem" offset="364" parentId="globals" symbolId="CustomItem" type="class"/>
+        <dataEntry label="globals/DefisDelegate" offset="443" parentId="globals" symbolId="DefisDelegate" type="class"/>
+        <dataEntry label="globals/ProgrammeDelegate" offset="506" parentId="globals" symbolId="ProgrammeDelegate" type="class"/>
+        <dataEntry label="globals/RunWalkDelegate" offset="577" parentId="globals" symbolId="RunWalkDelegate" type="class"/>
+        <dataEntry label="globals/Rez" offset="648" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/RunWalkView" offset="711" parentId="globals" symbolId="RunWalkView" type="class"/>
+        <dataEntry label="globals/ProgrammeView" offset="790" parentId="globals" symbolId="ProgrammeView" type="class"/>
+        <dataEntry label="globals/StatsDelegate" offset="869" parentId="globals" symbolId="StatsDelegate" type="class"/>
+        <dataEntry label="globals/RunQuestMenuDelegate" offset="940" parentId="globals" symbolId="RunQuestMenuDelegate" type="class"/>
+        <dataEntry label="globals/RunQuestView" offset="1019" parentId="globals" symbolId="RunQuestView" type="class"/>
+        <dataEntry label="globals/RunQuestApp" offset="1098" parentId="globals" symbolId="RunQuestApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1201" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1320" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1383" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1422" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1485" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="StatsView" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435497" name="&lt;init&gt;" parent="RunQuestDelegate" startPc="268435479">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435516" name="&lt;init&gt;" parent="CustomItem" startPc="268435498">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435542" name="getApp" startPc="268435517">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435561" name="&lt;init&gt;" parent="DefisDelegate" startPc="268435543">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435580" name="&lt;init&gt;" parent="ProgrammeDelegate" startPc="268435562">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435599" name="&lt;init&gt;" parent="RunWalkDelegate" startPc="268435581">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435623" name="&lt;init&gt;" parent="Rez" startPc="268435600">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435642" name="&lt;init&gt;" parent="RunWalkView" startPc="268435624">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435661" name="&lt;init&gt;" parent="ProgrammeView" startPc="268435643">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435680" name="&lt;init&gt;" parent="StatsDelegate" startPc="268435662">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435755" name="&lt;init&gt;" parent="RunQuestMenuDelegate" startPc="268435681">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435774" name="&lt;init&gt;" parent="RunQuestView" startPc="268435756">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435793" name="&lt;init&gt;" parent="RunQuestApp" startPc="268435775">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="StatsView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435837" name="onLayout" parent="StatsView" startPc="268435794">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435858" name="initialize" parent="StatsView" startPc="268435838">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="StatsView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435881" name="onUpdate" parent="StatsView" startPc="268435859">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435971" name="onMenu" parent="RunQuestDelegate" startPc="268435882">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436049" name="onStart" parent="RunQuestDelegate" startPc="268435972">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436070" name="initialize" parent="RunQuestDelegate" startPc="268436050">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436202" name="initialize" parent="CustomItem" startPc="268436071">
+            <param id="titre"/>
+            <param id="image"/>
+            <param id="progress"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436513" name="draw" parent="CustomItem" startPc="268436203">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436577" name="onBack" parent="DefisDelegate" startPc="268436514">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436582" name="onStart" parent="DefisDelegate" startPc="268436578">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436603" name="initialize" parent="DefisDelegate" startPc="268436583">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436669" name="onBack" parent="ProgrammeDelegate" startPc="268436604">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436759" name="onMenu" parent="ProgrammeDelegate" startPc="268436670">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436764" name="onStart" parent="ProgrammeDelegate" startPc="268436760">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436785" name="initialize" parent="ProgrammeDelegate" startPc="268436765">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436851" name="onBack" parent="RunWalkDelegate" startPc="268436786">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436941" name="onMenu" parent="RunWalkDelegate" startPc="268436852">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436946" name="onStart" parent="RunWalkDelegate" startPc="268436942">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436967" name="initialize" parent="RunWalkDelegate" startPc="268436947">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="RunWalkView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437011" name="onLayout" parent="RunWalkView" startPc="268436968">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437032" name="initialize" parent="RunWalkView" startPc="268437012">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="RunWalkView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437055" name="onUpdate" parent="RunWalkView" startPc="268437033">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="ProgrammeView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437099" name="onLayout" parent="ProgrammeView" startPc="268437056">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437120" name="initialize" parent="ProgrammeView" startPc="268437100">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="ProgrammeView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437143" name="onUpdate" parent="ProgrammeView" startPc="268437121">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437209" name="onBack" parent="StatsDelegate" startPc="268437144">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437287" name="onMenu" parent="StatsDelegate" startPc="268437210">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437292" name="onStart" parent="StatsDelegate" startPc="268437288">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437313" name="initialize" parent="StatsDelegate" startPc="268437293">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437715" name="createMenu" parent="RunQuestMenuDelegate" startPc="268437314">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438015" name="onMenuItem" parent="RunQuestMenuDelegate" startPc="268437716">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438036" name="initialize" parent="RunQuestMenuDelegate" startPc="268438016">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="RunQuestView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438080" name="onLayout" parent="RunQuestView" startPc="268438037">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438101" name="initialize" parent="RunQuestView" startPc="268438081">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="RunQuestView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438682" name="onUpdate" parent="RunQuestView" startPc="268438102">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438693" name="getAppDelegate" parent="RunQuestApp" startPc="268438683">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438696" name="onStart" parent="RunQuestApp" startPc="268438694">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438805" name="getInitialView" parent="RunQuestApp" startPc="268438697">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438826" name="initialize" parent="RunQuestApp" startPc="268438806">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438837" name="getAppView" parent="RunQuestApp" startPc="268438827">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438840" name="onStop" parent="RunQuestApp" startPc="268438838">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439004" name="Stats" parent="Layouts" startPc="268438841">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439168" name="RunWalk" parent="Layouts" startPc="268439005">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441137" name="MainLayout" parent="Layouts" startPc="268439169">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441301" name="Programme" parent="Layouts" startPc="268441138">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441320" name="&lt;init&gt;" parent="MainMenu" startPc="268441302">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441429" name="initialize" parent="MainMenu" startPc="268441321">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

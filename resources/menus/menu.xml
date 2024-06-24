@@ -1,0 +1,6 @@
+<menu id="MainMenu">
+    <menu-item id="Programme" label="Programme" />
+    <menu-item id="Statistiques" label="Statistiques" />
+    <menu-item id="Defis" label="Défis" />
+    <menu-item id="Annuler" label="Annuler" />
+</menu>

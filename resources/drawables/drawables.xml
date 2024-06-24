@@ -1,0 +1,7 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <bitmap id="Defis_Cal_badges" x="10%" y="20%" filename="badgesPNG/calories_badge.png" />
+    <bitmap id="Defis_Runner_badges" x="10%" y="40%" filename="badgesPNG/runner_badge.png" />
+    <bitmap id="Defis_Quizz_badges" x="10%" y="60%" filename="badgesPNG/quizz_badge.png" />
+</drawables>
+
