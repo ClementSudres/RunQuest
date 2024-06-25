@@ -75,15 +75,10 @@ class QuizzDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onKey(key){
-        if(key.getKey()==8 && questions[random][5].equals("C")){
-            WatchUi.showToast("Right", null);
-            WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
-        }else if(key.getKey()==13 && questions[random][5].equals("A")){
-            WatchUi.showToast("Right", null);
-            WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
-        }else{
-            WatchUi.showToast("Wrong", null);
-            WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
+        if(key.getKey()==8){
+            getApp().getAppDelegate().getChronoDelegate().getQuizzView().setChoix(1);
+        }else if(key.getKey()==13){
+            getApp().getAppDelegate().getChronoDelegate().getQuizzView().setChoix(-1);
         }
         return true; 
     }
@@ -91,9 +86,19 @@ class QuizzDelegate extends WatchUi.BehaviorDelegate {
     function onSelect() as Boolean {
         if(requete == true){
             getApp().getAppDelegate().getChronoDelegate().getQuizzView().setReponses();
+            getApp().getAppDelegate().getChronoDelegate().getQuizzView().change=true;
             requete=false;
         }else{
-            if(questions[random][5].equals("B")){
+            if(getApp().getAppDelegate().getChronoDelegate().getQuizzView().choix==1 && questions[random][5].equals("A")){
+                WatchUi.showToast("Right", null);
+                WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
+            }else if(getApp().getAppDelegate().getChronoDelegate().getQuizzView().choix==2 && questions[random][5].equals("B")){
+                WatchUi.showToast("Right", null);
+                WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
+            }else if(getApp().getAppDelegate().getChronoDelegate().getQuizzView().choix==3 && questions[random][5].equals("C")){
+                WatchUi.showToast("Right", null);
+                WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
+            }else if(getApp().getAppDelegate().getChronoDelegate().getQuizzView().choix==4 && questions[random][5].equals("D")){
                 WatchUi.showToast("Right", null);
                 WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
             }else{
@@ -105,13 +110,6 @@ class QuizzDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onBack(){
-        if(questions[random][5].equals("D")){
-            WatchUi.showToast("Right", null);
-            WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
-        }else{
-            WatchUi.showToast("Wrong", null);
-            WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
-        }
         return true;
     }
 }
