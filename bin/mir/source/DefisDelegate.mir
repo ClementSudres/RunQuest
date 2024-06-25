@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-[ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/DefisDelegate.mc"; @line = 1; ]
-import Toybox.Lang;
-[ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/DefisDelegate.mc"; @line = 2; ]
-import Toybox.WatchUi;
-[ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/DefisDelegate.mc"; @line = 4; ]
-class DefisDelegate extends WatchUi.Menu2InputDelegate{
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/DefisDelegate.mc"; @line = 4; ]
-=======
 [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\DefisDelegate.mc"; @line = 1; ]
 import Toybox.Lang;
 [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\DefisDelegate.mc"; @line = 2; ]
@@ -14,7 +5,6 @@ import Toybox.WatchUi;
 [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\DefisDelegate.mc"; @line = 4; ]
 class DefisDelegate extends WatchUi.Menu2InputDelegate{
     [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\DefisDelegate.mc"; @line = 4; ]
->>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
     <init> {
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\DefisDelegate.mc" 6 8 ]
         %tmp.1 = self;
@@ -49,33 +39,6 @@ class DefisDelegate extends WatchUi.Menu2InputDelegate{
         %tmp.24 = invoke %tmp.22 %tmp.23();
         putv self :runQuestMenuDelegate %tmp.24;
     }
-<<<<<<< HEAD
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/DefisDelegate.mc"; @line = 4; ]
-    static
-    <init> {
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/DefisDelegate.mc"; @line = 6; ]
-    function initialize() as Void {
-_Users_hugoams_Documents_Stage_RunQuest_source_DefisDelegate_mc_6_26_8_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/DefisDelegate.mc" 7 8 ]
-        %tmp.2 = getv ? :Menu2InputDelegate;
-        %tmp.3 = getv function %tmp.2 :initialize;
-        invoke %tmp.2 %tmp.3();
-_Users_hugoams_Documents_Stage_RunQuest_source_DefisDelegate_mc_6_26_8_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/DefisDelegate.mc"; @line = 10; ]
-    function onStart() as Boolean {
-_Users_hugoams_Documents_Stage_RunQuest_source_DefisDelegate_mc_10_34_13_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/DefisDelegate.mc" 12 8 ]
-        %tmp.1 = true;
-        ret %tmp.1;
-_Users_hugoams_Documents_Stage_RunQuest_source_DefisDelegate_mc_10_34_13_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/DefisDelegate.mc"; @line = 15; ]
-    function onBack() {
-_Users_hugoams_Documents_Stage_RunQuest_source_DefisDelegate_mc_15_21_17_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/DefisDelegate.mc" 16 8 ]
-=======
     [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\DefisDelegate.mc"; @line = 4; ]
     static
     <init> {
@@ -114,7 +77,6 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_DefisDelegate_mc_17_3
     function onBack() {
 C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_DefisDelegate_mc_22_21_24_4_start:
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\DefisDelegate.mc" 23 8 ]
->>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
         %tmp.1 = getm $.Toybox.WatchUi;
         %tmp.2 = getv function %tmp.1 :switchToView;
         %tmp.3 = self;
@@ -130,16 +92,9 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_DefisDelegate_mc_22_2
         %tmp.13 = getm $.Toybox.WatchUi;
         %tmp.14 = getv %tmp.13 :SLIDE_DOWN;
         invoke %tmp.1 %tmp.2(%tmp.7, %tmp.12, %tmp.14);
-<<<<<<< HEAD
-_Users_hugoams_Documents_Stage_RunQuest_source_DefisDelegate_mc_15_21_17_4_stop:
-    }
-}
-[ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/DefisDelegate.mc"; @line = 1; ]
-=======
 C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_DefisDelegate_mc_22_21_24_4_stop:
     }
 }
 [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\DefisDelegate.mc"; @line = 1; ]
->>>>>>> 02d913d957de0a217607915c9a8df96f7e120f54
 <init> {
 }
