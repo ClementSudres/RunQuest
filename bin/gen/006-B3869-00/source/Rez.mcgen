@@ -67,6 +67,20 @@ module Rez {
             return [rez_cmp_local_text_Programme] as Array<WatchUi.Drawable>;
         }
 
+        function Quizz(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_Question = new WatchUi.Text({:identifier=>"Question", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (10 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_A = new WatchUi.Text({:identifier=>"A", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (25 / 100.0)), :locY=>(208 * (25 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_B = new WatchUi.Text({:identifier=>"B", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (75 / 100.0)), :locY=>(208 * (25 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_C = new WatchUi.Text({:identifier=>"C", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (25 / 100.0)), :locY=>(208 * (75 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_D = new WatchUi.Text({:identifier=>"D", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (75 / 100.0)), :locY=>(208 * (75 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            return [rez_cmp_local_text_Question, rez_cmp_local_text_A, rez_cmp_local_text_B, rez_cmp_local_text_C, rez_cmp_local_text_D] as Array<WatchUi.Drawable>;
+        }
+
         function RunWalk(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
             var rez_cmp_local_text_Timer = new WatchUi.Text({:identifier=>"Timer", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>((208 - dc.getFontHeight(Graphics.FONT_NUMBER_THAI_HOT)) * 0.5), :text=>"00:00", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_THAI_HOT});
 

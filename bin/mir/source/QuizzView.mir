@@ -1,0 +1,183 @@
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 4; ]
+import Toybox.System;
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 6; ]
+class QuizzView extends WatchUi.View{
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 6; ]
+    <init> {
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 7 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :getApp;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = getv function %tmp.3 :getAppDelegate;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = getv function %tmp.5 :getChronoDelegate;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = getv function %tmp.7 :getQuizzDelegate;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        putv self :quizzDelegate %tmp.9;
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 7; @position = 8; ]
+    var quizzDelegate;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 8; @position = 8; ]
+    var quest;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 9; @position = 8; ]
+    var qe;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 10; @position = 8; ]
+    var un;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 11; @position = 8; ]
+    var deux;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 12; @position = 8; ]
+    var trois;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 13; @position = 8; ]
+    var quatre;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 15; ]
+    function initialize() as Void {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_15_26_17_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 16 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_15_26_17_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 20; ]
+    function onLayout(dc as Dc) as Void {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_20_40_31_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 21 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :Quizz;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 23 8 ]
+        %tmp.11 = getv ? :quizzDelegate;
+        %tmp.12 = getv %tmp.11 :random;
+        putv self :quest %tmp.12;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 24 8 ]
+        %tmp.14 = getv ? :View;
+        %tmp.15 = getv function %tmp.14 :findDrawableById;
+        %tmp.16 = "Question";
+        %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+        %tmp.18 = as %tmp.17 Text;
+        putv self :qe %tmp.18;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 25 8 ]
+        %tmp.20 = getv ? :View;
+        %tmp.21 = getv function %tmp.20 :findDrawableById;
+        %tmp.22 = "A";
+        %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
+        %tmp.24 = as %tmp.23 Text;
+        putv self :un %tmp.24;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 26 8 ]
+        %tmp.26 = getv ? :View;
+        %tmp.27 = getv function %tmp.26 :findDrawableById;
+        %tmp.28 = "B";
+        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
+        %tmp.30 = as %tmp.29 Text;
+        putv self :deux %tmp.30;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 27 8 ]
+        %tmp.32 = getv ? :View;
+        %tmp.33 = getv function %tmp.32 :findDrawableById;
+        %tmp.34 = "C";
+        %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
+        %tmp.36 = as %tmp.35 Text;
+        putv self :trois %tmp.36;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 28 8 ]
+        %tmp.38 = getv ? :View;
+        %tmp.39 = getv function %tmp.38 :findDrawableById;
+        %tmp.40 = "D";
+        %tmp.41 = invoke %tmp.38 %tmp.39(%tmp.40);
+        %tmp.42 = as %tmp.41 Text;
+        putv self :quatre %tmp.42;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 30 8 ]
+        %tmp.43 = self;
+        %tmp.44 = getv function %tmp.43 :setQuestions;
+        invoke %tmp.43 %tmp.44();
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_20_40_31_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 33; ]
+    function setQuestions() {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_33_27_39_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 34 8 ]
+        %tmp.2 = getv ? :qe;
+        %tmp.3 = getv function %tmp.2 :setText;
+        %tmp.5 = getv ? :quizzDelegate;
+        %tmp.6 = getv %tmp.5 :questions;
+        %tmp.8 = getv ? :quest;
+        %tmp.9 = agetv %tmp.6 %tmp.8;
+        %tmp.10 = 0;
+        %tmp.11 = agetv %tmp.9 %tmp.10;
+        invoke %tmp.2 %tmp.3(%tmp.11);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 35 8 ]
+        %tmp.13 = getv ? :un;
+        %tmp.14 = getv function %tmp.13 :setText;
+        %tmp.16 = getv ? :quizzDelegate;
+        %tmp.17 = getv %tmp.16 :questions;
+        %tmp.19 = getv ? :quest;
+        %tmp.20 = agetv %tmp.17 %tmp.19;
+        %tmp.21 = 1;
+        %tmp.22 = agetv %tmp.20 %tmp.21;
+        invoke %tmp.13 %tmp.14(%tmp.22);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 36 8 ]
+        %tmp.24 = getv ? :deux;
+        %tmp.25 = getv function %tmp.24 :setText;
+        %tmp.27 = getv ? :quizzDelegate;
+        %tmp.28 = getv %tmp.27 :questions;
+        %tmp.30 = getv ? :quest;
+        %tmp.31 = agetv %tmp.28 %tmp.30;
+        %tmp.32 = 2;
+        %tmp.33 = agetv %tmp.31 %tmp.32;
+        invoke %tmp.24 %tmp.25(%tmp.33);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 37 8 ]
+        %tmp.35 = getv ? :trois;
+        %tmp.36 = getv function %tmp.35 :setText;
+        %tmp.38 = getv ? :quizzDelegate;
+        %tmp.39 = getv %tmp.38 :questions;
+        %tmp.41 = getv ? :quest;
+        %tmp.42 = agetv %tmp.39 %tmp.41;
+        %tmp.43 = 3;
+        %tmp.44 = agetv %tmp.42 %tmp.43;
+        invoke %tmp.35 %tmp.36(%tmp.44);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 38 8 ]
+        %tmp.46 = getv ? :quatre;
+        %tmp.47 = getv function %tmp.46 :setText;
+        %tmp.49 = getv ? :quizzDelegate;
+        %tmp.50 = getv %tmp.49 :questions;
+        %tmp.52 = getv ? :quest;
+        %tmp.53 = agetv %tmp.50 %tmp.52;
+        %tmp.54 = 4;
+        %tmp.55 = agetv %tmp.53 %tmp.54;
+        invoke %tmp.46 %tmp.47(%tmp.55);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_33_27_39_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 43; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 47; ]
+    function onUpdate(dc as Dc) as Void {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_47_40_50_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 49 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :onUpdate;
+        %tmp.5 = lgetv %dc;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_47_40_50_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 55; ]
+    function onHide() as Void {
+    }
+}
+[ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 1; ]
+<init> {
+}
