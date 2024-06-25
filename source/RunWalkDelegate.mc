@@ -20,6 +20,7 @@ class RunWalkDelegate extends WatchUi.BehaviorDelegate {
     //on charge la vue 
     var view = getApp().getAppDelegate().getChronoView();
     var quizzDelegate;
+    var quizzView;
 
     function initialize(echauffement, circuit, pause) {
         BehaviorDelegate.initialize();
@@ -93,7 +94,8 @@ class RunWalkDelegate extends WatchUi.BehaviorDelegate {
             enMarche = false;
 
             quizzDelegate = new QuizzDelegate();
-            WatchUi.switchToView(new QuizzView(), quizzDelegate, WatchUi.SLIDE_DOWN);
+            quizzView = new QuizzView();
+            WatchUi.switchToView(quizzView, quizzDelegate, WatchUi.SLIDE_DOWN);
         }
         chrono--;
         view.setTimer(chrono);
@@ -122,6 +124,10 @@ class RunWalkDelegate extends WatchUi.BehaviorDelegate {
 
     function getQuizzDelegate(){
         return quizzDelegate;
+    }
+
+    function getQuizzView(){
+        return quizzView;
     }
 
     function onBack(){

@@ -9,6 +9,8 @@ class QuizzDelegate extends WatchUi.BehaviorDelegate {
     var chronoDelegate = getApp().getAppDelegate().getChronoDelegate();
     var random=0;
 
+    var requete = true; 
+
     var questions = [
         ["Quel est le record du monde du 100 mètres masculin ?", 
         "A. 9.58 secondes", 
@@ -74,35 +76,40 @@ class QuizzDelegate extends WatchUi.BehaviorDelegate {
 
     function onKey(key){
         if(key.getKey()==8 && questions[random][5].equals("C")){
-            WatchUi.showToast("You Right", null);
+            WatchUi.showToast("Right", null);
             WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
         }else if(key.getKey()==13 && questions[random][5].equals("A")){
-            WatchUi.showToast("You Right", null);
+            WatchUi.showToast("Right", null);
             WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
         }else{
-            WatchUi.showToast("You Wrong", null);
+            WatchUi.showToast("Wrong", null);
             WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
         }
         return true; 
     }
 
     function onSelect() as Boolean {
-        if(questions[random][5].equals("B")){
-            WatchUi.showToast("You Right", null);
-            WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
+        if(requete == true){
+            getApp().getAppDelegate().getChronoDelegate().getQuizzView().setReponses();
+            requete=false;
         }else{
-            WatchUi.showToast("You Wrong", null);
-            WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
+            if(questions[random][5].equals("B")){
+                WatchUi.showToast("Right", null);
+                WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
+            }else{
+                WatchUi.showToast("Wrong", null);
+                WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
+            }
         }
         return true; 
     }
 
     function onBack(){
         if(questions[random][5].equals("D")){
-            WatchUi.showToast("You Right", null);
+            WatchUi.showToast("Right", null);
             WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
         }else{
-            WatchUi.showToast("You Wrong", null);
+            WatchUi.showToast("Wrong", null);
             WatchUi.switchToView(chronoView, chronoDelegate, WatchUi.SLIDE_DOWN);
         }
         return true;

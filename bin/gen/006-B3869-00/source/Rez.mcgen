@@ -68,17 +68,25 @@ module Rez {
         }
 
         function Quizz(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_Question = new WatchUi.Text({:identifier=>"Question", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (10 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_un = new WatchUi.Text({:identifier=>"un", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_text_A = new WatchUi.Text({:identifier=>"A", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (25 / 100.0)), :locY=>(208 * (25 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_deux = new WatchUi.Text({:identifier=>"deux", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (20 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_text_B = new WatchUi.Text({:identifier=>"B", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (75 / 100.0)), :locY=>(208 * (25 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_trois = new WatchUi.Text({:identifier=>"trois", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (30 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_text_C = new WatchUi.Text({:identifier=>"C", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (25 / 100.0)), :locY=>(208 * (75 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_quatre = new WatchUi.Text({:identifier=>"quatre", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (40 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_text_D = new WatchUi.Text({:identifier=>"D", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (75 / 100.0)), :locY=>(208 * (75 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_cinq = new WatchUi.Text({:identifier=>"cinq", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (50 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            return [rez_cmp_local_text_Question, rez_cmp_local_text_A, rez_cmp_local_text_B, rez_cmp_local_text_C, rez_cmp_local_text_D] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_six = new WatchUi.Text({:identifier=>"six", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (60 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_sept = new WatchUi.Text({:identifier=>"sept", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (70 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_huit = new WatchUi.Text({:identifier=>"huit", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (70 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_neuf = new WatchUi.Text({:identifier=>"neuf", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (70 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            return [rez_cmp_local_text_un, rez_cmp_local_text_deux, rez_cmp_local_text_trois, rez_cmp_local_text_quatre, rez_cmp_local_text_cinq, rez_cmp_local_text_six, rez_cmp_local_text_sept, rez_cmp_local_text_huit, rez_cmp_local_text_neuf] as Array<WatchUi.Drawable>;
         }
 
         function RunWalk(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
