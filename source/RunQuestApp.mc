@@ -6,6 +6,8 @@ class RunQuestApp extends Application.AppBase {
     var view;
     var delegate;
 
+    var chrono=10;
+
     function initialize() {
         AppBase.initialize();
         System.println("RunQuestApp init");

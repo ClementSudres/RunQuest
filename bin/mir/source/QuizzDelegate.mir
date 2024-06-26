@@ -368,7 +368,7 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_121_95_12_sta
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 93 16 ]
         %tmp.48 = getm $.Toybox.WatchUi;
         %tmp.49 = getv function %tmp.48 :showToast;
-        %tmp.50 = "Right";
+        %tmp.50 = "Vrai";
         %tmp.51 = null;
         invoke %tmp.48 %tmp.49(%tmp.50, %tmp.51);
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 94 16 ]
@@ -416,7 +416,7 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_127_98_12_sta
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 96 16 ]
         %tmp.83 = getm $.Toybox.WatchUi;
         %tmp.84 = getv function %tmp.83 :showToast;
-        %tmp.85 = "Right";
+        %tmp.85 = "Vrai";
         %tmp.86 = null;
         invoke %tmp.83 %tmp.84(%tmp.85, %tmp.86);
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 97 16 ]
@@ -464,7 +464,7 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_127_101_12_st
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 99 16 ]
         %tmp.118 = getm $.Toybox.WatchUi;
         %tmp.119 = getv function %tmp.118 :showToast;
-        %tmp.120 = "Right";
+        %tmp.120 = "Vrai";
         %tmp.121 = null;
         invoke %tmp.118 %tmp.119(%tmp.120, %tmp.121);
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 100 16 ]
@@ -512,7 +512,7 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_127_104_12_s
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 102 16 ]
         %tmp.153 = getm $.Toybox.WatchUi;
         %tmp.154 = getv function %tmp.153 :showToast;
-        %tmp.155 = "Right";
+        %tmp.155 = "Vrai";
         %tmp.156 = null;
         invoke %tmp.153 %tmp.154(%tmp.155, %tmp.156);
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 103 16 ]
@@ -530,7 +530,7 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_104_17_107_12_st
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 105 16 ]
         %tmp.165 = getm $.Toybox.WatchUi;
         %tmp.166 = getv function %tmp.165 :showToast;
-        %tmp.167 = "Wrong";
+        %tmp.167 = "Faux";
         %tmp.168 = null;
         invoke %tmp.165 %tmp.166(%tmp.167, %tmp.168);
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 106 16 ]

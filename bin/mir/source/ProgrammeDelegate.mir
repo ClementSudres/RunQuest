@@ -7,325 +7,182 @@ import Toybox.System;
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 4; ]
 import Toybox.Timer;
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 6; ]
-class ProgrammeDelegate extends WatchUi.BehaviorDelegate{
+class ProgrammeDelegate extends WatchUi.Menu2InputDelegate{
     [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 6; ]
     <init> {
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 8 8 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 7 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :getApp;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        %tmp.4 = getv function %tmp.3 :getAppView;
+        %tmp.4 = getv function %tmp.3 :getAppDelegate;
         %tmp.5 = invoke %tmp.3 %tmp.4();
-        putv self :appView %tmp.5;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 9 8 ]
-        %tmp.6 = self;
-        %tmp.7 = getv function %tmp.6 :getApp;
-        %tmp.8 = invoke %tmp.6 %tmp.7();
-        %tmp.9 = getv function %tmp.8 :getAppDelegate;
-        %tmp.10 = invoke %tmp.8 %tmp.9();
-        putv self :appDelegate %tmp.10;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 11 8 ]
-        %tmp.11 = self;
-        %tmp.12 = getv function %tmp.11 :getApp;
-        %tmp.13 = invoke %tmp.11 %tmp.12();
-        %tmp.14 = getv function %tmp.13 :getAppDelegate;
-        %tmp.15 = invoke %tmp.13 %tmp.14();
-        %tmp.16 = getv function %tmp.15 :getMainMenu;
-        %tmp.17 = invoke %tmp.15 %tmp.16();
-        putv self :mainMenu %tmp.17;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 12 8 ]
-        %tmp.18 = self;
-        %tmp.19 = getv function %tmp.18 :getApp;
-        %tmp.20 = invoke %tmp.18 %tmp.19();
-        %tmp.21 = getv function %tmp.20 :getAppDelegate;
-        %tmp.22 = invoke %tmp.20 %tmp.21();
-        %tmp.23 = getv function %tmp.22 :getRunQuestMenuDelegate;
-        %tmp.24 = invoke %tmp.22 %tmp.23();
-        putv self :runQuestMenuDelegate %tmp.24;
+        %tmp.6 = getv function %tmp.5 :getRunQuestMenuDelegate;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        putv self :menuDelegate %tmp.7;
     }
     [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 6; ]
     static
     <init> {
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 8; @position = 8; ]
-    var appView;
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 9; @position = 8; ]
-    var appDelegate;
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 11; @position = 8; ]
-    var mainMenu;
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 12; @position = 8; ]
-    var runQuestMenuDelegate;
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 14; @position = 8; ]
-    var keyPressTimer;
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 15; @position = 8; ]
-    var isKeyEscDown;
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 16; @position = 8; ]
-    var keyCode;
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 17; @position = 8; ]
-    var longPressTriggered;
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 19; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 7; @position = 8; ]
+    var menuDelegate;
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 9; ]
     function initialize() as Void {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_19_26_26_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 20 8 ]
-        %tmp.2 = getv ? :BehaviorDelegate;
+_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_9_26_12_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 10 8 ]
+        %tmp.2 = getv ? :Menu2InputDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 21 8 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 11 8 ]
         %tmp.4 = getm $.Toybox.System;
         %tmp.5 = getv function %tmp.4 :println;
         %tmp.6 = "ProgrammeDelegate init";
         invoke %tmp.4 %tmp.5(%tmp.6);
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 23 8 ]
-        %tmp.7 = null;
-        putv self :keyPressTimer %tmp.7;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 24 8 ]
-        %tmp.8 = false;
-        putv self :isKeyEscDown %tmp.8;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 25 8 ]
-        %tmp.9 = false;
-        putv self :longPressTriggered %tmp.9;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_19_26_26_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_9_26_12_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 28; ]
-    function onMenu() as Boolean {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_28_33_31_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 29 8 ]
-        %tmp.1 = getm $.Toybox.WatchUi;
-        %tmp.2 = getv function %tmp.1 :switchToView;
-        %tmp.4 = getv ? :mainMenu;
-        %tmp.6 = getv ? :runQuestMenuDelegate;
-        %tmp.7 = getm $.Toybox.WatchUi;
-        %tmp.8 = getv %tmp.7 :SLIDE_UP;
-        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6, %tmp.8);
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 30 8 ]
-        %tmp.9 = true;
-        ret %tmp.9;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_28_33_31_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 33; ]
-    function onStart() as Boolean {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_33_34_36_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 35 8 ]
-        %tmp.1 = true;
-        ret %tmp.1;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_33_34_36_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 38; ]
-    function onBack() {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_38_21_40_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 39 8 ]
-        %tmp.1 = true;
-        ret %tmp.1;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_38_21_40_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 42; ]
-    function onKeyPressed(key) {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_42_30_48_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 43 8 ]
-        %tmp.1 = lgetv %key;
-        %tmp.2 = getv function %tmp.1 :getKey;
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 14; ]
+    function onSelect(item) {
+_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_14_27_25_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 15 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_15_8_24_8_if_stmt:
+        %tmp.1 = lgetv %item;
+        %tmp.2 = getv function %tmp.1 :getId;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        putv self :keyCode %tmp.3;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 44 8 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_44_8_46_8_if_stmt:
-        %tmp.5 = getv ? :keyCode;
-        %tmp.6 = getm $.Toybox.WatchUi;
-        %tmp.7 = getv %tmp.6 :KEY_ESC;
-        %tmp.8 = eq %tmp.5 %tmp.7;
-        bf %tmp.8 @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_44_8_46_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_44_8_46_8_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_44_40_46_8_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 45 12 ]
-        %tmp.9 = self;
-        %tmp.10 = getv function %tmp.9 :handleKeyEscDown;
-        invoke %tmp.9 %tmp.10();
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_44_40_46_8_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_44_8_46_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_44_8_46_8_if_end:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 47 8 ]
-        %tmp.11 = true;
-        ret %tmp.11;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_42_30_48_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 51; ]
-    function checkKeyPressDuration() as Void {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_51_45_56_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 52 8 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_8_55_8_if_stmt:
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_12_52_29_begin:
-        %tmp.2 = getv ? :isKeyEscDown;
-        bf %tmp.2 @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_8_55_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_28_52_29_true:
-        %tmp.4 = getv ? :longPressTriggered;
-        %tmp.5 = not %tmp.4;
-        push %tmp.5;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_28_52_29_end:
-        %tmp.6 = phi [%tmp.2 @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_12_52_29_begin] [%tmp.5 @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_28_52_29_true] [%tmp.6 @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_28_52_29_end];
-        bf %tmp.6 @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_8_55_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_8_55_8_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_49_55_8_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 53 12 ]
-        %tmp.7 = true;
-        putv self :longPressTriggered %tmp.7;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 54 12 ]
-        %tmp.8 = self;
-        %tmp.9 = getv function %tmp.8 :forceHome;
-        invoke %tmp.8 %tmp.9();
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_49_55_8_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_8_55_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_52_8_55_8_if_end:
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_51_45_56_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 59; ]
-    function onKeyReleased(key) {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_59_32_65_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 60 8 ]
-        %tmp.1 = lgetv %key;
-        %tmp.2 = getv function %tmp.1 :getKey;
-        %tmp.3 = invoke %tmp.1 %tmp.2();
-        putv self :keyCode %tmp.3;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 61 8 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_61_8_63_8_if_stmt:
-        %tmp.5 = getv ? :keyCode;
-        %tmp.6 = getm $.Toybox.WatchUi;
-        %tmp.7 = getv %tmp.6 :KEY_ESC;
-        %tmp.8 = eq %tmp.5 %tmp.7;
-        bf %tmp.8 @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_61_8_63_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_61_8_63_8_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_61_40_63_8_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 62 12 ]
-        %tmp.9 = self;
-        %tmp.10 = getv function %tmp.9 :handleKeyEscUp;
-        invoke %tmp.9 %tmp.10();
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_61_40_63_8_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_61_8_63_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_61_8_63_8_if_end:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 64 8 ]
-        %tmp.11 = true;
-        ret %tmp.11;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_59_32_65_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 68; ]
-    function handleKeyEscDown() {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_68_32_72_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 69 8 ]
-        %tmp.1 = true;
-        putv self :isKeyEscDown %tmp.1;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 70 8 ]
-        %tmp.2 = false;
-        putv self :longPressTriggered %tmp.2;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 71 8 ]
-        %tmp.3 = self;
-        %tmp.4 = getv function %tmp.3 :startKeyPressTimer;
-        invoke %tmp.3 %tmp.4();
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_68_32_72_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 75; ]
-    function handleKeyEscUp() {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_75_30_81_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 76 8 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_76_8_78_8_if_stmt:
-        %tmp.2 = getv ? :longPressTriggered;
-        %tmp.3 = not %tmp.2;
-        bf %tmp.3 @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_76_8_78_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_76_8_78_8_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_76_33_78_8_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 77 12 ]
-        %tmp.4 = self;
-        %tmp.5 = getv function %tmp.4 :forceBack;
-        invoke %tmp.4 %tmp.5();
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_76_33_78_8_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_76_8_78_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_76_8_78_8_if_end:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 79 8 ]
-        %tmp.6 = false;
-        putv self :isKeyEscDown %tmp.6;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 80 8 ]
-        %tmp.7 = self;
-        %tmp.8 = getv function %tmp.7 :stopKeyPressTimer;
-        invoke %tmp.7 %tmp.8();
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_75_30_81_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 84; ]
-    function startKeyPressTimer() {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_84_34_89_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 85 8 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_85_8_88_8_if_stmt:
-        %tmp.2 = getv ? :keyPressTimer;
-        %tmp.3 = null;
-        %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_85_8_88_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_85_8_88_8_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_85_35_88_8_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 86 12 ]
-        %tmp.7 = getm $.Toybox.Timer;
-        %tmp.8 = getv function ? %tmp.7 :Timer;
-        %tmp.5 = newc %tmp.8 ();
-        putv self :keyPressTimer %tmp.5;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 87 12 ]
-        %tmp.10 = getv ? :keyPressTimer;
-        %tmp.11 = getv function %tmp.10 :start;
-        %tmp.12 = self;
-        %tmp.13 = getv function %tmp.12 :method;
-        %tmp.15 = const :checkKeyPressDuration;
-        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
-        %tmp.17 = 1000;
-        %tmp.18 = false;
-        invoke %tmp.10 %tmp.11(%tmp.16, %tmp.17, %tmp.18);
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_85_35_88_8_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_85_8_88_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_85_8_88_8_if_end:
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_84_34_89_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 92; ]
-    function stopKeyPressTimer() {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_92_33_97_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 93 8 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_93_8_96_8_if_stmt:
-        %tmp.2 = getv ? :keyPressTimer;
-        %tmp.3 = null;
-        %tmp.4 = ne %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_93_8_96_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_93_8_96_8_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_93_35_96_8_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 94 12 ]
-        %tmp.6 = getv ? :keyPressTimer;
-        %tmp.7 = as %tmp.6 { (!Null) };
-        %tmp.8 = getv function %tmp.7 :stop;
-        invoke %tmp.7 %tmp.8();
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 95 12 ]
-        %tmp.9 = null;
-        putv self :keyPressTimer %tmp.9;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_93_35_96_8_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_93_8_96_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_93_8_96_8_if_end:
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_92_33_97_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 100; ]
-    function forceBack() {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_100_24_102_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 101 8 ]
-        %tmp.1 = getm $.Toybox.WatchUi;
-        %tmp.2 = getv function %tmp.1 :switchToView;
-        %tmp.4 = getv ? :mainMenu;
-        %tmp.6 = getv ? :runQuestMenuDelegate;
-        %tmp.7 = getm $.Toybox.WatchUi;
-        %tmp.8 = getv %tmp.7 :SLIDE_DOWN;
-        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6, %tmp.8);
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_100_24_102_4_stop:
-    }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 105; ]
-    function forceHome() {
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_105_24_107_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 106 8 ]
-        %tmp.1 = getm $.Toybox.WatchUi;
-        %tmp.2 = getv function %tmp.1 :switchToView;
-        %tmp.4 = getv ? :appView;
-        %tmp.6 = getv ? :appDelegate;
-        %tmp.7 = getm $.Toybox.WatchUi;
-        %tmp.8 = getv %tmp.7 :SLIDE_UP;
-        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6, %tmp.8);
-_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_105_24_107_4_stop:
+        %tmp.4 = getv function %tmp.3 :equals;
+        %tmp.5 = "Deb";
+        %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
+        bf %tmp.6 @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_15_8_24_8_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_15_8_24_8_if_true:
+_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_15_38_21_8_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 16 12 ]
+        %tmp.7 = getm $.Toybox.System;
+        %tmp.8 = getv function %tmp.7 :println;
+        %tmp.10 = getv ? :menuDelegate;
+        invoke %tmp.7 %tmp.8(%tmp.10);
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 17 12 ]
+        %tmp.11 = getm $.Toybox.System;
+        %tmp.12 = getv function %tmp.11 :println;
+        %tmp.14 = getv ? :menuDelegate;
+        %tmp.15 = getv %tmp.14 :menuProg;
+        invoke %tmp.11 %tmp.12(%tmp.15);
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 18 12 ]
+        %tmp.16 = getm $.Toybox.System;
+        %tmp.17 = getv function %tmp.16 :println;
+        %tmp.19 = getv ? :menuDelegate;
+        %tmp.20 = getv %tmp.19 :menuProg;
+        %tmp.21 = getv function %tmp.20 :findItemById;
+        %tmp.22 = lgetv %item;
+        %tmp.23 = getv function %tmp.22 :getId;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = invoke %tmp.20 %tmp.21(%tmp.24);
+        invoke %tmp.16 %tmp.17(%tmp.25);
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 19 12 ]
+        %tmp.27 = getv ? :menuDelegate;
+        %tmp.28 = getv %tmp.27 :menuProg;
+        %tmp.29 = getv function %tmp.28 :getItem;
+        %tmp.30 = 0;
+        %tmp.31 = invoke %tmp.28 %tmp.29(%tmp.30);
+        %tmp.32 = getv function %tmp.31 :setIcon;
+        %tmp.36 = getv ? :Bitmap;
+        %tmp.37 = newd 3;
+        %tmp.39 = const :rezId;
+        %tmp.41 = getv ? :Rez;
+        %tmp.42 = getv %tmp.41 :Drawables;
+        %tmp.43 = getv %tmp.42 :favori;
+        %tmp.44 = dup %tmp.37;
+        %tmp.45 = aputv %tmp.44 %tmp.39 %tmp.43;
+        %tmp.47 = const :locX;
+        %tmp.48 = 10;
+        %tmp.49 = dup %tmp.45;
+        %tmp.50 = aputv %tmp.49 %tmp.47 %tmp.48;
+        %tmp.52 = const :locY;
+        %tmp.53 = 30;
+        %tmp.54 = dup %tmp.50;
+        %tmp.55 = aputv %tmp.54 %tmp.52 %tmp.53;
+        %tmp.33 = newc %tmp.36 (%tmp.55);
+        invoke %tmp.31 %tmp.32(%tmp.33);
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 20 12 ]
+        %tmp.57 = getv ? :menuDelegate;
+        %tmp.58 = getv %tmp.57 :menuProg;
+        %tmp.59 = getv function %tmp.58 :getItem;
+        %tmp.60 = 1;
+        %tmp.61 = invoke %tmp.58 %tmp.59(%tmp.60);
+        %tmp.62 = getv function %tmp.61 :setIcon;
+        %tmp.66 = getv ? :Bitmap;
+        %tmp.67 = newd 3;
+        %tmp.69 = const :rezId;
+        %tmp.71 = getv ? :Rez;
+        %tmp.72 = getv %tmp.71 :Drawables;
+        %tmp.73 = getv %tmp.72 :Nfavori;
+        %tmp.74 = dup %tmp.67;
+        %tmp.75 = aputv %tmp.74 %tmp.69 %tmp.73;
+        %tmp.77 = const :locX;
+        %tmp.78 = 10;
+        %tmp.79 = dup %tmp.75;
+        %tmp.80 = aputv %tmp.79 %tmp.77 %tmp.78;
+        %tmp.82 = const :locY;
+        %tmp.83 = 30;
+        %tmp.84 = dup %tmp.80;
+        %tmp.85 = aputv %tmp.84 %tmp.82 %tmp.83;
+        %tmp.63 = newc %tmp.66 (%tmp.85);
+        invoke %tmp.61 %tmp.62(%tmp.63);
+_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_15_38_21_8_stop:
+        goto @_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_15_8_24_8_if_end;
+_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_15_8_24_8_if_false:
+_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_21_13_24_8_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 22 12 ]
+        %tmp.87 = getv ? :menuDelegate;
+        %tmp.88 = getv %tmp.87 :menuProg;
+        %tmp.89 = getv function %tmp.88 :getItem;
+        %tmp.90 = 0;
+        %tmp.91 = invoke %tmp.88 %tmp.89(%tmp.90);
+        %tmp.92 = getv function %tmp.91 :setIcon;
+        %tmp.96 = getv ? :Bitmap;
+        %tmp.97 = newd 3;
+        %tmp.99 = const :rezId;
+        %tmp.101 = getv ? :Rez;
+        %tmp.102 = getv %tmp.101 :Drawables;
+        %tmp.103 = getv %tmp.102 :Nfavori;
+        %tmp.104 = dup %tmp.97;
+        %tmp.105 = aputv %tmp.104 %tmp.99 %tmp.103;
+        %tmp.107 = const :locX;
+        %tmp.108 = 10;
+        %tmp.109 = dup %tmp.105;
+        %tmp.110 = aputv %tmp.109 %tmp.107 %tmp.108;
+        %tmp.112 = const :locY;
+        %tmp.113 = 30;
+        %tmp.114 = dup %tmp.110;
+        %tmp.115 = aputv %tmp.114 %tmp.112 %tmp.113;
+        %tmp.93 = newc %tmp.96 (%tmp.115);
+        invoke %tmp.91 %tmp.92(%tmp.93);
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc" 23 12 ]
+        %tmp.117 = getv ? :menuDelegate;
+        %tmp.118 = getv %tmp.117 :menuProg;
+        %tmp.119 = getv function %tmp.118 :getItem;
+        %tmp.120 = 1;
+        %tmp.121 = invoke %tmp.118 %tmp.119(%tmp.120);
+        %tmp.122 = getv function %tmp.121 :setIcon;
+        %tmp.126 = getv ? :Bitmap;
+        %tmp.127 = newd 3;
+        %tmp.129 = const :rezId;
+        %tmp.131 = getv ? :Rez;
+        %tmp.132 = getv %tmp.131 :Drawables;
+        %tmp.133 = getv %tmp.132 :favori;
+        %tmp.134 = dup %tmp.127;
+        %tmp.135 = aputv %tmp.134 %tmp.129 %tmp.133;
+        %tmp.137 = const :locX;
+        %tmp.138 = 10;
+        %tmp.139 = dup %tmp.135;
+        %tmp.140 = aputv %tmp.139 %tmp.137 %tmp.138;
+        %tmp.142 = const :locY;
+        %tmp.143 = 30;
+        %tmp.144 = dup %tmp.140;
+        %tmp.145 = aputv %tmp.144 %tmp.142 %tmp.143;
+        %tmp.123 = newc %tmp.126 (%tmp.145);
+        invoke %tmp.121 %tmp.122(%tmp.123);
+_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_21_13_24_8_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_15_8_24_8_if_end:
+_Users_hugoams_Documents_Stage_RunQuest_source_ProgrammeDelegate_mc_14_27_25_4_stop:
     }
 }
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/ProgrammeDelegate.mc"; @line = 1; ]

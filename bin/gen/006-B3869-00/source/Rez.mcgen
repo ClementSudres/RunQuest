@@ -9,6 +9,8 @@ module Rez {
         (:initialized) var Defis_Cal_badges as ResourceId;
         (:initialized) var Defis_Runner_badges as ResourceId;
         (:initialized) var Defis_Quizz_badges as ResourceId;
+        (:initialized) var favori as ResourceId;
+        (:initialized) var Nfavori as ResourceId;
         (:initialized) var Cal_logo as ResourceId;
         (:initialized) var Bpm_logo as ResourceId;
         (:initialized) var Pas_logo as ResourceId;
@@ -95,12 +97,6 @@ module Rez {
             var rez_cmp_local_text_Message = new WatchUi.Text({:identifier=>"Message", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (20 / 100.0)), :text=>"Message", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
 
             return [rez_cmp_local_text_Timer, rez_cmp_local_text_Message] as Array<WatchUi.Drawable>;
-        }
-
-        function Programme(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_Programme = new WatchUi.Text({:identifier=>"Programme", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>((208 - dc.getFontHeight(Graphics.FONT_XTINY)) * 0.5), :text=>"Programme", :font=>Graphics.FONT_XTINY});
-
-            return [rez_cmp_local_text_Programme] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
