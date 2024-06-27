@@ -9,6 +9,8 @@ module Rez {
         (:initialized) var Defis_Cal_badges as ResourceId;
         (:initialized) var Defis_Runner_badges as ResourceId;
         (:initialized) var Defis_Quizz_badges as ResourceId;
+        (:initialized) var favori as ResourceId;
+        (:initialized) var Nfavori as ResourceId;
         (:initialized) var Cal_logo as ResourceId;
         (:initialized) var Bpm_logo as ResourceId;
         (:initialized) var Pas_logo as ResourceId;
@@ -59,12 +61,6 @@ module Rez {
             rez_cmp_local_bitmap_Niveau_UP.setLocation((208 * (60 / 100.0)), (208 * (5 / 100.0)));
 
             return [rez_cmp_local_text_Heure, rez_cmp_local_text_Minute, rez_cmp_local_text_Date, rez_cmp_local_bitmap_Cal_logo, rez_cmp_local_bitmap_Bpm_logo, rez_cmp_local_bitmap_Pas_logo, rez_cmp_local_text_Calories, rez_cmp_local_text_Bpm, rez_cmp_local_text_Pas, rez_cmp_local_bitmap_Cal_badges, rez_cmp_local_bitmap_Runner_badges, rez_cmp_local_bitmap_Quizz_badges, rez_cmp_local_text_Programme_fav, rez_cmp_local_text_Niveau, rez_cmp_local_bitmap_Niveau_UP] as Array<WatchUi.Drawable>;
-        }
-
-        function Programme(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_Programme = new WatchUi.Text({:identifier=>"Programme", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>((208 - dc.getFontHeight(Graphics.FONT_XTINY)) * 0.5), :text=>"Programme", :font=>Graphics.FONT_XTINY});
-
-            return [rez_cmp_local_text_Programme] as Array<WatchUi.Drawable>;
         }
 
         function Quizz(dc as Graphics.Dc) as Array<WatchUi.Drawable> {

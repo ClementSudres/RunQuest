@@ -20,8 +20,8 @@ class RunWalkView extends WatchUi.View {
 
         timer = View.findDrawableById("Timer") as Text;
         message = View.findDrawableById("Message") as Text;
-        
-        setTimer(temps);
+       
+        setTimer(getApp().chrono);
         setMessage("Prêt ?");
     }
 
@@ -66,5 +66,4 @@ class RunWalkView extends WatchUi.View {
         message.setText(mess.toString());
         WatchUi.requestUpdate();
     }
-
 }

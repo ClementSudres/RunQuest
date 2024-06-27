@@ -17,6 +17,7 @@ class QuizzView extends WatchUi.View {
     var huit;
     var neuf;
 
+    var choix = 1;
     var change = false;
 
     function initialize() {
@@ -126,6 +127,18 @@ class QuizzView extends WatchUi.View {
 
         WatchUi.requestUpdate();
     }
+
+    function setChoix(val){
+        System.println(val);
+        if(choix==1 && val == -1){
+            choix=4;
+        }else if(choix==4 && val==1){
+            choix=1;
+        }else{
+            choix = choix + val;
+        }
+        WatchUi.requestUpdate();
+    }
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
@@ -136,8 +149,21 @@ class QuizzView extends WatchUi.View {
     function onUpdate(dc as Dc) as Void {
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
-
-        dc.drawCircle(15, 15, 20);
+        if(change==true){
+            if(choix==1){
+                dc.clear();
+                dc.drawRectangle(0, 65, 300, 20);
+            }else if(choix==2){
+                dc.clear();
+                dc.drawRectangle(0, 85, 300, 20);
+            }else if(choix==3){
+                dc.clear();
+                dc.drawRectangle(0, 105, 300, 20);
+            }else if(choix==4){
+                dc.clear();
+                dc.drawRectangle(0, 125, 300, 20);
+            }
+        }
     }
 
     // Called when this View is removed from the screen. Save the

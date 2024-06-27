@@ -3,7 +3,7 @@ import Toybox.WatchUi;
 import Toybox.System;
 import Toybox.Timer;
 
-class ProgrammeDelegate extends WatchUi.BehaviorDelegate {
+class ProgrammeDelegate extends WatchUi.Menu2InputDelegate {
 
     var appView = getApp().getAppView();
     var appDelegate = getApp().getAppDelegate();
@@ -17,7 +17,7 @@ class ProgrammeDelegate extends WatchUi.BehaviorDelegate {
     //var longPressTriggered;
 
     function initialize() {
-        BehaviorDelegate.initialize();
+        Menu2InputDelegate.initialize();
         System.println("ProgrammeDelegate init");
 
         //keyPressTimer = null;
@@ -37,7 +37,6 @@ class ProgrammeDelegate extends WatchUi.BehaviorDelegate {
 
     function onBack(){
         WatchUi.switchToView(mainMenu, runQuestMenuDelegate, WatchUi.SLIDE_DOWN); // ligne à commenter si la logique de retour au menu après un appuie long est décommenter
-        return true;
     }
     /*
     function onKeyPressed(key){

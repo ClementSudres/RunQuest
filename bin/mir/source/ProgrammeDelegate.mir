@@ -7,7 +7,7 @@ import Toybox.System;
 [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 4; ]
 import Toybox.Timer;
 [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 6; ]
-class ProgrammeDelegate extends WatchUi.BehaviorDelegate{
+class ProgrammeDelegate extends WatchUi.Menu2InputDelegate{
     [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 6; ]
     <init> {
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 8 8 ]
@@ -59,7 +59,7 @@ class ProgrammeDelegate extends WatchUi.BehaviorDelegate{
     function initialize() as Void {
 C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_19_26_26_4_start:
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 20 8 ]
-        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.2 = getv ? :Menu2InputDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 21 8 ]
@@ -95,7 +95,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_
     }
     [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 38; ]
     function onBack() {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_38_21_41_4_start:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_38_21_40_4_start:
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 39 8 ]
         %tmp.1 = getm $.Toybox.WatchUi;
         %tmp.2 = getv function %tmp.1 :switchToView;
@@ -104,10 +104,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_
         %tmp.7 = getm $.Toybox.WatchUi;
         %tmp.8 = getv %tmp.7 :SLIDE_DOWN;
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6, %tmp.8);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 40 8 ]
-        %tmp.9 = true;
-        ret %tmp.9;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_38_21_41_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_38_21_40_4_stop:
     }
 }
 [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc"; @line = 1; ]
