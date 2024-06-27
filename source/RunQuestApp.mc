@@ -5,8 +5,12 @@ import Toybox.WatchUi;
 class RunQuestApp extends Application.AppBase {
     var view;
     var delegate;
-
+    
+    //si pas stocker dans la montre détermine le programme par défaut 
     var chrono=10;
+    var tempsCircuit=5;
+    var tempsPause=3;
+    var periode=0; //0 représente l'echauffement
 
     function initialize() {
         AppBase.initialize();

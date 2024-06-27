@@ -31,6 +31,7 @@ class RunWalkDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onSelect() as Boolean {
+        //ajouter des vibrations quand on lance la course ou met sur pause 
         if(System.getDeviceSettings().vibrateOn==true){
             if (Attention has :vibrate) {
                 var vibeData =[new Attention.VibeProfile(50, 1000)];
@@ -39,7 +40,7 @@ class RunWalkDelegate extends WatchUi.BehaviorDelegate {
         }else{
             WatchUi.showToast("vibrations off", null);
         }   
-
+        //lancer l'echauffement ou le run walk et possibilité de mettre pause 
         if(echauffement==true){
             if(enMarche==false){
                 enMarche = true;
@@ -96,6 +97,7 @@ class RunWalkDelegate extends WatchUi.BehaviorDelegate {
 
 
     function updateEchauffement() as Void{
+        //lancer le quizz quand l'echauffement est fini
         if(chrono==0){
             timer.stop();
             view.setMessage("Quizz");
@@ -106,7 +108,8 @@ class RunWalkDelegate extends WatchUi.BehaviorDelegate {
             echauffement=false;
             enMarche = false;
             getApp().chrono = chrono;
-            
+            getApp().periode = 1;
+
             quizzDelegate = new QuizzDelegate();
             quizzView = new QuizzView();
             WatchUi.switchToView(quizzView, quizzDelegate, WatchUi.SLIDE_DOWN);
@@ -118,17 +121,22 @@ class RunWalkDelegate extends WatchUi.BehaviorDelegate {
     function updateCountdown() as Void{
         if(chrono==0){
             cycle--;
+            //actions en fonction du cycle à venir 
             if(cycle==0){
                 timer.stop();
                 view.setMessage("Fin");
+                getApp().chrono=10;
+                getApp().periode=0;
             }else if(cycle%2==0){
                 view.setMessage("Pause");
                 chrono=tempsPause;
                 view.setTimer(chrono);
+                getApp().periode=2;
             }else{
                 view.setMessage("Run");
                 chrono=tempsCircuit;
                 view.setTimer(chrono);
+                getApp().periode=1;
             }
         }
         view.setTimer(chrono);

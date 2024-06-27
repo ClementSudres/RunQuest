@@ -4,13 +4,16 @@ import Toybox.System;
 import Toybox.Timer;
 import Toybox.Math;
 
+//gère les questions et les réponses du quizz 
 class QuizzDelegate extends WatchUi.BehaviorDelegate {
     var chronoView = getApp().getAppDelegate().getChronoView();
     var chronoDelegate = getApp().getAppDelegate().getChronoDelegate();
     var random=0;
 
+    //variable pour déterminer si on visualise la question ou les réponses 
     var requete = true; 
 
+    //liste de 8 questions basiques pour tester 
     var questions = [
         ["Quel est le record du monde du 100 mètres masculin ?", 
         "A. 9.58 secondes", 
@@ -74,6 +77,8 @@ class QuizzDelegate extends WatchUi.BehaviorDelegate {
         random = Math.rand()%7;
     }
 
+    //si on clique sur down on sélectionne l'item en dessous
+    //si on clique sur up on sélectionne l'item au dessus
     function onKey(key){
         if(key.getKey()==8){
             getApp().getAppDelegate().getChronoDelegate().getQuizzView().setChoix(1);
@@ -84,10 +89,12 @@ class QuizzDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onSelect() as Boolean {
+        //si on visualise la question on passe à l'affichage des réponses 
         if(requete == true){
             getApp().getAppDelegate().getChronoDelegate().getQuizzView().setReponses();
             getApp().getAppDelegate().getChronoDelegate().getQuizzView().change=true;
             requete=false;
+        //si on visualise les réponses on switch vers le run walk
         }else{
             if(getApp().getAppDelegate().getChronoDelegate().getQuizzView().choix==1 && questions[random][5].equals("A")){
                 WatchUi.showToast("Vrai", null);

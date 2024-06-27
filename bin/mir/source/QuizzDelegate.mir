@@ -8,11 +8,11 @@ import Toybox.System;
 import Toybox.Timer;
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 5; ]
 import Toybox.Math;
-[ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 7; ]
+[ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 8; ]
 class QuizzDelegate extends WatchUi.BehaviorDelegate{
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 7; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 8; ]
     <init> {
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 8 8 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 9 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :getApp;
         %tmp.3 = invoke %tmp.1 %tmp.2();
@@ -21,7 +21,7 @@ class QuizzDelegate extends WatchUi.BehaviorDelegate{
         %tmp.6 = getv function %tmp.5 :getChronoView;
         %tmp.7 = invoke %tmp.5 %tmp.6();
         putv self :chronoView %tmp.7;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 9 8 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 10 8 ]
         %tmp.8 = self;
         %tmp.9 = getv function %tmp.8 :getApp;
         %tmp.10 = invoke %tmp.8 %tmp.9();
@@ -30,7 +30,7 @@ class QuizzDelegate extends WatchUi.BehaviorDelegate{
         %tmp.13 = getv function %tmp.12 :getChronoDelegate;
         %tmp.14 = invoke %tmp.12 %tmp.13();
         putv self :chronoDelegate %tmp.14;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 14 8 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 17 8 ]
         %tmp.15 = newa 8;
         %tmp.16 = newa 6;
         %tmp.17 = "Quel est le record du monde du 100 mètres masculin ?";
@@ -202,50 +202,50 @@ class QuizzDelegate extends WatchUi.BehaviorDelegate{
         %tmp.183 = aputv %tmp.182 7 %tmp.181;
         putv self :questions %tmp.183;
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 7; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 8; ]
     static
     <init> {
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 8; @position = 8; ]
-    var chronoView;
     [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 9; @position = 8; ]
-    var chronoDelegate;
+    var chronoView;
     [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 10; @position = 8; ]
+    var chronoDelegate;
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 11; @position = 8; ]
     var random = 0;
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 12; @position = 8; ]
-    var requete = true;
     [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 14; @position = 8; ]
+    var requete = true;
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 17; @position = 8; ]
     var questions;
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 72; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 75; ]
     function initialize() as Void {
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_72_26_75_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 73 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_75_26_78_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 76 8 ]
         %tmp.2 = getv ? :BehaviorDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 74 8 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 77 8 ]
         %tmp.4 = getm $.Toybox.Math;
         %tmp.5 = getv function %tmp.4 :rand;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = 7;
         %tmp.8 = mod %tmp.6 %tmp.7;
         putv self :random %tmp.8;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_72_26_75_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_75_26_78_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 77; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 82; ]
     function onKey(key) {
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_77_23_84_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 78 8 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_78_8_82_8_if_stmt:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_82_23_89_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 83 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_83_8_87_8_if_stmt:
         %tmp.1 = lgetv %key;
         %tmp.2 = getv function %tmp.1 :getKey;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = 8;
         %tmp.5 = eq %tmp.3 %tmp.4;
-        bf %tmp.5 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_78_8_82_8_if_false;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_78_8_82_8_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_78_27_80_8_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 79 12 ]
+        bf %tmp.5 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_83_8_87_8_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_83_8_87_8_if_true:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_83_27_85_8_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 84 12 ]
         %tmp.6 = self;
         %tmp.7 = getv function %tmp.6 :getApp;
         %tmp.8 = invoke %tmp.6 %tmp.7();
@@ -258,20 +258,20 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_78_27_80_8_start
         %tmp.15 = getv function %tmp.14 :setChoix;
         %tmp.16 = 1;
         invoke %tmp.14 %tmp.15(%tmp.16);
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_78_27_80_8_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_78_8_82_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_78_8_82_8_if_false:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 80 14 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_80_14_82_8_if_stmt:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_83_27_85_8_stop:
+        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_83_8_87_8_if_end;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_83_8_87_8_if_false:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 85 14 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_85_14_87_8_if_stmt:
         %tmp.17 = lgetv %key;
         %tmp.18 = getv function %tmp.17 :getKey;
         %tmp.19 = invoke %tmp.17 %tmp.18();
         %tmp.20 = 13;
         %tmp.21 = eq %tmp.19 %tmp.20;
-        bf %tmp.21 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_80_14_82_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_80_14_82_8_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_80_34_82_8_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 81 12 ]
+        bf %tmp.21 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_85_14_87_8_if_end;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_85_14_87_8_if_true:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_85_34_87_8_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 86 12 ]
         %tmp.22 = self;
         %tmp.23 = getv function %tmp.22 :getApp;
         %tmp.24 = invoke %tmp.22 %tmp.23();
@@ -284,27 +284,27 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_80_34_82_8_start
         %tmp.31 = getv function %tmp.30 :setChoix;
         %tmp.32 = -1;
         invoke %tmp.30 %tmp.31(%tmp.32);
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_80_34_82_8_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_80_14_82_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_80_14_82_8_if_end:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_78_8_82_8_if_end:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 83 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_85_34_87_8_stop:
+        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_85_14_87_8_if_end;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_85_14_87_8_if_end:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_83_8_87_8_if_end:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 88 8 ]
         %tmp.33 = true;
         ret %tmp.33;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_77_23_84_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_82_23_89_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 86; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 91; ]
     function onSelect() as Boolean {
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_86_35_110_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 87 8 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_87_8_108_8_if_stmt:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_91_35_117_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 93 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_93_8_115_8_if_stmt:
         %tmp.2 = getv ? :requete;
         %tmp.3 = true;
         %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_87_8_108_8_if_false;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_87_8_108_8_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_87_27_91_8_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 88 12 ]
+        bf %tmp.4 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_93_8_115_8_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_93_8_115_8_if_true:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_93_27_98_8_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 94 12 ]
         %tmp.5 = self;
         %tmp.6 = getv function %tmp.5 :getApp;
         %tmp.7 = invoke %tmp.5 %tmp.6();
@@ -316,7 +316,7 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_87_27_91_8_start
         %tmp.13 = invoke %tmp.11 %tmp.12();
         %tmp.14 = getv function %tmp.13 :setReponses;
         invoke %tmp.13 %tmp.14();
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 89 12 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 95 12 ]
         %tmp.15 = getv function self :getApp;
         %tmp.16 = invoke self %tmp.15();
         %tmp.17 = getv function %tmp.16 :getAppDelegate;
@@ -327,16 +327,16 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_87_27_91_8_start
         %tmp.22 = invoke %tmp.20 %tmp.21();
         %tmp.23 = true;
         putv %tmp.22 :change %tmp.23;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 90 12 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 96 12 ]
         %tmp.24 = false;
         putv self :requete %tmp.24;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_87_27_91_8_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_87_8_108_8_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_87_8_108_8_if_false:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_91_13_108_8_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 92 12 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_12_107_12_if_stmt:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_15_92_119_begin:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_93_27_98_8_stop:
+        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_93_8_115_8_if_end;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_93_8_115_8_if_false:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_13_115_8_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 99 12 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_12_114_12_if_stmt:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_15_99_119_begin:
         %tmp.25 = self;
         %tmp.26 = getv function %tmp.25 :getApp;
         %tmp.27 = invoke %tmp.25 %tmp.26();
@@ -349,8 +349,8 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_15_92_119_beg
         %tmp.34 = getv %tmp.33 :choix;
         %tmp.35 = 1;
         %tmp.36 = eq %tmp.34 %tmp.35;
-        bf %tmp.36 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_12_107_12_if_false;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_88_92_119_true:
+        bf %tmp.36 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_12_114_12_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_88_99_119_true:
         %tmp.38 = getv ? :questions;
         %tmp.40 = getv ? :random;
         %tmp.41 = agetv %tmp.38 %tmp.40;
@@ -360,18 +360,18 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_88_92_119_tru
         %tmp.45 = "A";
         %tmp.46 = invoke %tmp.43 %tmp.44(%tmp.45);
         push %tmp.46;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_88_92_119_end:
-        %tmp.47 = phi [%tmp.36 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_15_92_119_begin] [%tmp.46 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_88_92_119_true] [%tmp.47 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_88_92_119_end];
-        bf %tmp.47 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_12_107_12_if_false;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_12_107_12_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_121_95_12_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 93 16 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_88_99_119_end:
+        %tmp.47 = phi [%tmp.36 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_15_99_119_begin] [%tmp.46 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_88_99_119_true] [%tmp.47 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_88_99_119_end];
+        bf %tmp.47 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_12_114_12_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_12_114_12_if_true:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_121_102_12_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 100 16 ]
         %tmp.48 = getm $.Toybox.WatchUi;
         %tmp.49 = getv function %tmp.48 :showToast;
         %tmp.50 = "Vrai";
         %tmp.51 = null;
         invoke %tmp.48 %tmp.49(%tmp.50, %tmp.51);
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 94 16 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 101 16 ]
         %tmp.52 = getm $.Toybox.WatchUi;
         %tmp.53 = getv function %tmp.52 :switchToView;
         %tmp.55 = getv ? :chronoView;
@@ -379,12 +379,12 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_121_95_12_sta
         %tmp.58 = getm $.Toybox.WatchUi;
         %tmp.59 = getv %tmp.58 :SLIDE_DOWN;
         invoke %tmp.52 %tmp.53(%tmp.55, %tmp.57, %tmp.59);
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_121_95_12_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_12_107_12_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_12_107_12_if_false:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 95 18 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_18_107_12_if_stmt:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_21_95_125_begin:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_121_102_12_stop:
+        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_12_114_12_if_end;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_12_114_12_if_false:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 102 18 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_18_114_12_if_stmt:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_21_102_125_begin:
         %tmp.60 = self;
         %tmp.61 = getv function %tmp.60 :getApp;
         %tmp.62 = invoke %tmp.60 %tmp.61();
@@ -397,8 +397,8 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_21_95_125_beg
         %tmp.69 = getv %tmp.68 :choix;
         %tmp.70 = 2;
         %tmp.71 = eq %tmp.69 %tmp.70;
-        bf %tmp.71 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_18_107_12_if_false;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_94_95_125_true:
+        bf %tmp.71 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_18_114_12_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_94_102_125_true:
         %tmp.73 = getv ? :questions;
         %tmp.75 = getv ? :random;
         %tmp.76 = agetv %tmp.73 %tmp.75;
@@ -408,18 +408,18 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_94_95_125_tru
         %tmp.80 = "B";
         %tmp.81 = invoke %tmp.78 %tmp.79(%tmp.80);
         push %tmp.81;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_94_95_125_end:
-        %tmp.82 = phi [%tmp.71 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_21_95_125_begin] [%tmp.81 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_94_95_125_true] [%tmp.82 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_94_95_125_end];
-        bf %tmp.82 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_18_107_12_if_false;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_18_107_12_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_127_98_12_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 96 16 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_94_102_125_end:
+        %tmp.82 = phi [%tmp.71 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_21_102_125_begin] [%tmp.81 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_94_102_125_true] [%tmp.82 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_94_102_125_end];
+        bf %tmp.82 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_18_114_12_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_18_114_12_if_true:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_127_105_12_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 103 16 ]
         %tmp.83 = getm $.Toybox.WatchUi;
         %tmp.84 = getv function %tmp.83 :showToast;
         %tmp.85 = "Vrai";
         %tmp.86 = null;
         invoke %tmp.83 %tmp.84(%tmp.85, %tmp.86);
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 97 16 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 104 16 ]
         %tmp.87 = getm $.Toybox.WatchUi;
         %tmp.88 = getv function %tmp.87 :switchToView;
         %tmp.90 = getv ? :chronoView;
@@ -427,12 +427,12 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_127_98_12_sta
         %tmp.93 = getm $.Toybox.WatchUi;
         %tmp.94 = getv %tmp.93 :SLIDE_DOWN;
         invoke %tmp.87 %tmp.88(%tmp.90, %tmp.92, %tmp.94);
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_127_98_12_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_18_107_12_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_18_107_12_if_false:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 98 18 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_18_107_12_if_stmt:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_21_98_125_begin:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_127_105_12_stop:
+        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_18_114_12_if_end;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_18_114_12_if_false:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 105 18 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_18_114_12_if_stmt:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_21_105_125_begin:
         %tmp.95 = self;
         %tmp.96 = getv function %tmp.95 :getApp;
         %tmp.97 = invoke %tmp.95 %tmp.96();
@@ -445,8 +445,8 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_21_98_125_beg
         %tmp.104 = getv %tmp.103 :choix;
         %tmp.105 = 3;
         %tmp.106 = eq %tmp.104 %tmp.105;
-        bf %tmp.106 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_18_107_12_if_false;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_94_98_125_true:
+        bf %tmp.106 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_18_114_12_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_94_105_125_true:
         %tmp.108 = getv ? :questions;
         %tmp.110 = getv ? :random;
         %tmp.111 = agetv %tmp.108 %tmp.110;
@@ -456,18 +456,18 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_94_98_125_tru
         %tmp.115 = "C";
         %tmp.116 = invoke %tmp.113 %tmp.114(%tmp.115);
         push %tmp.116;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_94_98_125_end:
-        %tmp.117 = phi [%tmp.106 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_21_98_125_begin] [%tmp.116 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_94_98_125_true] [%tmp.117 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_94_98_125_end];
-        bf %tmp.117 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_18_107_12_if_false;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_18_107_12_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_127_101_12_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 99 16 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_94_105_125_end:
+        %tmp.117 = phi [%tmp.106 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_21_105_125_begin] [%tmp.116 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_94_105_125_true] [%tmp.117 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_94_105_125_end];
+        bf %tmp.117 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_18_114_12_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_18_114_12_if_true:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_127_108_12_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 106 16 ]
         %tmp.118 = getm $.Toybox.WatchUi;
         %tmp.119 = getv function %tmp.118 :showToast;
         %tmp.120 = "Vrai";
         %tmp.121 = null;
         invoke %tmp.118 %tmp.119(%tmp.120, %tmp.121);
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 100 16 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 107 16 ]
         %tmp.122 = getm $.Toybox.WatchUi;
         %tmp.123 = getv function %tmp.122 :switchToView;
         %tmp.125 = getv ? :chronoView;
@@ -475,12 +475,12 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_127_101_12_st
         %tmp.128 = getm $.Toybox.WatchUi;
         %tmp.129 = getv %tmp.128 :SLIDE_DOWN;
         invoke %tmp.122 %tmp.123(%tmp.125, %tmp.127, %tmp.129);
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_127_101_12_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_18_107_12_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_18_107_12_if_false:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 101 18 ]
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_18_107_12_if_stmt:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_21_101_125_begin:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_127_108_12_stop:
+        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_18_114_12_if_end;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_18_114_12_if_false:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 108 18 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_18_114_12_if_stmt:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_21_108_125_begin:
         %tmp.130 = self;
         %tmp.131 = getv function %tmp.130 :getApp;
         %tmp.132 = invoke %tmp.130 %tmp.131();
@@ -493,8 +493,8 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_21_101_125_b
         %tmp.139 = getv %tmp.138 :choix;
         %tmp.140 = 4;
         %tmp.141 = eq %tmp.139 %tmp.140;
-        bf %tmp.141 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_18_107_12_if_false;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_94_101_125_true:
+        bf %tmp.141 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_18_114_12_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_94_108_125_true:
         %tmp.143 = getv ? :questions;
         %tmp.145 = getv ? :random;
         %tmp.146 = agetv %tmp.143 %tmp.145;
@@ -504,18 +504,18 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_94_101_125_t
         %tmp.150 = "D";
         %tmp.151 = invoke %tmp.148 %tmp.149(%tmp.150);
         push %tmp.151;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_94_101_125_end:
-        %tmp.152 = phi [%tmp.141 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_21_101_125_begin] [%tmp.151 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_94_101_125_true] [%tmp.152 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_94_101_125_end];
-        bf %tmp.152 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_18_107_12_if_false;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_18_107_12_if_true:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_127_104_12_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 102 16 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_94_108_125_end:
+        %tmp.152 = phi [%tmp.141 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_21_108_125_begin] [%tmp.151 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_94_108_125_true] [%tmp.152 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_94_108_125_end];
+        bf %tmp.152 @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_18_114_12_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_18_114_12_if_true:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_127_111_12_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 109 16 ]
         %tmp.153 = getm $.Toybox.WatchUi;
         %tmp.154 = getv function %tmp.153 :showToast;
         %tmp.155 = "Vrai";
         %tmp.156 = null;
         invoke %tmp.153 %tmp.154(%tmp.155, %tmp.156);
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 103 16 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 110 16 ]
         %tmp.157 = getm $.Toybox.WatchUi;
         %tmp.158 = getv function %tmp.157 :switchToView;
         %tmp.160 = getv ? :chronoView;
@@ -523,17 +523,17 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_127_104_12_s
         %tmp.163 = getm $.Toybox.WatchUi;
         %tmp.164 = getv %tmp.163 :SLIDE_DOWN;
         invoke %tmp.157 %tmp.158(%tmp.160, %tmp.162, %tmp.164);
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_127_104_12_stop:
-        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_18_107_12_if_end;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_18_107_12_if_false:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_104_17_107_12_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 105 16 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_127_111_12_stop:
+        goto @_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_18_114_12_if_end;
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_18_114_12_if_false:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_111_17_114_12_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 112 16 ]
         %tmp.165 = getm $.Toybox.WatchUi;
         %tmp.166 = getv function %tmp.165 :showToast;
         %tmp.167 = "Faux";
         %tmp.168 = null;
         invoke %tmp.165 %tmp.166(%tmp.167, %tmp.168);
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 106 16 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 113 16 ]
         %tmp.169 = getm $.Toybox.WatchUi;
         %tmp.170 = getv function %tmp.169 :switchToView;
         %tmp.172 = getv ? :chronoView;
@@ -541,25 +541,25 @@ _Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_104_17_107_12_st
         %tmp.175 = getm $.Toybox.WatchUi;
         %tmp.176 = getv %tmp.175 :SLIDE_DOWN;
         invoke %tmp.169 %tmp.170(%tmp.172, %tmp.174, %tmp.176);
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_104_17_107_12_stop:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_101_18_107_12_if_end:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_18_107_12_if_end:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_95_18_107_12_if_end:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_92_12_107_12_if_end:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_91_13_108_8_stop:
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_87_8_108_8_if_end:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 109 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_111_17_114_12_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_108_18_114_12_if_end:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_105_18_114_12_if_end:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_102_18_114_12_if_end:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_99_12_114_12_if_end:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_98_13_115_8_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_93_8_115_8_if_end:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 116 8 ]
         %tmp.177 = true;
         ret %tmp.177;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_86_35_110_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_91_35_117_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 112; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 119; ]
     function onBack() {
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_112_21_114_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 113 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_119_21_121_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc" 120 8 ]
         %tmp.1 = true;
         ret %tmp.1;
-_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_112_21_114_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_QuizzDelegate_mc_119_21_121_4_stop:
     }
 }
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/QuizzDelegate.mc"; @line = 1; ]

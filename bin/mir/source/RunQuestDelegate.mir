@@ -2,41 +2,43 @@
 import Toybox.Lang;
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 2; ]
 import Toybox.WatchUi;
-[ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 4; ]
+[ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 3; ]
+import Toybox.Application;
+[ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 5; ]
 class RunQuestDelegate extends WatchUi.BehaviorDelegate{
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 4; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 5; ]
     <init> {
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 4; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 5; @position = 8; ]
-    var chronoView;
     [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 6; @position = 8; ]
+    var chronoView;
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 7; @position = 8; ]
     var chronoDelegate;
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 8; @position = 8; ]
-    var mainMenu;
     [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 9; @position = 8; ]
+    var mainMenu;
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 10; @position = 8; ]
     var runQuestMenuDelegate;
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 11; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 12; ]
     function initialize() as Void {
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_11_26_14_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 12 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_12_26_15_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 13 8 ]
         %tmp.2 = getv ? :BehaviorDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 13 8 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 14 8 ]
         %tmp.5 = getv ? :System;
         %tmp.6 = getv function %tmp.5 :println;
         %tmp.7 = "RunQuestDelegate init";
         invoke %tmp.5 %tmp.6(%tmp.7);
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_11_26_14_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_12_26_15_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 16; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 18; ]
     function onMenu() as Boolean {
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_16_33_22_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 17 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_18_33_24_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 19 8 ]
         %tmp.1 = getm $.Toybox.WatchUi;
         %tmp.2 = getv function %tmp.1 :pushView;
         %tmp.6 = getv ? :Rez;
@@ -48,17 +50,17 @@ _Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_16_33_22_4_st
         %tmp.13 = getm $.Toybox.WatchUi;
         %tmp.14 = getv %tmp.13 :SLIDE_DOWN;
         invoke %tmp.1 %tmp.2(%tmp.3, %tmp.9, %tmp.14);
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 18 8 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 20 8 ]
         %tmp.18 = getv ? :Rez;
         %tmp.19 = getv %tmp.18 :Menus;
         %tmp.20 = getv function ? %tmp.19 :MainMenu;
         %tmp.15 = newc %tmp.20 ();
         putv self :mainMenu %tmp.15;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 19 8 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 21 8 ]
         %tmp.24 = getv ? :RunQuestMenuDelegate;
         %tmp.21 = newc %tmp.24 ();
         putv self :runQuestMenuDelegate %tmp.21;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 20 8 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 22 8 ]
         %tmp.25 = getm $.Toybox.WatchUi;
         %tmp.26 = getv function %tmp.25 :switchToView;
         %tmp.28 = getv ? :mainMenu;
@@ -66,70 +68,131 @@ _Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_16_33_22_4_st
         %tmp.31 = getm $.Toybox.WatchUi;
         %tmp.32 = getv %tmp.31 :SLIDE_DOWN;
         invoke %tmp.25 %tmp.26(%tmp.28, %tmp.30, %tmp.32);
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 21 8 ]
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 23 8 ]
         %tmp.33 = true;
         ret %tmp.33;
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_16_33_22_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_18_33_24_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 24; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 27; ]
     function onSelect() as Boolean {
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_24_35_29_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 25 8 ]
-        %tmp.4 = getv ? :RunWalkView;
-        %tmp.5 = 10;
-        %tmp.1 = newc %tmp.4 (%tmp.5);
-        putv self :chronoView %tmp.1;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 26 8 ]
-        %tmp.9 = getv ? :RunWalkDelegate;
-        %tmp.10 = 10;
-        %tmp.11 = 5;
-        %tmp.12 = 3;
-        %tmp.6 = newc %tmp.9 (%tmp.10, %tmp.11, %tmp.12);
-        putv self :chronoDelegate %tmp.6;
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 27 8 ]
-        %tmp.13 = getm $.Toybox.WatchUi;
-        %tmp.14 = getv function %tmp.13 :switchToView;
-        %tmp.16 = getv ? :chronoView;
-        %tmp.18 = getv ? :chronoDelegate;
-        %tmp.19 = getm $.Toybox.WatchUi;
-        %tmp.20 = getv %tmp.19 :SLIDE_DOWN;
-        invoke %tmp.13 %tmp.14(%tmp.16, %tmp.18, %tmp.20);
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_27_35_38_4_start:
 [ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 28 8 ]
-        %tmp.21 = true;
-        ret %tmp.21;
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_24_35_29_4_stop:
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.5 = getv ? :Storage;
+        %tmp.6 = getv function %tmp.5 :getValue;
+        %tmp.7 = "echauffement";
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.2 %tmp.3(%tmp.8);
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 29 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_stmt:
+        %tmp.10 = getv ? :Storage;
+        %tmp.11 = getv function %tmp.10 :getValue;
+        %tmp.12 = "echauffement";
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        %tmp.14 = null;
+        %tmp.15 = ne %tmp.13 %tmp.14;
+        bf %tmp.15 @_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_false;
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_true:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_29_50_32_8_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 30 12 ]
+        %tmp.19 = getv ? :RunWalkView;
+        %tmp.21 = getv ? :Storage;
+        %tmp.22 = getv function %tmp.21 :getValue;
+        %tmp.23 = "echauffement";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        %tmp.16 = newc %tmp.19 (%tmp.24);
+        putv self :chronoView %tmp.16;
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 31 12 ]
+        %tmp.28 = getv ? :RunWalkDelegate;
+        %tmp.30 = getv ? :Storage;
+        %tmp.31 = getv function %tmp.30 :getValue;
+        %tmp.32 = "echauffement";
+        %tmp.33 = invoke %tmp.30 %tmp.31(%tmp.32);
+        %tmp.35 = getv ? :Storage;
+        %tmp.36 = getv function %tmp.35 :getValue;
+        %tmp.37 = "tempsCircuit";
+        %tmp.38 = invoke %tmp.35 %tmp.36(%tmp.37);
+        %tmp.40 = getv ? :Storage;
+        %tmp.41 = getv function %tmp.40 :getValue;
+        %tmp.42 = "tempsPause";
+        %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
+        %tmp.25 = newc %tmp.28 (%tmp.33, %tmp.38, %tmp.43);
+        putv self :chronoDelegate %tmp.25;
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_29_50_32_8_stop:
+        goto @_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_end;
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_false:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_32_13_35_8_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 33 12 ]
+        %tmp.47 = getv ? :RunWalkView;
+        %tmp.48 = self;
+        %tmp.49 = getv function %tmp.48 :getApp;
+        %tmp.50 = invoke %tmp.48 %tmp.49();
+        %tmp.51 = getv %tmp.50 :chrono;
+        %tmp.44 = newc %tmp.47 (%tmp.51);
+        putv self :chronoView %tmp.44;
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 34 12 ]
+        %tmp.55 = getv ? :RunWalkDelegate;
+        %tmp.56 = self;
+        %tmp.57 = getv function %tmp.56 :getApp;
+        %tmp.58 = invoke %tmp.56 %tmp.57();
+        %tmp.59 = getv %tmp.58 :chrono;
+        %tmp.60 = self;
+        %tmp.61 = getv function %tmp.60 :getApp;
+        %tmp.62 = invoke %tmp.60 %tmp.61();
+        %tmp.63 = getv %tmp.62 :tempsCircuit;
+        %tmp.64 = self;
+        %tmp.65 = getv function %tmp.64 :getApp;
+        %tmp.66 = invoke %tmp.64 %tmp.65();
+        %tmp.67 = getv %tmp.66 :tempsPause;
+        %tmp.52 = newc %tmp.55 (%tmp.59, %tmp.63, %tmp.67);
+        putv self :chronoDelegate %tmp.52;
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_32_13_35_8_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_end:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 36 8 ]
+        %tmp.68 = getm $.Toybox.WatchUi;
+        %tmp.69 = getv function %tmp.68 :switchToView;
+        %tmp.71 = getv ? :chronoView;
+        %tmp.73 = getv ? :chronoDelegate;
+        %tmp.74 = getm $.Toybox.WatchUi;
+        %tmp.75 = getv %tmp.74 :SLIDE_DOWN;
+        invoke %tmp.68 %tmp.69(%tmp.71, %tmp.73, %tmp.75);
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 37 8 ]
+        %tmp.76 = true;
+        ret %tmp.76;
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_27_35_38_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 31; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 41; ]
     function getChronoView() {
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_31_28_33_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 32 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_41_28_43_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 42 8 ]
         %tmp.2 = getv ? :chronoView;
         ret %tmp.2;
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_31_28_33_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_41_28_43_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 34; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 44; ]
     function getChronoDelegate() {
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_34_32_36_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 35 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_44_32_46_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 45 8 ]
         %tmp.2 = getv ? :chronoDelegate;
         ret %tmp.2;
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_34_32_36_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_44_32_46_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 38; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 48; ]
     function getMainMenu() {
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_38_26_40_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 39 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_48_26_50_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 49 8 ]
         %tmp.2 = getv ? :mainMenu;
         ret %tmp.2;
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_38_26_40_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_48_26_50_4_stop:
     }
-    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 42; ]
+    [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 52; ]
     function getRunQuestMenuDelegate() {
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_42_38_44_4_start:
-[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 43 8 ]
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_52_38_54_4_start:
+[ "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc" 53 8 ]
         %tmp.2 = getv ? :runQuestMenuDelegate;
         ret %tmp.2;
-_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_42_38_44_4_stop:
+_Users_hugoams_Documents_Stage_RunQuest_source_RunQuestDelegate_mc_52_38_54_4_stop:
     }
 }
 [ @file = "/Users/hugoams/Documents/Stage/RunQuest/source/RunQuestDelegate.mc"; @line = 1; ]

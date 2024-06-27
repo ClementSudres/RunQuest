@@ -7,6 +7,7 @@ class QuizzView extends WatchUi.View {
     var quizzDelegate = getApp().getAppDelegate().getChronoDelegate().getQuizzDelegate();
     var quest; 
 
+    //une variable par ligne d'affichage 
     var un;
     var deux;
     var trois;
@@ -17,6 +18,7 @@ class QuizzView extends WatchUi.View {
     var huit;
     var neuf;
 
+    //choix de la réponse 
     var choix = 1;
     var change = false;
 
@@ -27,9 +29,10 @@ class QuizzView extends WatchUi.View {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.Quizz(dc));
-
+        //récupérer un chiffre random pour choisir une fonction
         quest = quizzDelegate.random;
 
+        //on charge les différentes lignes d'affichage 
         un = findDrawableById("un");
         deux = findDrawableById("deux");
         trois = findDrawableById("trois");
@@ -39,10 +42,12 @@ class QuizzView extends WatchUi.View {
         sept = findDrawableById("sept");
         huit = findDrawableById("huit");
         neuf = findDrawableById("neuf");
-
+        //on affiche la question 
         setQuestions();
     }
 
+    //comme les questions sont plus ou moins longue, on divise la question en plusieurs lignes 
+    //et on l'affiche de manière centrale 
     function setQuestions(){
         var temp = quizzDelegate.questions[quest][0];
         var longueur = temp.length();
@@ -113,6 +118,7 @@ class QuizzView extends WatchUi.View {
         }
     }
 
+    //pour afficher nos 4 propositions de réponses au milieu de l'écran 
     function setReponses() as Void{
         trois.setText(quizzDelegate.questions[quest][1]);
         quatre.setText(quizzDelegate.questions[quest][2]);
@@ -128,8 +134,8 @@ class QuizzView extends WatchUi.View {
         WatchUi.requestUpdate();
     }
 
+    //parametrer la réponse choisit et mettre à jour le cadre qui illustre la sélection d'une réponse 
     function setChoix(val){
-        System.println(val);
         if(choix==1 && val == -1){
             choix=4;
         }else if(choix==4 && val==1){
@@ -149,6 +155,7 @@ class QuizzView extends WatchUi.View {
     function onUpdate(dc as Dc) as Void {
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
+        //dessiner le cadre autour de la réponse choisit
         if(change==true){
             if(choix==1){
                 dc.clear();
