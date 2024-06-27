@@ -42,51 +42,53 @@ class RunWalkDelegate extends WatchUi.BehaviorDelegate{
     var view;
     [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 22; @position = 8; ]
     var quizzDelegate;
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 24; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 23; @position = 8; ]
+    var quizzView;
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 25; ]
     function initialize(echauffement, circuit, pause) as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_24_54_30_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 25 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_25_54_31_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 26 8 ]
         %tmp.2 = getv ? :BehaviorDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 26 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 27 8 ]
         %tmp.5 = lgetv %echauffement;
         putv self :chrono %tmp.5;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 27 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 28 8 ]
         %tmp.7 = lgetv %circuit;
         putv self :tempsCircuit %tmp.7;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 28 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 29 8 ]
         %tmp.9 = lgetv %pause;
         putv self :tempsPause %tmp.9;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 29 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 30 8 ]
         %tmp.10 = 4;
         putv self :cycle %tmp.10;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_24_54_30_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_25_54_31_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 32; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 33; ]
     function onSelect() as Boolean {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_32_35_60_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 33 8 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_33_8_40_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_33_35_61_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 34 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_8_41_8_if_stmt:
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :getDeviceSettings;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = getv %tmp.3 :vibrateOn;
         %tmp.5 = true;
         %tmp.6 = eq %tmp.4 %tmp.5;
-        bf %tmp.6 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_33_8_40_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_33_8_40_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_33_54_38_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 34 12 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_12_37_12_if_stmt:
+        bf %tmp.6 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_8_41_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_8_41_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_54_39_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 35 12 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_35_12_38_12_if_stmt:
         %tmp.8 = getm $.Toybox.Attention;
         %tmp.10 = const :vibrate;
         %tmp.11 = canhazplz %tmp.8 %tmp.10;
-        bf %tmp.11 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_12_37_12_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_12_37_12_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_40_37_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 35 16 ]
-        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_40_37_12_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_40_37_12_stop" ]
+        bf %tmp.11 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_35_12_38_12_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_35_12_38_12_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_35_40_38_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 36 16 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_35_40_38_12_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_35_40_38_12_stop" ]
         %vibeData.1 = local;
         %tmp.12 = newa 1;
         %tmp.15 = getm $.Toybox.Attention;
@@ -97,111 +99,111 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34
         %tmp.19 = dup %tmp.12;
         %tmp.20 = aputv %tmp.19 0 %tmp.13;
         lputv %vibeData.1 %tmp.20;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 36 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 37 16 ]
         %tmp.21 = getm $.Toybox.Attention;
         %tmp.22 = getv function %tmp.21 :vibrate;
         %tmp.24 = lgetv %vibeData.1;
         invoke %tmp.21 %tmp.22(%tmp.24);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_40_37_12_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_12_37_12_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_12_37_12_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_33_54_38_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_33_8_40_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_33_8_40_8_if_false:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_38_13_40_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 39 12 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_35_40_38_12_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_35_12_38_12_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_35_12_38_12_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_54_39_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_8_41_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_8_41_8_if_false:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_39_13_41_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 40 12 ]
         %tmp.25 = getm $.Toybox.WatchUi;
         %tmp.26 = getv function %tmp.25 :showToast;
         %tmp.27 = "vibrations off";
         %tmp.28 = null;
         invoke %tmp.25 %tmp.26(%tmp.27, %tmp.28);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_38_13_40_8_stop:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_33_8_40_8_if_end:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 42 8 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_42_8_58_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_39_13_41_8_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_34_8_41_8_if_end:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 43 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_8_59_8_if_stmt:
         %tmp.30 = getv ? :echauffement;
         %tmp.31 = true;
         %tmp.32 = eq %tmp.30 %tmp.31;
-        bf %tmp.32 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_42_8_58_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_42_8_58_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_42_30_50_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 43 12 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_12_49_12_if_stmt:
+        bf %tmp.32 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_8_59_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_8_59_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_30_51_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 44 12 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_44_12_50_12_if_stmt:
         %tmp.34 = getv ? :enMarche;
         %tmp.35 = false;
         %tmp.36 = eq %tmp.34 %tmp.35;
-        bf %tmp.36 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_12_49_12_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_12_49_12_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_31_46_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 44 16 ]
+        bf %tmp.36 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_44_12_50_12_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_44_12_50_12_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_44_31_47_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 45 16 ]
         %tmp.37 = true;
         putv self :enMarche %tmp.37;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 45 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 46 16 ]
         %tmp.38 = self;
         %tmp.39 = getv function %tmp.38 :startEchauffement;
         invoke %tmp.38 %tmp.39();
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_31_46_12_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_12_49_12_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_12_49_12_if_false:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_46_17_49_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 47 16 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_44_31_47_12_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_44_12_50_12_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_44_12_50_12_if_false:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_47_17_50_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 48 16 ]
         %tmp.40 = false;
         putv self :enMarche %tmp.40;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 48 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 49 16 ]
         %tmp.41 = self;
         %tmp.42 = getv function %tmp.41 :pauseCountdown;
         invoke %tmp.41 %tmp.42();
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_46_17_49_12_stop:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_12_49_12_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_42_30_50_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_42_8_58_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_42_8_58_8_if_false:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_50_13_58_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 51 12 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_51_12_57_12_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_47_17_50_12_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_44_12_50_12_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_30_51_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_8_59_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_8_59_8_if_false:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_51_13_59_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 52 12 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_52_12_58_12_if_stmt:
         %tmp.44 = getv ? :enMarche;
         %tmp.45 = false;
         %tmp.46 = eq %tmp.44 %tmp.45;
-        bf %tmp.46 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_51_12_57_12_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_51_12_57_12_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_51_31_54_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 52 16 ]
+        bf %tmp.46 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_52_12_58_12_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_52_12_58_12_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_52_31_55_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 53 16 ]
         %tmp.47 = true;
         putv self :enMarche %tmp.47;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 53 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 54 16 ]
         %tmp.48 = self;
         %tmp.49 = getv function %tmp.48 :startCountdown;
         invoke %tmp.48 %tmp.49();
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_51_31_54_12_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_51_12_57_12_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_51_12_57_12_if_false:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_54_17_57_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 55 16 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_52_31_55_12_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_52_12_58_12_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_52_12_58_12_if_false:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_55_17_58_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 56 16 ]
         %tmp.50 = false;
         putv self :enMarche %tmp.50;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 56 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 57 16 ]
         %tmp.51 = self;
         %tmp.52 = getv function %tmp.51 :pauseCountdown;
         invoke %tmp.51 %tmp.52();
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_54_17_57_12_stop:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_51_12_57_12_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_50_13_58_8_stop:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_42_8_58_8_if_end:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 59 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_55_17_58_12_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_52_12_58_12_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_51_13_59_8_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_43_8_59_8_if_end:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 60 8 ]
         %tmp.53 = true;
         ret %tmp.53;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_32_35_60_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_33_35_61_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 62; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 63; ]
     function startEchauffement() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_62_40_69_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 63 8 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_63_8_68_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_63_40_70_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 64 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_64_8_69_8_if_stmt:
         %tmp.2 = getv ? :timer;
-        bf %tmp.2 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_63_8_68_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_63_8_68_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_63_17_65_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 64 12 ]
+        bf %tmp.2 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_64_8_69_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_64_8_69_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_64_17_66_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 65 12 ]
         %tmp.4 = getv ? :timer;
         %tmp.5 = getv function %tmp.4 :start;
         %tmp.6 = self;
@@ -211,16 +213,16 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_63
         %tmp.11 = 1000;
         %tmp.12 = true;
         invoke %tmp.4 %tmp.5(%tmp.10, %tmp.11, %tmp.12);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_63_17_65_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_63_8_68_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_63_8_68_8_if_false:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_65_13_68_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 66 12 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_64_17_66_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_64_8_69_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_64_8_69_8_if_false:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_66_13_69_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 67 12 ]
         %tmp.16 = getv ? :Timer;
         %tmp.17 = getv function ? %tmp.16 :Timer;
         %tmp.13 = newc %tmp.17 ();
         putv self :timer %tmp.13;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 67 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 68 12 ]
         %tmp.19 = getv ? :timer;
         %tmp.20 = getv function %tmp.19 :start;
         %tmp.21 = self;
@@ -230,20 +232,20 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_65
         %tmp.26 = 1000;
         %tmp.27 = true;
         invoke %tmp.19 %tmp.20(%tmp.25, %tmp.26, %tmp.27);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_65_13_68_8_stop:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_63_8_68_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_62_40_69_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_66_13_69_8_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_64_8_69_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_63_40_70_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 71; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 72; ]
     function startCountdown() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_71_37_78_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 72 8 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_72_8_77_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_72_37_79_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 73 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_73_8_78_8_if_stmt:
         %tmp.2 = getv ? :timer;
-        bf %tmp.2 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_72_8_77_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_72_8_77_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_72_17_74_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 73 12 ]
+        bf %tmp.2 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_73_8_78_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_73_8_78_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_73_17_75_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 74 12 ]
         %tmp.4 = getv ? :timer;
         %tmp.5 = getv function %tmp.4 :start;
         %tmp.6 = self;
@@ -253,16 +255,16 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_72
         %tmp.11 = 1000;
         %tmp.12 = true;
         invoke %tmp.4 %tmp.5(%tmp.10, %tmp.11, %tmp.12);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_72_17_74_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_72_8_77_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_72_8_77_8_if_false:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_74_13_77_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 75 12 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_73_17_75_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_73_8_78_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_73_8_78_8_if_false:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_75_13_78_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 76 12 ]
         %tmp.16 = getv ? :Timer;
         %tmp.17 = getv function ? %tmp.16 :Timer;
         %tmp.13 = newc %tmp.17 ();
         putv self :timer %tmp.13;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 76 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 77 12 ]
         %tmp.19 = getv ? :timer;
         %tmp.20 = getv function %tmp.19 :start;
         %tmp.21 = self;
@@ -272,192 +274,203 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_74
         %tmp.26 = 1000;
         %tmp.27 = true;
         invoke %tmp.19 %tmp.20(%tmp.25, %tmp.26, %tmp.27);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_74_13_77_8_stop:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_72_8_77_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_71_37_78_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_75_13_78_8_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_73_8_78_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_72_37_79_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 80; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 81; ]
     function pauseCountdown() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_80_37_82_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 81 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_81_37_83_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 82 8 ]
         %tmp.2 = getv ? :timer;
         %tmp.3 = getv function %tmp.2 :stop;
         invoke %tmp.2 %tmp.3();
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_80_37_82_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_81_37_83_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 85; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 86; ]
     function updateEchauffement() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_85_41_100_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 86 8 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_86_8_97_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_86_41_102_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 87 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_87_8_99_8_if_stmt:
         %tmp.2 = getv ? :chrono;
         %tmp.3 = 0;
         %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_86_8_97_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_86_8_97_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_86_21_97_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 87 12 ]
+        bf %tmp.4 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_87_8_99_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_87_8_99_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_87_21_99_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 88 12 ]
         %tmp.6 = getv ? :timer;
         %tmp.7 = getv function %tmp.6 :stop;
         invoke %tmp.6 %tmp.7();
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 88 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 89 12 ]
         %tmp.9 = getv ? :view;
         %tmp.10 = getv function %tmp.9 :setMessage;
         %tmp.11 = "Quizz";
         invoke %tmp.9 %tmp.10(%tmp.11);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 89 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 90 12 ]
         %tmp.14 = getv ? :cycle;
         %tmp.15 = sub %tmp.14 1;
         putv self :cycle dup %tmp.15;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 90 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 91 12 ]
         %tmp.17 = getv ? :tempsCircuit;
         putv self :chrono %tmp.17;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 91 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 92 12 ]
         %tmp.19 = getv ? :view;
         %tmp.20 = getv function %tmp.19 :setTimer;
         %tmp.22 = getv ? :chrono;
         invoke %tmp.19 %tmp.20(%tmp.22);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 92 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 93 12 ]
         %tmp.23 = false;
         putv self :echauffement %tmp.23;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 93 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 94 12 ]
         %tmp.24 = false;
         putv self :enMarche %tmp.24;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 95 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 96 12 ]
         %tmp.28 = getv ? :QuizzDelegate;
         %tmp.25 = newc %tmp.28 ();
         putv self :quizzDelegate %tmp.25;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 96 12 ]
-        %tmp.29 = getm $.Toybox.WatchUi;
-        %tmp.30 = getv function %tmp.29 :switchToView;
-        %tmp.34 = getv ? :QuizzView;
-        %tmp.31 = newc %tmp.34 ();
-        %tmp.36 = getv ? :quizzDelegate;
-        %tmp.37 = getm $.Toybox.WatchUi;
-        %tmp.38 = getv %tmp.37 :SLIDE_DOWN;
-        invoke %tmp.29 %tmp.30(%tmp.31, %tmp.36, %tmp.38);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_86_21_97_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_86_8_97_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_86_8_97_8_if_end:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 98 8 ]
-        %tmp.41 = getv ? :chrono;
-        %tmp.42 = sub %tmp.41 1;
-        putv self :chrono dup %tmp.42;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 99 8 ]
-        %tmp.44 = getv ? :view;
-        %tmp.45 = getv function %tmp.44 :setTimer;
-        %tmp.47 = getv ? :chrono;
-        invoke %tmp.44 %tmp.45(%tmp.47);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_85_41_100_4_stop:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 97 12 ]
+        %tmp.32 = getv ? :QuizzView;
+        %tmp.29 = newc %tmp.32 ();
+        putv self :quizzView %tmp.29;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 98 12 ]
+        %tmp.33 = getm $.Toybox.WatchUi;
+        %tmp.34 = getv function %tmp.33 :switchToView;
+        %tmp.36 = getv ? :quizzView;
+        %tmp.38 = getv ? :quizzDelegate;
+        %tmp.39 = getm $.Toybox.WatchUi;
+        %tmp.40 = getv %tmp.39 :SLIDE_DOWN;
+        invoke %tmp.33 %tmp.34(%tmp.36, %tmp.38, %tmp.40);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_87_21_99_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_87_8_99_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_87_8_99_8_if_end:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 100 8 ]
+        %tmp.43 = getv ? :chrono;
+        %tmp.44 = sub %tmp.43 1;
+        putv self :chrono dup %tmp.44;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 101 8 ]
+        %tmp.46 = getv ? :view;
+        %tmp.47 = getv function %tmp.46 :setTimer;
+        %tmp.49 = getv ? :chrono;
+        invoke %tmp.46 %tmp.47(%tmp.49);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_86_41_102_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 102; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 104; ]
     function updateCountdown() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_102_38_121_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 103 8 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_103_8_118_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_104_38_123_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 105 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_105_8_120_8_if_stmt:
         %tmp.2 = getv ? :chrono;
         %tmp.3 = 0;
         %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_103_8_118_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_103_8_118_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_103_21_118_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 104 12 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_104_12_117_12_if_stmt:
+        bf %tmp.4 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_105_8_120_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_105_8_120_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_105_21_120_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 106 12 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_106_12_119_12_if_stmt:
         %tmp.6 = getv ? :cycle;
         %tmp.7 = 0;
         %tmp.8 = eq %tmp.6 %tmp.7;
-        bf %tmp.8 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_104_12_117_12_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_104_12_117_12_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_104_24_107_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 105 16 ]
+        bf %tmp.8 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_106_12_119_12_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_106_12_119_12_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_106_24_109_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 107 16 ]
         %tmp.10 = getv ? :timer;
         %tmp.11 = getv function %tmp.10 :stop;
         invoke %tmp.10 %tmp.11();
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 106 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 108 16 ]
         %tmp.13 = getv ? :view;
         %tmp.14 = getv function %tmp.13 :setMessage;
         %tmp.15 = "Fin";
         invoke %tmp.13 %tmp.14(%tmp.15);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_104_24_107_12_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_104_12_117_12_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_104_12_117_12_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 107 18 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_107_18_117_12_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_106_24_109_12_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_106_12_119_12_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_106_12_119_12_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 109 18 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_109_18_119_12_if_stmt:
         %tmp.17 = getv ? :cycle;
         %tmp.18 = 2;
         %tmp.19 = mod %tmp.17 %tmp.18;
         %tmp.20 = 0;
         %tmp.21 = eq %tmp.19 %tmp.20;
-        bf %tmp.21 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_107_18_117_12_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_107_18_117_12_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_107_32_112_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 108 16 ]
+        bf %tmp.21 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_109_18_119_12_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_109_18_119_12_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_109_32_114_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 110 16 ]
         %tmp.23 = getv ? :view;
         %tmp.24 = getv function %tmp.23 :setMessage;
         %tmp.25 = "Pause";
         invoke %tmp.23 %tmp.24(%tmp.25);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 109 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 111 16 ]
         %tmp.27 = getv ? :tempsPause;
         putv self :chrono %tmp.27;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 110 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 112 16 ]
         %tmp.29 = getv ? :view;
         %tmp.30 = getv function %tmp.29 :setTimer;
         %tmp.32 = getv ? :chrono;
         invoke %tmp.29 %tmp.30(%tmp.32);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 111 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 113 16 ]
         %tmp.35 = getv ? :cycle;
         %tmp.36 = sub %tmp.35 1;
         putv self :cycle dup %tmp.36;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_107_32_112_12_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_107_18_117_12_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_107_18_117_12_if_false:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_112_17_117_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 113 16 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_109_32_114_12_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_109_18_119_12_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_109_18_119_12_if_false:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_114_17_119_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 115 16 ]
         %tmp.38 = getv ? :view;
         %tmp.39 = getv function %tmp.38 :setMessage;
         %tmp.40 = "Run";
         invoke %tmp.38 %tmp.39(%tmp.40);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 114 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 116 16 ]
         %tmp.42 = getv ? :tempsCircuit;
         putv self :chrono %tmp.42;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 115 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 117 16 ]
         %tmp.44 = getv ? :view;
         %tmp.45 = getv function %tmp.44 :setTimer;
         %tmp.47 = getv ? :chrono;
         invoke %tmp.44 %tmp.45(%tmp.47);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 116 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 118 16 ]
         %tmp.50 = getv ? :cycle;
         %tmp.51 = sub %tmp.50 1;
         putv self :cycle dup %tmp.51;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_112_17_117_12_stop:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_107_18_117_12_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_104_12_117_12_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_103_21_118_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_103_8_118_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_103_8_118_8_if_end:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 119 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_114_17_119_12_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_109_18_119_12_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_106_12_119_12_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_105_21_120_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_105_8_120_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_105_8_120_8_if_end:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 121 8 ]
         %tmp.53 = getv ? :view;
         %tmp.54 = getv function %tmp.53 :setTimer;
         %tmp.56 = getv ? :chrono;
         invoke %tmp.53 %tmp.54(%tmp.56);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 120 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 122 8 ]
         %tmp.59 = getv ? :chrono;
         %tmp.60 = sub %tmp.59 1;
         putv self :chrono dup %tmp.60;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_102_38_121_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_104_38_123_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 123; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 125; ]
     function getQuizzDelegate() {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_123_31_125_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 124 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_125_31_127_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 126 8 ]
         %tmp.2 = getv ? :quizzDelegate;
         ret %tmp.2;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_123_31_125_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_125_31_127_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 127; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 129; ]
+    function getQuizzView() {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_129_27_131_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 130 8 ]
+        %tmp.2 = getv ? :quizzView;
+        ret %tmp.2;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_129_27_131_4_stop:
+    }
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 133; ]
     function onBack() {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_127_21_130_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 128 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_133_21_136_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 134 8 ]
         %tmp.1 = getm $.Toybox.WatchUi;
         %tmp.2 = getv function %tmp.1 :switchToView;
         %tmp.3 = self;
@@ -473,10 +486,10 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_12
         %tmp.13 = getm $.Toybox.WatchUi;
         %tmp.14 = getv %tmp.13 :SLIDE_DOWN;
         invoke %tmp.1 %tmp.2(%tmp.7, %tmp.12, %tmp.14);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 129 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc" 135 8 ]
         %tmp.15 = true;
         ret %tmp.15;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_127_21_130_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunWalkDelegate_mc_133_21_136_4_stop:
     }
 }
 [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunWalkDelegate.mc"; @line = 1; ]

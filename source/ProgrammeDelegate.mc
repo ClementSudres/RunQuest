@@ -11,18 +11,18 @@ class ProgrammeDelegate extends WatchUi.BehaviorDelegate {
     var mainMenu = getApp().getAppDelegate().getMainMenu();
     var runQuestMenuDelegate = getApp().getAppDelegate().getRunQuestMenuDelegate();
 
-    var keyPressTimer;
-    var isKeyEscDown;
-    var keyCode;
-    var longPressTriggered;
+    //var keyPressTimer;
+    //var isKeyEscDown;
+    //var keyCode;
+    //var longPressTriggered;
 
     function initialize() {
         BehaviorDelegate.initialize();
         System.println("ProgrammeDelegate init");
 
-        keyPressTimer = null;
-        isKeyEscDown = false;
-        longPressTriggered = false;
+        //keyPressTimer = null;
+        //isKeyEscDown = false;
+        //longPressTriggered = false;
     }
 
     function onMenu() as Boolean {
@@ -36,9 +36,10 @@ class ProgrammeDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onBack(){
+        WatchUi.switchToView(mainMenu, runQuestMenuDelegate, WatchUi.SLIDE_DOWN); // ligne à commenter si la logique de retour au menu après un appuie long est décommenter
         return true;
     }
-
+    /*
     function onKeyPressed(key){
         keyCode = key.getKey();
         if (keyCode == WatchUi.KEY_ESC) {
@@ -105,5 +106,6 @@ class ProgrammeDelegate extends WatchUi.BehaviorDelegate {
     function forceHome(){
         WatchUi.switchToView(appView, appDelegate, WatchUi.SLIDE_UP);
     }
+    */
 
 }

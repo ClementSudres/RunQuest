@@ -34,9 +34,10 @@ class StatsDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onBack(){
+        WatchUi.switchToView(mainMenu, runQuestMenuDelegate, WatchUi.SLIDE_DOWN); // ligne à commenter si la logique de retour au menu après un appuie long est décommenter
         return true;
     }
-
+    /*
     function onKeyPressed(key) {
         var keyCode = key.getKey();
         if (keyCode == WatchUi.KEY_ESC) {
@@ -102,5 +103,6 @@ class StatsDelegate extends WatchUi.BehaviorDelegate {
     function forceHome() {
         WatchUi.switchToView(appView, appDelegate, WatchUi.SLIDE_UP);
     }
+    */
 
 }

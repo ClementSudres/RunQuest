@@ -12,6 +12,7 @@ class StatsView extends WatchUi.View {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.Stats(dc));
+
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -25,6 +26,8 @@ class StatsView extends WatchUi.View {
     function onUpdate(dc as Dc) as Void {
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.fillRectangle(30, 0, 2, 300);
     }
 
     // Called when this View is removed from the screen. Save the

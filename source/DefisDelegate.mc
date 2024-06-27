@@ -20,7 +20,9 @@ class DefisDelegate extends WatchUi.Menu2InputDelegate {
     }
 
     function onBack(){
-        WatchUi.switchToView(getApp().getAppView(), getApp().getAppDelegate(), WatchUi.SLIDE_DOWN);
+        WatchUi.switchToView(mainMenu, runQuestMenuDelegate, WatchUi.SLIDE_DOWN);
+        System.println("Print");
     }
 
 }
+

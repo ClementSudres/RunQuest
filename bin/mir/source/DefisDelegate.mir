@@ -75,24 +75,21 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_DefisDelegate_mc_17_3
     }
     [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\DefisDelegate.mc"; @line = 22; ]
     function onBack() {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_DefisDelegate_mc_22_21_24_4_start:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_DefisDelegate_mc_22_21_25_4_start:
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\DefisDelegate.mc" 23 8 ]
         %tmp.1 = getm $.Toybox.WatchUi;
         %tmp.2 = getv function %tmp.1 :switchToView;
-        %tmp.3 = self;
-        %tmp.4 = getv function %tmp.3 :getApp;
-        %tmp.5 = invoke %tmp.3 %tmp.4();
-        %tmp.6 = getv function %tmp.5 :getAppView;
-        %tmp.7 = invoke %tmp.5 %tmp.6();
-        %tmp.8 = self;
-        %tmp.9 = getv function %tmp.8 :getApp;
-        %tmp.10 = invoke %tmp.8 %tmp.9();
-        %tmp.11 = getv function %tmp.10 :getAppDelegate;
-        %tmp.12 = invoke %tmp.10 %tmp.11();
-        %tmp.13 = getm $.Toybox.WatchUi;
-        %tmp.14 = getv %tmp.13 :SLIDE_DOWN;
-        invoke %tmp.1 %tmp.2(%tmp.7, %tmp.12, %tmp.14);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_DefisDelegate_mc_22_21_24_4_stop:
+        %tmp.4 = getv ? :mainMenu;
+        %tmp.6 = getv ? :runQuestMenuDelegate;
+        %tmp.7 = getm $.Toybox.WatchUi;
+        %tmp.8 = getv %tmp.7 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6, %tmp.8);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\DefisDelegate.mc" 24 8 ]
+        %tmp.10 = getv ? :System;
+        %tmp.11 = getv function %tmp.10 :println;
+        %tmp.12 = "Print";
+        invoke %tmp.10 %tmp.11(%tmp.12);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_DefisDelegate_mc_22_21_25_4_stop:
     }
 }
 [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\DefisDelegate.mc"; @line = 1; ]

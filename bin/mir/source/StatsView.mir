@@ -26,7 +26,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_8_26_10_
     }
     [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc"; @line = 13; ]
     function onLayout(dc as Dc) as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_13_40_15_4_start:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_13_40_16_4_start:
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc" 14 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
@@ -36,37 +36,53 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_13_40_15
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_13_40_15_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_13_40_16_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc"; @line = 20; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc"; @line = 21; ]
     function onShow() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_20_30_22_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc" 21 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_21_30_23_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc" 22 8 ]
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :println;
         %tmp.3 = "StatsView est visible";
         invoke %tmp.1 %tmp.2(%tmp.3);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_20_30_22_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_21_30_23_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc"; @line = 25; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc"; @line = 26; ]
     function onUpdate(dc as Dc) as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_25_40_28_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc" 27 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_26_40_31_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc" 28 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.5 = lgetv %dc;
         invoke %tmp.2 %tmp.3(%tmp.5);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_25_40_28_4_stop:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc" 29 8 ]
+        %tmp.6 = lgetv %dc;
+        %tmp.7 = getv function %tmp.6 :setColor;
+        %tmp.8 = getm $.Toybox.Graphics;
+        %tmp.9 = getv %tmp.8 :COLOR_WHITE;
+        %tmp.10 = getm $.Toybox.Graphics;
+        %tmp.11 = getv %tmp.10 :COLOR_BLACK;
+        invoke %tmp.6 %tmp.7(%tmp.9, %tmp.11);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc" 30 8 ]
+        %tmp.12 = lgetv %dc;
+        %tmp.13 = getv function %tmp.12 :fillRectangle;
+        %tmp.14 = 30;
+        %tmp.15 = 0;
+        %tmp.16 = 2;
+        %tmp.17 = 300;
+        invoke %tmp.12 %tmp.13(%tmp.14, %tmp.15, %tmp.16, %tmp.17);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_26_40_31_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc"; @line = 33; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc"; @line = 36; ]
     function onHide() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_33_30_35_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc" 34 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_36_30_38_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc" 37 8 ]
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :println;
         %tmp.3 = "StatsView est masquée";
         invoke %tmp.1 %tmp.2(%tmp.3);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_33_30_35_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_StatsView_mc_36_30_38_4_stop:
     }
 }
 [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\StatsView.mc"; @line = 1; ]

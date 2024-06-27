@@ -68,17 +68,25 @@ module Rez {
         }
 
         function Quizz(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_Question = new WatchUi.Text({:identifier=>"Question", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (10 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_un = new WatchUi.Text({:identifier=>"un", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (10 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_text_A = new WatchUi.Text({:identifier=>"A", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (25 / 100.0)), :locY=>(208 * (25 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_deux = new WatchUi.Text({:identifier=>"deux", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (20 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_text_B = new WatchUi.Text({:identifier=>"B", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (75 / 100.0)), :locY=>(208 * (25 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_trois = new WatchUi.Text({:identifier=>"trois", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (30 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_text_C = new WatchUi.Text({:identifier=>"C", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (25 / 100.0)), :locY=>(208 * (75 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_quatre = new WatchUi.Text({:identifier=>"quatre", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (40 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_text_D = new WatchUi.Text({:identifier=>"D", :color=>Graphics.COLOR_WHITE, :locX=>(208 * (75 / 100.0)), :locY=>(208 * (75 / 100.0)), :text=>"Press start to random", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_cinq = new WatchUi.Text({:identifier=>"cinq", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (50 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            return [rez_cmp_local_text_Question, rez_cmp_local_text_A, rez_cmp_local_text_B, rez_cmp_local_text_C, rez_cmp_local_text_D] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_six = new WatchUi.Text({:identifier=>"six", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (60 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_sept = new WatchUi.Text({:identifier=>"sept", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (70 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_huit = new WatchUi.Text({:identifier=>"huit", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (70 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_neuf = new WatchUi.Text({:identifier=>"neuf", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (70 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+
+            return [rez_cmp_local_text_un, rez_cmp_local_text_deux, rez_cmp_local_text_trois, rez_cmp_local_text_quatre, rez_cmp_local_text_cinq, rez_cmp_local_text_six, rez_cmp_local_text_sept, rez_cmp_local_text_huit, rez_cmp_local_text_neuf] as Array<WatchUi.Drawable>;
         }
 
         function RunWalk(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
@@ -90,9 +98,35 @@ module Rez {
         }
 
         function Stats(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_Stats = new WatchUi.Text({:identifier=>"Stats", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>((208 - dc.getFontHeight(Graphics.FONT_XTINY)) * 0.5), :text=>"Stats", :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_Stats = new WatchUi.Text({:identifier=>"Stats", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>((208 - dc.getFontHeight(Graphics.FONT_XTINY)) * 0.5), :font=>Graphics.FONT_XTINY});
 
-            return [rez_cmp_local_text_Stats] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_Semaine_x = new WatchUi.Text({:identifier=>"Semaine_x", :color=>Graphics.COLOR_WHITE, :locX=>56, :locY=>5, :text=>"Semaine:", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_Du_jj = new WatchUi.Text({:identifier=>"Du_jj", :color=>Graphics.COLOR_WHITE, :locX=>10, :locY=>50, :text=>"17", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_slash1 = new WatchUi.Text({:identifier=>"slash1", :color=>Graphics.COLOR_WHITE, :locX=>16, :locY=>52, :text=>"_", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_Du_mm = new WatchUi.Text({:identifier=>"Du_mm", :color=>Graphics.COLOR_WHITE, :locX=>10, :locY=>69, :text=>"01", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_a = new WatchUi.Text({:identifier=>"a", :color=>Graphics.COLOR_WHITE, :locX=>15, :locY=>92, :text=>"à", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_Au_jj = new WatchUi.Text({:identifier=>"Au_jj", :color=>Graphics.COLOR_WHITE, :locX=>10, :locY=>115, :text=>"23", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_slash2 = new WatchUi.Text({:identifier=>"slash2", :color=>Graphics.COLOR_WHITE, :locX=>16, :locY=>118, :text=>"_", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_Au_mm = new WatchUi.Text({:identifier=>"Au_mm", :color=>Graphics.COLOR_WHITE, :locX=>10, :locY=>135, :text=>"01", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_Dist_total = new WatchUi.Text({:identifier=>"Dist_total", :color=>Graphics.COLOR_WHITE, :locX=>35, :locY=>30, :text=>"Dist. total:", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_Temps_total = new WatchUi.Text({:identifier=>"Temps_total", :color=>Graphics.COLOR_WHITE, :locX=>35, :locY=>60, :text=>"Temps total:", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_Calories = new WatchUi.Text({:identifier=>"Calories", :color=>Graphics.COLOR_WHITE, :locX=>35, :locY=>90, :text=>"Calories:", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_nb_pas = new WatchUi.Text({:identifier=>"nb_pas", :color=>Graphics.COLOR_WHITE, :locX=>35, :locY=>120, :text=>"Nb de pas:", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_Exp = new WatchUi.Text({:identifier=>"Exp", :color=>Graphics.COLOR_WHITE, :locX=>35, :locY=>150, :text=>"XP:", :font=>Graphics.FONT_XTINY});
+
+            return [rez_cmp_local_text_Stats, rez_cmp_local_text_Semaine_x, rez_cmp_local_text_Du_jj, rez_cmp_local_text_slash1, rez_cmp_local_text_Du_mm, rez_cmp_local_text_a, rez_cmp_local_text_Au_jj, rez_cmp_local_text_slash2, rez_cmp_local_text_Au_mm, rez_cmp_local_text_Dist_total, rez_cmp_local_text_Temps_total, rez_cmp_local_text_Calories, rez_cmp_local_text_nb_pas, rez_cmp_local_text_Exp] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

@@ -1,3 +1,18 @@
 <layout id="Stats">
-    <label id="Stats" x="center" y="center" text="Stats" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
+    <label id="Stats" x="center" y="center" text="" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
+    <label id="Semaine_x" x="56" y="5" text="Semaine:" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
+
+    <label id="Du_jj" x="10" y="50" text="17" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
+    <label id="slash1" x="16" y="52" text="_" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
+    <label id="Du_mm" x="10" y="69" text="01" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
+    <label id="a" x="15" y="92" text="à" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" /> 
+    <label id="Au_jj" x="10" y="115" text="23" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
+    <label id="slash2" x="16" y="118" text="_" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
+    <label id="Au_mm" x="10" y="135" text="01" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" /> 
+
+    <label id="Dist_total" x="35" y="30" text="Dist. total:" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
+    <label id="Temps_total" x="35" y="60" text="Temps total:" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
+    <label id="Calories" x="35" y="90" text="Calories:" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
+    <label id="nb_pas" x="35" y="120" text="Nb de pas:" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
+    <label id="Exp" x="35" y="150" text="XP:" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" />  
 </layout>
