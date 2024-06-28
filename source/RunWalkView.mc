@@ -2,7 +2,7 @@ import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Lang;
 import Toybox.System;
-
+import Toybox.Application;
 class RunWalkView extends WatchUi.View {
     var timer;
     var message;
@@ -17,11 +17,20 @@ class RunWalkView extends WatchUi.View {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.RunWalk(dc));
-
+        //parametrer l'ecran initial du run walk 
         timer = View.findDrawableById("Timer") as Text;
         message = View.findDrawableById("Message") as Text;
-       
-        setTimer(getApp().chrono);
+        if(Storage.getValue("echauffement")!=null){
+            if(getApp().periode==0){
+                setTimer(Storage.getValue("echauffement"));
+            }else if(getApp().periode==1){
+                setTimer(Storage.getValue("tempsCircuit"));
+            }else if(getApp().periode==2){
+                setTimer(Storage.getValue("tempsPause"));
+            }
+        }else{
+            setTimer(getApp().chrono);
+        }
         setMessage("Prêt ?");
     }
 
@@ -45,6 +54,7 @@ class RunWalkView extends WatchUi.View {
         System.println("RunWalkView est masquée");
     }
 
+    //fonctions pour mettre à jour l'affichage 
     function setTimer(temps) as Void{
         var heures = temps / 3600;
         var minutes = (temps % 3600) / 60;

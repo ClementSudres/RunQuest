@@ -1,6 +1,7 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
 
+//Creer les items du menu custom pour les défis 
 class CustomItem extends WatchUi.Drawable {
     var title;
     var bitmap;

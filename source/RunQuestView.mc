@@ -22,7 +22,7 @@ class RunQuestView extends WatchUi.View {
         System.println("RunQuestView est visible");
     }
 
-    // Update the view
+    // Notre vue principale
     function onUpdate(dc as Dc) as Void {
         //heure
         var clockTime = System.getClockTime();
