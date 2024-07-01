@@ -83,83 +83,85 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_2
         %tmp.6 = getv function %tmp.5 :getValue;
         %tmp.7 = "echauffement";
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
-        invoke %tmp.2 %tmp.3(%tmp.8);
+        %tmp.9 = " echauffement";
+        %tmp.10 = add %tmp.8 %tmp.9;
+        invoke %tmp.2 %tmp.3(%tmp.10);
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestDelegate.mc" 29 8 ]
 C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_stmt:
-        %tmp.10 = getv ? :Storage;
-        %tmp.11 = getv function %tmp.10 :getValue;
-        %tmp.12 = "echauffement";
-        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
-        %tmp.14 = null;
-        %tmp.15 = ne %tmp.13 %tmp.14;
-        bf %tmp.15 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_false;
+        %tmp.12 = getv ? :Storage;
+        %tmp.13 = getv function %tmp.12 :getValue;
+        %tmp.14 = "echauffement";
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        %tmp.16 = null;
+        %tmp.17 = ne %tmp.15 %tmp.16;
+        bf %tmp.17 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_false;
 C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_true:
 C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_29_50_32_8_start:
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestDelegate.mc" 30 12 ]
-        %tmp.19 = getv ? :RunWalkView;
-        %tmp.21 = getv ? :Storage;
-        %tmp.22 = getv function %tmp.21 :getValue;
-        %tmp.23 = "echauffement";
-        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
-        %tmp.16 = newc %tmp.19 (%tmp.24);
-        putv self :chronoView %tmp.16;
+        %tmp.21 = getv ? :RunWalkView;
+        %tmp.23 = getv ? :Storage;
+        %tmp.24 = getv function %tmp.23 :getValue;
+        %tmp.25 = "echauffement";
+        %tmp.26 = invoke %tmp.23 %tmp.24(%tmp.25);
+        %tmp.18 = newc %tmp.21 (%tmp.26);
+        putv self :chronoView %tmp.18;
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestDelegate.mc" 31 12 ]
-        %tmp.28 = getv ? :RunWalkDelegate;
-        %tmp.30 = getv ? :Storage;
-        %tmp.31 = getv function %tmp.30 :getValue;
-        %tmp.32 = "echauffement";
-        %tmp.33 = invoke %tmp.30 %tmp.31(%tmp.32);
-        %tmp.35 = getv ? :Storage;
-        %tmp.36 = getv function %tmp.35 :getValue;
-        %tmp.37 = "tempsCircuit";
-        %tmp.38 = invoke %tmp.35 %tmp.36(%tmp.37);
-        %tmp.40 = getv ? :Storage;
-        %tmp.41 = getv function %tmp.40 :getValue;
-        %tmp.42 = "tempsPause";
-        %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
-        %tmp.25 = newc %tmp.28 (%tmp.33, %tmp.38, %tmp.43);
-        putv self :chronoDelegate %tmp.25;
+        %tmp.30 = getv ? :RunWalkDelegate;
+        %tmp.32 = getv ? :Storage;
+        %tmp.33 = getv function %tmp.32 :getValue;
+        %tmp.34 = "echauffement";
+        %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
+        %tmp.37 = getv ? :Storage;
+        %tmp.38 = getv function %tmp.37 :getValue;
+        %tmp.39 = "tempsCircuit";
+        %tmp.40 = invoke %tmp.37 %tmp.38(%tmp.39);
+        %tmp.42 = getv ? :Storage;
+        %tmp.43 = getv function %tmp.42 :getValue;
+        %tmp.44 = "tempsPause";
+        %tmp.45 = invoke %tmp.42 %tmp.43(%tmp.44);
+        %tmp.27 = newc %tmp.30 (%tmp.35, %tmp.40, %tmp.45);
+        putv self :chronoDelegate %tmp.27;
 C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_29_50_32_8_stop:
         goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_end;
 C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_false:
 C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_32_13_35_8_start:
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestDelegate.mc" 33 12 ]
-        %tmp.47 = getv ? :RunWalkView;
-        %tmp.48 = self;
-        %tmp.49 = getv function %tmp.48 :getApp;
-        %tmp.50 = invoke %tmp.48 %tmp.49();
-        %tmp.51 = getv %tmp.50 :chrono;
-        %tmp.44 = newc %tmp.47 (%tmp.51);
-        putv self :chronoView %tmp.44;
+        %tmp.49 = getv ? :RunWalkView;
+        %tmp.50 = self;
+        %tmp.51 = getv function %tmp.50 :getApp;
+        %tmp.52 = invoke %tmp.50 %tmp.51();
+        %tmp.53 = getv %tmp.52 :chrono;
+        %tmp.46 = newc %tmp.49 (%tmp.53);
+        putv self :chronoView %tmp.46;
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestDelegate.mc" 34 12 ]
-        %tmp.55 = getv ? :RunWalkDelegate;
-        %tmp.56 = self;
-        %tmp.57 = getv function %tmp.56 :getApp;
-        %tmp.58 = invoke %tmp.56 %tmp.57();
-        %tmp.59 = getv %tmp.58 :chrono;
-        %tmp.60 = self;
-        %tmp.61 = getv function %tmp.60 :getApp;
-        %tmp.62 = invoke %tmp.60 %tmp.61();
-        %tmp.63 = getv %tmp.62 :tempsCircuit;
-        %tmp.64 = self;
-        %tmp.65 = getv function %tmp.64 :getApp;
-        %tmp.66 = invoke %tmp.64 %tmp.65();
-        %tmp.67 = getv %tmp.66 :tempsPause;
-        %tmp.52 = newc %tmp.55 (%tmp.59, %tmp.63, %tmp.67);
-        putv self :chronoDelegate %tmp.52;
+        %tmp.57 = getv ? :RunWalkDelegate;
+        %tmp.58 = self;
+        %tmp.59 = getv function %tmp.58 :getApp;
+        %tmp.60 = invoke %tmp.58 %tmp.59();
+        %tmp.61 = getv %tmp.60 :chrono;
+        %tmp.62 = self;
+        %tmp.63 = getv function %tmp.62 :getApp;
+        %tmp.64 = invoke %tmp.62 %tmp.63();
+        %tmp.65 = getv %tmp.64 :tempsCircuit;
+        %tmp.66 = self;
+        %tmp.67 = getv function %tmp.66 :getApp;
+        %tmp.68 = invoke %tmp.66 %tmp.67();
+        %tmp.69 = getv %tmp.68 :tempsPause;
+        %tmp.54 = newc %tmp.57 (%tmp.61, %tmp.65, %tmp.69);
+        putv self :chronoDelegate %tmp.54;
 C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_32_13_35_8_stop:
 C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_29_8_35_8_if_end:
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestDelegate.mc" 36 8 ]
-        %tmp.68 = getm $.Toybox.WatchUi;
-        %tmp.69 = getv function %tmp.68 :switchToView;
-        %tmp.71 = getv ? :chronoView;
-        %tmp.73 = getv ? :chronoDelegate;
-        %tmp.74 = getm $.Toybox.WatchUi;
-        %tmp.75 = getv %tmp.74 :SLIDE_DOWN;
-        invoke %tmp.68 %tmp.69(%tmp.71, %tmp.73, %tmp.75);
+        %tmp.70 = getm $.Toybox.WatchUi;
+        %tmp.71 = getv function %tmp.70 :switchToView;
+        %tmp.73 = getv ? :chronoView;
+        %tmp.75 = getv ? :chronoDelegate;
+        %tmp.76 = getm $.Toybox.WatchUi;
+        %tmp.77 = getv %tmp.76 :SLIDE_DOWN;
+        invoke %tmp.70 %tmp.71(%tmp.73, %tmp.75, %tmp.77);
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestDelegate.mc" 37 8 ]
-        %tmp.76 = true;
-        ret %tmp.76;
+        %tmp.78 = true;
+        ret %tmp.78;
 C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestDelegate_mc_27_35_38_4_stop:
     }
     [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\RunQuestDelegate.mc"; @line = 41; ]

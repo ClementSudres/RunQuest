@@ -128,7 +128,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_RunQuestMenuDelegate_
         %tmp.4 = getv ? :Menu2;
         %tmp.5 = newd 1;
         %tmp.7 = const :title;
-        %tmp.8 = "Prog";
+        %tmp.8 = "";
         %tmp.9 = dup %tmp.5;
         %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
         %tmp.1 = newc %tmp.4 (%tmp.10);

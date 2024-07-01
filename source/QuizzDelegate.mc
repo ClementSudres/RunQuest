@@ -116,7 +116,8 @@ class QuizzDelegate extends WatchUi.BehaviorDelegate {
         return true; 
     }
 
-    function onBack(){
+    function onBack() {
+        WatchUi.switchToView(getApp().getAppView(), getApp().getAppDelegate(), WatchUi.SLIDE_DOWN);
         return true;
     }
 }

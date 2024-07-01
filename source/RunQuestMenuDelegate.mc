@@ -40,7 +40,7 @@ class RunQuestMenuDelegate extends WatchUi.Menu2InputDelegate {
 
     //crer le menu pour sélectionner un programme 
     function createProgrammeMenu(){
-        menuProg = new Menu2({:title=>"Prog"});
+        menuProg = new Menu2({:title=>""});
         //on vérifie si un programme avait été mis en favori
         if(Storage.getValue("favori")!=null && Storage.getValue("favori")==0){
             //si un programme est en favori, on lui assimile le bon icon

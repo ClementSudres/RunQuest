@@ -25,7 +25,7 @@ class RunQuestDelegate extends WatchUi.BehaviorDelegate {
 
     //lance le run walk 
     function onSelect() as Boolean {
-        System.println(Storage.getValue("echauffement"));
+        System.println(Storage.getValue("echauffement") + " echauffement");
         if(Storage.getValue("echauffement")!=null){
             chronoView = new RunWalkView(Storage.getValue("echauffement"));
             chronoDelegate = new RunWalkDelegate(Storage.getValue("echauffement"), Storage.getValue("tempsCircuit"), Storage.getValue("tempsPause"));

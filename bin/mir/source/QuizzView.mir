@@ -63,7 +63,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_25_26_27
     }
     [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 30; ]
     function onLayout(dc as Dc) as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_30_40_47_4_start:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_30_40_49_4_start:
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 31 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
@@ -73,75 +73,80 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_30_40_47
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 33 8 ]
-        %tmp.11 = getv ? :quizzDelegate;
-        %tmp.12 = getv %tmp.11 :random;
-        putv self :quest %tmp.12;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 36 8 ]
-        %tmp.13 = self;
-        %tmp.14 = getv function %tmp.13 :findDrawableById;
-        %tmp.15 = "un";
-        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
-        putv self :un %tmp.16;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 37 8 ]
-        %tmp.17 = self;
-        %tmp.18 = getv function %tmp.17 :findDrawableById;
-        %tmp.19 = "deux";
-        %tmp.20 = invoke %tmp.17 %tmp.18(%tmp.19);
-        putv self :deux %tmp.20;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 32 8 ]
+        %tmp.10 = getm $.Toybox.System;
+        %tmp.11 = getv function %tmp.10 :println;
+        %tmp.12 = "QuizzView est visible";
+        invoke %tmp.10 %tmp.11(%tmp.12);
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 35 8 ]
+        %tmp.14 = getv ? :quizzDelegate;
+        %tmp.15 = getv %tmp.14 :random;
+        putv self :quest %tmp.15;
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 38 8 ]
-        %tmp.21 = self;
-        %tmp.22 = getv function %tmp.21 :findDrawableById;
-        %tmp.23 = "trois";
-        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
-        putv self :trois %tmp.24;
+        %tmp.16 = self;
+        %tmp.17 = getv function %tmp.16 :findDrawableById;
+        %tmp.18 = "un";
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        putv self :un %tmp.19;
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 39 8 ]
-        %tmp.25 = self;
-        %tmp.26 = getv function %tmp.25 :findDrawableById;
-        %tmp.27 = "quatre";
-        %tmp.28 = invoke %tmp.25 %tmp.26(%tmp.27);
-        putv self :quatre %tmp.28;
+        %tmp.20 = self;
+        %tmp.21 = getv function %tmp.20 :findDrawableById;
+        %tmp.22 = "deux";
+        %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
+        putv self :deux %tmp.23;
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 40 8 ]
-        %tmp.29 = self;
-        %tmp.30 = getv function %tmp.29 :findDrawableById;
-        %tmp.31 = "cinq";
-        %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
-        putv self :cinq %tmp.32;
+        %tmp.24 = self;
+        %tmp.25 = getv function %tmp.24 :findDrawableById;
+        %tmp.26 = "trois";
+        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
+        putv self :trois %tmp.27;
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 41 8 ]
-        %tmp.33 = self;
-        %tmp.34 = getv function %tmp.33 :findDrawableById;
-        %tmp.35 = "six";
-        %tmp.36 = invoke %tmp.33 %tmp.34(%tmp.35);
-        putv self :six %tmp.36;
+        %tmp.28 = self;
+        %tmp.29 = getv function %tmp.28 :findDrawableById;
+        %tmp.30 = "quatre";
+        %tmp.31 = invoke %tmp.28 %tmp.29(%tmp.30);
+        putv self :quatre %tmp.31;
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 42 8 ]
-        %tmp.37 = self;
-        %tmp.38 = getv function %tmp.37 :findDrawableById;
-        %tmp.39 = "sept";
-        %tmp.40 = invoke %tmp.37 %tmp.38(%tmp.39);
-        putv self :sept %tmp.40;
+        %tmp.32 = self;
+        %tmp.33 = getv function %tmp.32 :findDrawableById;
+        %tmp.34 = "cinq";
+        %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
+        putv self :cinq %tmp.35;
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 43 8 ]
-        %tmp.41 = self;
-        %tmp.42 = getv function %tmp.41 :findDrawableById;
-        %tmp.43 = "huit";
-        %tmp.44 = invoke %tmp.41 %tmp.42(%tmp.43);
-        putv self :huit %tmp.44;
+        %tmp.36 = self;
+        %tmp.37 = getv function %tmp.36 :findDrawableById;
+        %tmp.38 = "six";
+        %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
+        putv self :six %tmp.39;
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 44 8 ]
-        %tmp.45 = self;
-        %tmp.46 = getv function %tmp.45 :findDrawableById;
-        %tmp.47 = "neuf";
-        %tmp.48 = invoke %tmp.45 %tmp.46(%tmp.47);
-        putv self :neuf %tmp.48;
+        %tmp.40 = self;
+        %tmp.41 = getv function %tmp.40 :findDrawableById;
+        %tmp.42 = "sept";
+        %tmp.43 = invoke %tmp.40 %tmp.41(%tmp.42);
+        putv self :sept %tmp.43;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 45 8 ]
+        %tmp.44 = self;
+        %tmp.45 = getv function %tmp.44 :findDrawableById;
+        %tmp.46 = "huit";
+        %tmp.47 = invoke %tmp.44 %tmp.45(%tmp.46);
+        putv self :huit %tmp.47;
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 46 8 ]
-        %tmp.49 = self;
-        %tmp.50 = getv function %tmp.49 :setQuestions;
-        invoke %tmp.49 %tmp.50();
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_30_40_47_4_stop:
+        %tmp.48 = self;
+        %tmp.49 = getv function %tmp.48 :findDrawableById;
+        %tmp.50 = "neuf";
+        %tmp.51 = invoke %tmp.48 %tmp.49(%tmp.50);
+        putv self :neuf %tmp.51;
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 48 8 ]
+        %tmp.52 = self;
+        %tmp.53 = getv function %tmp.52 :setQuestions;
+        invoke %tmp.52 %tmp.53();
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_30_40_49_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 51; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 53; ]
     function setQuestions() {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_51_27_119_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 52 8 ]
-        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_51_27_119_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_51_27_119_4_stop" ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_53_27_121_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 54 8 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_53_27_121_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_53_27_121_4_stop" ]
         %temp.1 = local;
         %tmp.2 = getv ? :quizzDelegate;
         %tmp.3 = getv %tmp.2 :questions;
@@ -150,79 +155,79 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_51_27_11
         %tmp.7 = 0;
         %tmp.8 = agetv %tmp.6 %tmp.7;
         lputv %temp.1 %tmp.8;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 53 8 ]
-        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_51_27_119_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_51_27_119_4_stop" ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 55 8 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_53_27_121_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_53_27_121_4_stop" ]
         %longueur.2 = local;
         %tmp.9 = lgetv %temp.1;
         %tmp.10 = getv function %tmp.9 :length;
         %tmp.11 = invoke %tmp.9 %tmp.10();
         lputv %longueur.2 %tmp.11;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 54 8 ]
-        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_51_27_119_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_51_27_119_4_stop" ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 56 8 ]
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_53_27_121_4_start" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_53_27_121_4_stop" ]
         %j.3 = local;
         %tmp.12 = 0;
         lputv %j.3 %tmp.12;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 55 8 ]
-        for @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_test @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_incr @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_init:
-        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_begin" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_end" ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 57 8 ]
+        for @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_test @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_incr @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_init:
+        [ "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_begin" "C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_end" ]
         %i.4 = local;
         %tmp.13 = 0;
         lputv %i.4 %tmp.13;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_test:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_test:
         %tmp.15 = lgetv %i.4;
         %tmp.16 = 9;
         %tmp.17 = lt %tmp.15 %tmp.16;
-        bf %tmp.17 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_begin:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_34_62_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 56 12 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_56_12_61_12_if_stmt:
+        bf %tmp.17 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_begin:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_34_64_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 58 12 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_58_12_63_12_if_stmt:
         %tmp.19 = lgetv %longueur.2;
         %tmp.20 = 18;
         %tmp.21 = lt %tmp.19 %tmp.20;
-        bf %tmp.21 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_56_12_61_12_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_56_12_61_12_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_56_27_58_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 57 16 ]
-        goto break @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_56_27_58_12_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_56_12_61_12_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_56_12_61_12_if_false:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_58_17_61_12_start:
+        bf %tmp.21 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_58_12_63_12_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_58_12_63_12_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_58_27_60_12_start:
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 59 16 ]
+        goto break @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_58_27_60_12_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_58_12_63_12_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_58_12_63_12_if_false:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_60_17_63_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 61 16 ]
         %tmp.24 = lgetv %j.3;
         %tmp.25 = add %tmp.24 1;
         lputv %j.3 %tmp.25;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 60 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 62 16 ]
         %tmp.27 = lgetv %longueur.2;
         %tmp.28 = 2;
         %tmp.29 = div %tmp.27 %tmp.28;
         lputv %longueur.2 %tmp.29;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_58_17_61_12_stop:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_56_12_61_12_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_34_62_8_stop:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_incr:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 55 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_60_17_63_12_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_58_12_63_12_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_34_64_8_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_incr:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 57 ]
         %tmp.32 = lgetv %i.4;
         %tmp.33 = add %tmp.32 1;
         lputv %i.4 %tmp.33;
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_test;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_55_8_62_8_for_end:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 63 8 ]
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_test;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_57_8_64_8_for_end:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 65 8 ]
         %tmp.34 = lgetv %temp.1;
         %tmp.35 = getv function %tmp.34 :length;
         %tmp.36 = invoke %tmp.34 %tmp.35();
         lputv %longueur.2 %tmp.36;
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 64 8 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_64_8_118_8_if_stmt:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 66 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_8_120_8_if_stmt:
         %tmp.38 = lgetv %j.3;
         %tmp.39 = 0;
         %tmp.40 = eq %tmp.38 %tmp.39;
-        bf %tmp.40 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_64_8_118_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_64_8_118_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_64_16_66_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 65 12 ]
+        bf %tmp.40 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_8_120_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_8_120_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_16_68_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 67 12 ]
         %tmp.42 = getv ? :quatre;
         %tmp.43 = getv function %tmp.42 :setText;
         %tmp.45 = getv ? :quizzDelegate;
@@ -232,18 +237,18 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_64_16_66
         %tmp.50 = 0;
         %tmp.51 = agetv %tmp.49 %tmp.50;
         invoke %tmp.42 %tmp.43(%tmp.51);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_64_16_66_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_64_8_118_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_64_8_118_8_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 66 14 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_14_118_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_16_68_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_8_120_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_8_120_8_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 68 14 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_68_14_120_8_if_stmt:
         %tmp.53 = lgetv %j.3;
         %tmp.54 = 1;
         %tmp.55 = eq %tmp.53 %tmp.54;
-        bf %tmp.55 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_14_118_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_14_118_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_22_69_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 67 12 ]
+        bf %tmp.55 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_68_14_120_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_68_14_120_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_68_22_71_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 69 12 ]
         %tmp.57 = getv ? :quatre;
         %tmp.58 = getv function %tmp.57 :setText;
         %tmp.59 = lgetv %temp.1;
@@ -254,7 +259,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_22_69
         %tmp.65 = div %tmp.63 %tmp.64;
         %tmp.66 = invoke %tmp.59 %tmp.60(%tmp.61, %tmp.65);
         invoke %tmp.57 %tmp.58(%tmp.66);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 68 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 70 12 ]
         %tmp.68 = getv ? :cinq;
         %tmp.69 = getv function %tmp.68 :setText;
         %tmp.70 = lgetv %temp.1;
@@ -265,18 +270,18 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_22_69
         %tmp.77 = lgetv %longueur.2;
         %tmp.78 = invoke %tmp.70 %tmp.71(%tmp.75, %tmp.77);
         invoke %tmp.68 %tmp.69(%tmp.78);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_22_69_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_14_118_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_14_118_8_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 69 14 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_69_14_118_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_68_22_71_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_68_14_120_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_68_14_120_8_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 71 14 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_71_14_120_8_if_stmt:
         %tmp.80 = lgetv %j.3;
         %tmp.81 = 2;
         %tmp.82 = eq %tmp.80 %tmp.81;
-        bf %tmp.82 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_69_14_118_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_69_14_118_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_69_22_73_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 70 12 ]
+        bf %tmp.82 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_71_14_120_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_71_14_120_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_71_22_75_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 72 12 ]
         %tmp.84 = getv ? :trois;
         %tmp.85 = getv function %tmp.84 :setText;
         %tmp.86 = lgetv %temp.1;
@@ -287,7 +292,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_69_22_73
         %tmp.92 = div %tmp.90 %tmp.91;
         %tmp.93 = invoke %tmp.86 %tmp.87(%tmp.88, %tmp.92);
         invoke %tmp.84 %tmp.85(%tmp.93);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 71 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 73 12 ]
         %tmp.95 = getv ? :quatre;
         %tmp.96 = getv function %tmp.95 :setText;
         %tmp.97 = lgetv %temp.1;
@@ -302,7 +307,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_69_22_73
         %tmp.108 = div %tmp.106 %tmp.107;
         %tmp.109 = invoke %tmp.97 %tmp.98(%tmp.102, %tmp.108);
         invoke %tmp.95 %tmp.96(%tmp.109);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 72 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 74 12 ]
         %tmp.111 = getv ? :cinq;
         %tmp.112 = getv function %tmp.111 :setText;
         %tmp.113 = lgetv %temp.1;
@@ -315,18 +320,18 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_69_22_73
         %tmp.122 = lgetv %longueur.2;
         %tmp.123 = invoke %tmp.113 %tmp.114(%tmp.120, %tmp.122);
         invoke %tmp.111 %tmp.112(%tmp.123);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_69_22_73_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_69_14_118_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_69_14_118_8_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 73 14 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_73_14_118_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_71_22_75_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_71_14_120_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_71_14_120_8_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 75 14 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_75_14_120_8_if_stmt:
         %tmp.125 = lgetv %j.3;
         %tmp.126 = 3;
         %tmp.127 = eq %tmp.125 %tmp.126;
-        bf %tmp.127 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_73_14_118_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_73_14_118_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_73_22_78_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 74 12 ]
+        bf %tmp.127 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_75_14_120_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_75_14_120_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_75_22_80_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 76 12 ]
         %tmp.129 = getv ? :trois;
         %tmp.130 = getv function %tmp.129 :setText;
         %tmp.131 = lgetv %temp.1;
@@ -337,7 +342,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_73_22_78
         %tmp.137 = div %tmp.135 %tmp.136;
         %tmp.138 = invoke %tmp.131 %tmp.132(%tmp.133, %tmp.137);
         invoke %tmp.129 %tmp.130(%tmp.138);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 75 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 77 12 ]
         %tmp.140 = getv ? :quatre;
         %tmp.141 = getv function %tmp.140 :setText;
         %tmp.142 = lgetv %temp.1;
@@ -352,7 +357,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_73_22_78
         %tmp.153 = div %tmp.151 %tmp.152;
         %tmp.154 = invoke %tmp.142 %tmp.143(%tmp.147, %tmp.153);
         invoke %tmp.140 %tmp.141(%tmp.154);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 76 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 78 12 ]
         %tmp.156 = getv ? :cinq;
         %tmp.157 = getv function %tmp.156 :setText;
         %tmp.158 = lgetv %temp.1;
@@ -369,7 +374,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_73_22_78
         %tmp.171 = div %tmp.169 %tmp.170;
         %tmp.172 = invoke %tmp.158 %tmp.159(%tmp.165, %tmp.171);
         invoke %tmp.156 %tmp.157(%tmp.172);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 77 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 79 12 ]
         %tmp.174 = getv ? :six;
         %tmp.175 = getv function %tmp.174 :setText;
         %tmp.176 = lgetv %temp.1;
@@ -382,18 +387,18 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_73_22_78
         %tmp.185 = lgetv %longueur.2;
         %tmp.186 = invoke %tmp.176 %tmp.177(%tmp.183, %tmp.185);
         invoke %tmp.174 %tmp.175(%tmp.186);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_73_22_78_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_73_14_118_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_73_14_118_8_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 78 14 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_14_118_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_75_22_80_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_75_14_120_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_75_14_120_8_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 80 14 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_80_14_120_8_if_stmt:
         %tmp.188 = lgetv %j.3;
         %tmp.189 = 4;
         %tmp.190 = eq %tmp.188 %tmp.189;
-        bf %tmp.190 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_14_118_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_14_118_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_22_84_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 79 12 ]
+        bf %tmp.190 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_80_14_120_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_80_14_120_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_80_22_86_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 81 12 ]
         %tmp.192 = getv ? :trois;
         %tmp.193 = getv function %tmp.192 :setText;
         %tmp.194 = lgetv %temp.1;
@@ -404,7 +409,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_22_84
         %tmp.200 = div %tmp.198 %tmp.199;
         %tmp.201 = invoke %tmp.194 %tmp.195(%tmp.196, %tmp.200);
         invoke %tmp.192 %tmp.193(%tmp.201);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 80 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 82 12 ]
         %tmp.203 = getv ? :quatre;
         %tmp.204 = getv function %tmp.203 :setText;
         %tmp.205 = lgetv %temp.1;
@@ -419,7 +424,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_22_84
         %tmp.216 = div %tmp.214 %tmp.215;
         %tmp.217 = invoke %tmp.205 %tmp.206(%tmp.210, %tmp.216);
         invoke %tmp.203 %tmp.204(%tmp.217);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 81 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 83 12 ]
         %tmp.219 = getv ? :cinq;
         %tmp.220 = getv function %tmp.219 :setText;
         %tmp.221 = lgetv %temp.1;
@@ -436,7 +441,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_22_84
         %tmp.234 = div %tmp.232 %tmp.233;
         %tmp.235 = invoke %tmp.221 %tmp.222(%tmp.228, %tmp.234);
         invoke %tmp.219 %tmp.220(%tmp.235);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 82 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 84 12 ]
         %tmp.237 = getv ? :six;
         %tmp.238 = getv function %tmp.237 :setText;
         %tmp.239 = lgetv %temp.1;
@@ -453,7 +458,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_22_84
         %tmp.252 = div %tmp.250 %tmp.251;
         %tmp.253 = invoke %tmp.239 %tmp.240(%tmp.246, %tmp.252);
         invoke %tmp.237 %tmp.238(%tmp.253);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 83 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 85 12 ]
         %tmp.255 = getv ? :sept;
         %tmp.256 = getv function %tmp.255 :setText;
         %tmp.257 = lgetv %temp.1;
@@ -466,18 +471,18 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_22_84
         %tmp.266 = lgetv %longueur.2;
         %tmp.267 = invoke %tmp.257 %tmp.258(%tmp.264, %tmp.266);
         invoke %tmp.255 %tmp.256(%tmp.267);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_22_84_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_14_118_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_14_118_8_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 84 14 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_14_118_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_80_22_86_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_80_14_120_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_80_14_120_8_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 86 14 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_86_14_120_8_if_stmt:
         %tmp.269 = lgetv %j.3;
         %tmp.270 = 5;
         %tmp.271 = eq %tmp.269 %tmp.270;
-        bf %tmp.271 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_14_118_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_14_118_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_22_91_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 85 12 ]
+        bf %tmp.271 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_86_14_120_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_86_14_120_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_86_22_93_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 87 12 ]
         %tmp.273 = getv ? :deux;
         %tmp.274 = getv function %tmp.273 :setText;
         %tmp.275 = lgetv %temp.1;
@@ -488,7 +493,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_22_91
         %tmp.281 = div %tmp.279 %tmp.280;
         %tmp.282 = invoke %tmp.275 %tmp.276(%tmp.277, %tmp.281);
         invoke %tmp.273 %tmp.274(%tmp.282);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 86 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 88 12 ]
         %tmp.284 = getv ? :trois;
         %tmp.285 = getv function %tmp.284 :setText;
         %tmp.286 = lgetv %temp.1;
@@ -503,7 +508,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_22_91
         %tmp.297 = div %tmp.295 %tmp.296;
         %tmp.298 = invoke %tmp.286 %tmp.287(%tmp.291, %tmp.297);
         invoke %tmp.284 %tmp.285(%tmp.298);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 87 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 89 12 ]
         %tmp.300 = getv ? :quatre;
         %tmp.301 = getv function %tmp.300 :setText;
         %tmp.302 = lgetv %temp.1;
@@ -520,7 +525,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_22_91
         %tmp.315 = div %tmp.313 %tmp.314;
         %tmp.316 = invoke %tmp.302 %tmp.303(%tmp.309, %tmp.315);
         invoke %tmp.300 %tmp.301(%tmp.316);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 88 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 90 12 ]
         %tmp.318 = getv ? :cinq;
         %tmp.319 = getv function %tmp.318 :setText;
         %tmp.320 = lgetv %temp.1;
@@ -537,7 +542,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_22_91
         %tmp.333 = div %tmp.331 %tmp.332;
         %tmp.334 = invoke %tmp.320 %tmp.321(%tmp.327, %tmp.333);
         invoke %tmp.318 %tmp.319(%tmp.334);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 89 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 91 12 ]
         %tmp.336 = getv ? :six;
         %tmp.337 = getv function %tmp.336 :setText;
         %tmp.338 = lgetv %temp.1;
@@ -554,7 +559,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_22_91
         %tmp.351 = div %tmp.349 %tmp.350;
         %tmp.352 = invoke %tmp.338 %tmp.339(%tmp.345, %tmp.351);
         invoke %tmp.336 %tmp.337(%tmp.352);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 90 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 92 12 ]
         %tmp.354 = getv ? :sept;
         %tmp.355 = getv function %tmp.354 :setText;
         %tmp.356 = lgetv %temp.1;
@@ -567,18 +572,18 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_22_91
         %tmp.365 = lgetv %longueur.2;
         %tmp.366 = invoke %tmp.356 %tmp.357(%tmp.363, %tmp.365);
         invoke %tmp.354 %tmp.355(%tmp.366);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_22_91_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_14_118_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_14_118_8_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 91 14 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_14_118_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_86_22_93_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_86_14_120_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_86_14_120_8_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 93 14 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_93_14_120_8_if_stmt:
         %tmp.368 = lgetv %j.3;
         %tmp.369 = 6;
         %tmp.370 = eq %tmp.368 %tmp.369;
-        bf %tmp.370 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_14_118_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_14_118_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_22_99_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 92 12 ]
+        bf %tmp.370 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_93_14_120_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_93_14_120_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_93_22_101_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 94 12 ]
         %tmp.372 = getv ? :deux;
         %tmp.373 = getv function %tmp.372 :setText;
         %tmp.374 = lgetv %temp.1;
@@ -589,7 +594,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_22_99
         %tmp.380 = div %tmp.378 %tmp.379;
         %tmp.381 = invoke %tmp.374 %tmp.375(%tmp.376, %tmp.380);
         invoke %tmp.372 %tmp.373(%tmp.381);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 93 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 95 12 ]
         %tmp.383 = getv ? :trois;
         %tmp.384 = getv function %tmp.383 :setText;
         %tmp.385 = lgetv %temp.1;
@@ -604,7 +609,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_22_99
         %tmp.396 = div %tmp.394 %tmp.395;
         %tmp.397 = invoke %tmp.385 %tmp.386(%tmp.390, %tmp.396);
         invoke %tmp.383 %tmp.384(%tmp.397);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 94 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 96 12 ]
         %tmp.399 = getv ? :quatre;
         %tmp.400 = getv function %tmp.399 :setText;
         %tmp.401 = lgetv %temp.1;
@@ -621,7 +626,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_22_99
         %tmp.414 = div %tmp.412 %tmp.413;
         %tmp.415 = invoke %tmp.401 %tmp.402(%tmp.408, %tmp.414);
         invoke %tmp.399 %tmp.400(%tmp.415);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 95 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 97 12 ]
         %tmp.417 = getv ? :cinq;
         %tmp.418 = getv function %tmp.417 :setText;
         %tmp.419 = lgetv %temp.1;
@@ -638,7 +643,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_22_99
         %tmp.432 = div %tmp.430 %tmp.431;
         %tmp.433 = invoke %tmp.419 %tmp.420(%tmp.426, %tmp.432);
         invoke %tmp.417 %tmp.418(%tmp.433);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 96 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 98 12 ]
         %tmp.435 = getv ? :six;
         %tmp.436 = getv function %tmp.435 :setText;
         %tmp.437 = lgetv %temp.1;
@@ -655,7 +660,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_22_99
         %tmp.450 = div %tmp.448 %tmp.449;
         %tmp.451 = invoke %tmp.437 %tmp.438(%tmp.444, %tmp.450);
         invoke %tmp.435 %tmp.436(%tmp.451);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 97 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 99 12 ]
         %tmp.453 = getv ? :sept;
         %tmp.454 = getv function %tmp.453 :setText;
         %tmp.455 = lgetv %temp.1;
@@ -672,7 +677,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_22_99
         %tmp.468 = div %tmp.466 %tmp.467;
         %tmp.469 = invoke %tmp.455 %tmp.456(%tmp.462, %tmp.468);
         invoke %tmp.453 %tmp.454(%tmp.469);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 98 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 100 12 ]
         %tmp.471 = getv ? :huit;
         %tmp.472 = getv function %tmp.471 :setText;
         %tmp.473 = lgetv %temp.1;
@@ -685,18 +690,18 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_22_99
         %tmp.482 = lgetv %longueur.2;
         %tmp.483 = invoke %tmp.473 %tmp.474(%tmp.480, %tmp.482);
         invoke %tmp.471 %tmp.472(%tmp.483);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_22_99_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_14_118_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_14_118_8_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 99 14 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_14_118_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_93_22_101_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_93_14_120_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_93_14_120_8_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 101 14 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_101_14_120_8_if_stmt:
         %tmp.485 = lgetv %j.3;
         %tmp.486 = 7;
         %tmp.487 = eq %tmp.485 %tmp.486;
-        bf %tmp.487 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_14_118_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_14_118_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_22_108_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 100 12 ]
+        bf %tmp.487 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_101_14_120_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_101_14_120_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_101_22_110_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 102 12 ]
         %tmp.489 = getv ? :un;
         %tmp.490 = getv function %tmp.489 :setText;
         %tmp.491 = lgetv %temp.1;
@@ -707,7 +712,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_22_10
         %tmp.497 = div %tmp.495 %tmp.496;
         %tmp.498 = invoke %tmp.491 %tmp.492(%tmp.493, %tmp.497);
         invoke %tmp.489 %tmp.490(%tmp.498);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 101 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 103 12 ]
         %tmp.500 = getv ? :deux;
         %tmp.501 = getv function %tmp.500 :setText;
         %tmp.502 = lgetv %temp.1;
@@ -722,7 +727,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_22_10
         %tmp.513 = div %tmp.511 %tmp.512;
         %tmp.514 = invoke %tmp.502 %tmp.503(%tmp.507, %tmp.513);
         invoke %tmp.500 %tmp.501(%tmp.514);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 102 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 104 12 ]
         %tmp.516 = getv ? :trois;
         %tmp.517 = getv function %tmp.516 :setText;
         %tmp.518 = lgetv %temp.1;
@@ -739,7 +744,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_22_10
         %tmp.531 = div %tmp.529 %tmp.530;
         %tmp.532 = invoke %tmp.518 %tmp.519(%tmp.525, %tmp.531);
         invoke %tmp.516 %tmp.517(%tmp.532);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 103 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 105 12 ]
         %tmp.534 = getv ? :quatre;
         %tmp.535 = getv function %tmp.534 :setText;
         %tmp.536 = lgetv %temp.1;
@@ -756,7 +761,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_22_10
         %tmp.549 = div %tmp.547 %tmp.548;
         %tmp.550 = invoke %tmp.536 %tmp.537(%tmp.543, %tmp.549);
         invoke %tmp.534 %tmp.535(%tmp.550);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 104 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 106 12 ]
         %tmp.552 = getv ? :cinq;
         %tmp.553 = getv function %tmp.552 :setText;
         %tmp.554 = lgetv %temp.1;
@@ -773,7 +778,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_22_10
         %tmp.567 = div %tmp.565 %tmp.566;
         %tmp.568 = invoke %tmp.554 %tmp.555(%tmp.561, %tmp.567);
         invoke %tmp.552 %tmp.553(%tmp.568);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 105 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 107 12 ]
         %tmp.570 = getv ? :six;
         %tmp.571 = getv function %tmp.570 :setText;
         %tmp.572 = lgetv %temp.1;
@@ -790,7 +795,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_22_10
         %tmp.585 = div %tmp.583 %tmp.584;
         %tmp.586 = invoke %tmp.572 %tmp.573(%tmp.579, %tmp.585);
         invoke %tmp.570 %tmp.571(%tmp.586);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 106 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 108 12 ]
         %tmp.588 = getv ? :sept;
         %tmp.589 = getv function %tmp.588 :setText;
         %tmp.590 = lgetv %temp.1;
@@ -807,7 +812,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_22_10
         %tmp.603 = div %tmp.601 %tmp.602;
         %tmp.604 = invoke %tmp.590 %tmp.591(%tmp.597, %tmp.603);
         invoke %tmp.588 %tmp.589(%tmp.604);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 107 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 109 12 ]
         %tmp.606 = getv ? :huit;
         %tmp.607 = getv function %tmp.606 :setText;
         %tmp.608 = lgetv %temp.1;
@@ -820,18 +825,18 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_22_10
         %tmp.617 = lgetv %longueur.2;
         %tmp.618 = invoke %tmp.608 %tmp.609(%tmp.615, %tmp.617);
         invoke %tmp.606 %tmp.607(%tmp.618);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_22_108_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_14_118_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_14_118_8_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 108 14 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_14_118_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_101_22_110_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_101_14_120_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_101_14_120_8_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 110 14 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_110_14_120_8_if_stmt:
         %tmp.620 = lgetv %j.3;
         %tmp.621 = 8;
         %tmp.622 = eq %tmp.620 %tmp.621;
-        bf %tmp.622 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_14_118_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_14_118_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_22_118_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 109 12 ]
+        bf %tmp.622 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_110_14_120_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_110_14_120_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_110_22_120_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 111 12 ]
         %tmp.624 = getv ? :un;
         %tmp.625 = getv function %tmp.624 :setText;
         %tmp.626 = lgetv %temp.1;
@@ -842,7 +847,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_22_1
         %tmp.632 = div %tmp.630 %tmp.631;
         %tmp.633 = invoke %tmp.626 %tmp.627(%tmp.628, %tmp.632);
         invoke %tmp.624 %tmp.625(%tmp.633);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 110 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 112 12 ]
         %tmp.635 = getv ? :deux;
         %tmp.636 = getv function %tmp.635 :setText;
         %tmp.637 = lgetv %temp.1;
@@ -857,7 +862,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_22_1
         %tmp.648 = div %tmp.646 %tmp.647;
         %tmp.649 = invoke %tmp.637 %tmp.638(%tmp.642, %tmp.648);
         invoke %tmp.635 %tmp.636(%tmp.649);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 111 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 113 12 ]
         %tmp.651 = getv ? :trois;
         %tmp.652 = getv function %tmp.651 :setText;
         %tmp.653 = lgetv %temp.1;
@@ -874,7 +879,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_22_1
         %tmp.666 = div %tmp.664 %tmp.665;
         %tmp.667 = invoke %tmp.653 %tmp.654(%tmp.660, %tmp.666);
         invoke %tmp.651 %tmp.652(%tmp.667);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 112 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 114 12 ]
         %tmp.669 = getv ? :quatre;
         %tmp.670 = getv function %tmp.669 :setText;
         %tmp.671 = lgetv %temp.1;
@@ -891,7 +896,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_22_1
         %tmp.684 = div %tmp.682 %tmp.683;
         %tmp.685 = invoke %tmp.671 %tmp.672(%tmp.678, %tmp.684);
         invoke %tmp.669 %tmp.670(%tmp.685);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 113 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 115 12 ]
         %tmp.687 = getv ? :cinq;
         %tmp.688 = getv function %tmp.687 :setText;
         %tmp.689 = lgetv %temp.1;
@@ -908,7 +913,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_22_1
         %tmp.702 = div %tmp.700 %tmp.701;
         %tmp.703 = invoke %tmp.689 %tmp.690(%tmp.696, %tmp.702);
         invoke %tmp.687 %tmp.688(%tmp.703);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 114 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 116 12 ]
         %tmp.705 = getv ? :six;
         %tmp.706 = getv function %tmp.705 :setText;
         %tmp.707 = lgetv %temp.1;
@@ -925,7 +930,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_22_1
         %tmp.720 = div %tmp.718 %tmp.719;
         %tmp.721 = invoke %tmp.707 %tmp.708(%tmp.714, %tmp.720);
         invoke %tmp.705 %tmp.706(%tmp.721);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 115 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 117 12 ]
         %tmp.723 = getv ? :sept;
         %tmp.724 = getv function %tmp.723 :setText;
         %tmp.725 = lgetv %temp.1;
@@ -942,7 +947,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_22_1
         %tmp.738 = div %tmp.736 %tmp.737;
         %tmp.739 = invoke %tmp.725 %tmp.726(%tmp.732, %tmp.738);
         invoke %tmp.723 %tmp.724(%tmp.739);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 116 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 118 12 ]
         %tmp.741 = getv ? :huit;
         %tmp.742 = getv function %tmp.741 :setText;
         %tmp.743 = lgetv %temp.1;
@@ -959,7 +964,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_22_1
         %tmp.756 = div %tmp.754 %tmp.755;
         %tmp.757 = invoke %tmp.743 %tmp.744(%tmp.750, %tmp.756);
         invoke %tmp.741 %tmp.742(%tmp.757);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 117 12 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 119 12 ]
         %tmp.759 = getv ? :neuf;
         %tmp.760 = getv function %tmp.759 :setText;
         %tmp.761 = lgetv %temp.1;
@@ -972,23 +977,23 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_22_1
         %tmp.770 = lgetv %longueur.2;
         %tmp.771 = invoke %tmp.761 %tmp.762(%tmp.768, %tmp.770);
         invoke %tmp.759 %tmp.760(%tmp.771);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_22_118_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_14_118_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_108_14_118_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_99_14_118_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_91_14_118_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_84_14_118_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_78_14_118_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_73_14_118_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_69_14_118_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_14_118_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_64_8_118_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_51_27_119_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_110_22_120_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_110_14_120_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_110_14_120_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_101_14_120_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_93_14_120_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_86_14_120_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_80_14_120_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_75_14_120_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_71_14_120_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_68_14_120_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_66_8_120_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_53_27_121_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 122; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 124; ]
     function setReponses() as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_122_34_135_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 123 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_124_34_137_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 125 8 ]
         %tmp.2 = getv ? :trois;
         %tmp.3 = getv function %tmp.2 :setText;
         %tmp.5 = getv ? :quizzDelegate;
@@ -998,7 +1003,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_122_34_1
         %tmp.10 = 1;
         %tmp.11 = agetv %tmp.9 %tmp.10;
         invoke %tmp.2 %tmp.3(%tmp.11);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 124 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 126 8 ]
         %tmp.13 = getv ? :quatre;
         %tmp.14 = getv function %tmp.13 :setText;
         %tmp.16 = getv ? :quizzDelegate;
@@ -1008,7 +1013,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_122_34_1
         %tmp.21 = 2;
         %tmp.22 = agetv %tmp.20 %tmp.21;
         invoke %tmp.13 %tmp.14(%tmp.22);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 125 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 127 8 ]
         %tmp.24 = getv ? :cinq;
         %tmp.25 = getv function %tmp.24 :setText;
         %tmp.27 = getv ? :quizzDelegate;
@@ -1018,7 +1023,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_122_34_1
         %tmp.32 = 3;
         %tmp.33 = agetv %tmp.31 %tmp.32;
         invoke %tmp.24 %tmp.25(%tmp.33);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 126 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 128 8 ]
         %tmp.35 = getv ? :six;
         %tmp.36 = getv function %tmp.35 :setText;
         %tmp.38 = getv ? :quizzDelegate;
@@ -1028,133 +1033,133 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_122_34_1
         %tmp.43 = 4;
         %tmp.44 = agetv %tmp.42 %tmp.43;
         invoke %tmp.35 %tmp.36(%tmp.44);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 128 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 130 8 ]
         %tmp.46 = getv ? :un;
         %tmp.47 = getv function %tmp.46 :setText;
         %tmp.48 = "";
         invoke %tmp.46 %tmp.47(%tmp.48);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 129 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 131 8 ]
         %tmp.50 = getv ? :deux;
         %tmp.51 = getv function %tmp.50 :setText;
         %tmp.52 = "";
         invoke %tmp.50 %tmp.51(%tmp.52);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 130 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 132 8 ]
         %tmp.54 = getv ? :sept;
         %tmp.55 = getv function %tmp.54 :setText;
         %tmp.56 = "";
         invoke %tmp.54 %tmp.55(%tmp.56);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 131 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 133 8 ]
         %tmp.58 = getv ? :huit;
         %tmp.59 = getv function %tmp.58 :setText;
         %tmp.60 = "";
         invoke %tmp.58 %tmp.59(%tmp.60);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 132 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 134 8 ]
         %tmp.62 = getv ? :neuf;
         %tmp.63 = getv function %tmp.62 :setText;
         %tmp.64 = "";
         invoke %tmp.62 %tmp.63(%tmp.64);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 134 8 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 136 8 ]
         %tmp.65 = getm $.Toybox.WatchUi;
         %tmp.66 = getv function %tmp.65 :requestUpdate;
         invoke %tmp.65 %tmp.66();
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_122_34_135_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_124_34_137_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 138; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 140; ]
     function setChoix(val) {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_138_26_147_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 139 8 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_8_145_8_if_stmt:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_11_139_31_begin:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_140_26_149_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 141 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_8_147_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_11_141_31_begin:
         %tmp.2 = getv ? :choix;
         %tmp.3 = 1;
         %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_8_145_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_23_139_31_true:
+        bf %tmp.4 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_8_147_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_23_141_31_true:
         %tmp.6 = lgetv %val;
         %tmp.7 = -1;
         %tmp.8 = eq %tmp.6 %tmp.7;
         push %tmp.8;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_23_139_31_end:
-        %tmp.9 = phi [%tmp.4 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_11_139_31_begin] [%tmp.8 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_23_139_31_true] [%tmp.9 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_23_139_31_end];
-        bf %tmp.9 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_8_145_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_8_145_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_33_141_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 140 12 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_23_141_31_end:
+        %tmp.9 = phi [%tmp.4 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_11_141_31_begin] [%tmp.8 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_23_141_31_true] [%tmp.9 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_23_141_31_end];
+        bf %tmp.9 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_8_147_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_8_147_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_33_143_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 142 12 ]
         %tmp.10 = 4;
         putv self :choix %tmp.10;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_33_141_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_8_145_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_8_145_8_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 141 14 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_14_145_8_if_stmt:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_17_141_34_begin:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_33_143_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_8_147_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_8_147_8_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 143 14 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_14_147_8_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_17_143_34_begin:
         %tmp.12 = getv ? :choix;
         %tmp.13 = 4;
         %tmp.14 = eq %tmp.12 %tmp.13;
-        bf %tmp.14 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_14_145_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_29_141_34_true:
+        bf %tmp.14 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_14_147_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_29_143_34_true:
         %tmp.16 = lgetv %val;
         %tmp.17 = 1;
         %tmp.18 = eq %tmp.16 %tmp.17;
         push %tmp.18;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_29_141_34_end:
-        %tmp.19 = phi [%tmp.14 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_17_141_34_begin] [%tmp.18 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_29_141_34_true] [%tmp.19 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_29_141_34_end];
-        bf %tmp.19 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_14_145_8_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_14_145_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_36_143_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 142 12 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_29_143_34_end:
+        %tmp.19 = phi [%tmp.14 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_17_143_34_begin] [%tmp.18 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_29_143_34_true] [%tmp.19 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_29_143_34_end];
+        bf %tmp.19 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_14_147_8_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_14_147_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_36_145_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 144 12 ]
         %tmp.20 = 1;
         putv self :choix %tmp.20;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_36_143_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_14_145_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_14_145_8_if_false:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_13_145_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 144 12 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_36_145_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_14_147_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_14_147_8_if_false:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_145_13_147_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 146 12 ]
         %tmp.22 = getv ? :choix;
         %tmp.24 = lgetv %val;
         %tmp.25 = add %tmp.22 %tmp.24;
         putv self :choix %tmp.25;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_13_145_8_stop:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_14_145_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_139_8_145_8_if_end:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 146 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_145_13_147_8_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_143_14_147_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_141_8_147_8_if_end:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 148 8 ]
         %tmp.26 = getm $.Toybox.WatchUi;
         %tmp.27 = getv function %tmp.26 :requestUpdate;
         invoke %tmp.26 %tmp.27();
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_138_26_147_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_140_26_149_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 151; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 153; ]
     function onShow() as Void {
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 155; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 157; ]
     function onUpdate(dc as Dc) as Void {
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_155_40_174_4_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 157 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_157_40_176_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 159 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.5 = lgetv %dc;
         invoke %tmp.2 %tmp.3(%tmp.5);
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 159 8 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_159_8_173_8_if_stmt:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 161 8 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_161_8_175_8_if_stmt:
         %tmp.7 = getv ? :change;
         %tmp.8 = true;
         %tmp.9 = eq %tmp.7 %tmp.8;
-        bf %tmp.9 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_159_8_173_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_159_8_173_8_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_159_24_173_8_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 160 12 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_160_12_172_12_if_stmt:
+        bf %tmp.9 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_161_8_175_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_161_8_175_8_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_161_24_175_8_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 162 12 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_162_12_174_12_if_stmt:
         %tmp.11 = getv ? :choix;
         %tmp.12 = 1;
         %tmp.13 = eq %tmp.11 %tmp.12;
-        bf %tmp.13 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_160_12_172_12_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_160_12_172_12_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_160_24_163_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 161 16 ]
+        bf %tmp.13 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_162_12_174_12_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_162_12_174_12_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_162_24_165_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 163 16 ]
         %tmp.14 = lgetv %dc;
         %tmp.15 = getv function %tmp.14 :clear;
         invoke %tmp.14 %tmp.15();
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 162 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 164 16 ]
         %tmp.16 = lgetv %dc;
         %tmp.17 = getv function %tmp.16 :drawRectangle;
         %tmp.18 = 0;
@@ -1162,22 +1167,22 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_160_24_1
         %tmp.20 = 300;
         %tmp.21 = 20;
         invoke %tmp.16 %tmp.17(%tmp.18, %tmp.19, %tmp.20, %tmp.21);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_160_24_163_12_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_160_12_172_12_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_160_12_172_12_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 163 18 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_163_18_172_12_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_162_24_165_12_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_162_12_174_12_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_162_12_174_12_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 165 18 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_165_18_174_12_if_stmt:
         %tmp.23 = getv ? :choix;
         %tmp.24 = 2;
         %tmp.25 = eq %tmp.23 %tmp.24;
-        bf %tmp.25 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_163_18_172_12_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_163_18_172_12_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_163_30_166_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 164 16 ]
+        bf %tmp.25 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_165_18_174_12_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_165_18_174_12_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_165_30_168_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 166 16 ]
         %tmp.26 = lgetv %dc;
         %tmp.27 = getv function %tmp.26 :clear;
         invoke %tmp.26 %tmp.27();
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 165 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 167 16 ]
         %tmp.28 = lgetv %dc;
         %tmp.29 = getv function %tmp.28 :drawRectangle;
         %tmp.30 = 0;
@@ -1185,22 +1190,22 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_163_30_1
         %tmp.32 = 300;
         %tmp.33 = 20;
         invoke %tmp.28 %tmp.29(%tmp.30, %tmp.31, %tmp.32, %tmp.33);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_163_30_166_12_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_163_18_172_12_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_163_18_172_12_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 166 18 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_166_18_172_12_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_165_30_168_12_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_165_18_174_12_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_165_18_174_12_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 168 18 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_168_18_174_12_if_stmt:
         %tmp.35 = getv ? :choix;
         %tmp.36 = 3;
         %tmp.37 = eq %tmp.35 %tmp.36;
-        bf %tmp.37 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_166_18_172_12_if_false;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_166_18_172_12_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_166_30_169_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 167 16 ]
+        bf %tmp.37 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_168_18_174_12_if_false;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_168_18_174_12_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_168_30_171_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 169 16 ]
         %tmp.38 = lgetv %dc;
         %tmp.39 = getv function %tmp.38 :clear;
         invoke %tmp.38 %tmp.39();
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 168 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 170 16 ]
         %tmp.40 = lgetv %dc;
         %tmp.41 = getv function %tmp.40 :drawRectangle;
         %tmp.42 = 0;
@@ -1208,22 +1213,22 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_166_30_1
         %tmp.44 = 300;
         %tmp.45 = 20;
         invoke %tmp.40 %tmp.41(%tmp.42, %tmp.43, %tmp.44, %tmp.45);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_166_30_169_12_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_166_18_172_12_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_166_18_172_12_if_false:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 169 18 ]
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_169_18_172_12_if_stmt:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_168_30_171_12_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_168_18_174_12_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_168_18_174_12_if_false:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 171 18 ]
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_171_18_174_12_if_stmt:
         %tmp.47 = getv ? :choix;
         %tmp.48 = 4;
         %tmp.49 = eq %tmp.47 %tmp.48;
-        bf %tmp.49 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_169_18_172_12_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_169_18_172_12_if_true:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_169_30_172_12_start:
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 170 16 ]
+        bf %tmp.49 @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_171_18_174_12_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_171_18_174_12_if_true:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_171_30_174_12_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 172 16 ]
         %tmp.50 = lgetv %dc;
         %tmp.51 = getv function %tmp.50 :clear;
         invoke %tmp.50 %tmp.51();
-[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 171 16 ]
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 173 16 ]
         %tmp.52 = lgetv %dc;
         %tmp.53 = getv function %tmp.52 :drawRectangle;
         %tmp.54 = 0;
@@ -1231,19 +1236,26 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_169_30_1
         %tmp.56 = 300;
         %tmp.57 = 20;
         invoke %tmp.52 %tmp.53(%tmp.54, %tmp.55, %tmp.56, %tmp.57);
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_169_30_172_12_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_169_18_172_12_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_169_18_172_12_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_166_18_172_12_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_163_18_172_12_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_160_12_172_12_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_159_24_173_8_stop:
-        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_159_8_173_8_if_end;
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_159_8_173_8_if_end:
-C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_155_40_174_4_stop:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_171_30_174_12_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_171_18_174_12_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_171_18_174_12_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_168_18_174_12_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_165_18_174_12_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_162_12_174_12_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_161_24_175_8_stop:
+        goto @C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_161_8_175_8_if_end;
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_161_8_175_8_if_end:
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_157_40_176_4_stop:
     }
-    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 179; ]
+    [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 181; ]
     function onHide() as Void {
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_181_30_183_4_start:
+[ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc" 182 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "QuizzView est masquée";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_QuizzView_mc_181_30_183_4_stop:
     }
 }
 [ @file = "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\QuizzView.mc"; @line = 1; ]

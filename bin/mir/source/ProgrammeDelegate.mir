@@ -188,7 +188,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_
         %tmp.78 = getv ? :Storage;
         %tmp.79 = getv function %tmp.78 :setValue;
         %tmp.80 = "tempsPause";
-        %tmp.81 = 3;
+        %tmp.81 = 120;
         invoke %tmp.78 %tmp.79(%tmp.80, %tmp.81);
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 54 12 ]
         %tmp.83 = getv ? :Storage;
@@ -266,7 +266,7 @@ C_Users_sudres_Documents_Stage_2024_Garmin_RunQuest_source_ProgrammeDelegate_mc_
         %tmp.158 = getv ? :Storage;
         %tmp.159 = getv function %tmp.158 :setValue;
         %tmp.160 = "tempsPause";
-        %tmp.161 = 3;
+        %tmp.161 = 120;
         invoke %tmp.158 %tmp.159(%tmp.160, %tmp.161);
 [ "C:\Users\sudres\Documents\Stage 2024\Garmin\RunQuest\source\ProgrammeDelegate.mc" 61 12 ]
         %tmp.163 = getv ? :Storage;

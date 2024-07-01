@@ -49,7 +49,7 @@ class ProgrammeDelegate extends WatchUi.Menu2InputDelegate {
             //on enregistre les params du programme choisit 
             Storage.setValue("echauffement", 10);
             Storage.setValue("tempsCircuit", 5);
-            Storage.setValue("tempsPause", 3);
+            Storage.setValue("tempsPause", 120);
             //on enregistre que ce programme est choisit pour les prochaines fois 
             Storage.setValue("favori", 0);
         }else{
@@ -57,7 +57,7 @@ class ProgrammeDelegate extends WatchUi.Menu2InputDelegate {
             runQuestMenuDelegate.menuProg.getItem(1).setIcon(new Bitmap({:rezId=>Rez.Drawables.favori,:locX=>10,:locY=>30}));
             Storage.setValue("echauffement", 20);
             Storage.setValue("tempsCircuit", 10);
-            Storage.setValue("tempsPause", 3);
+            Storage.setValue("tempsPause", 120);
             Storage.setValue("favori", 1);
         }
     }

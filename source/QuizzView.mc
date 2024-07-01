@@ -29,6 +29,8 @@ class QuizzView extends WatchUi.View {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.Quizz(dc));
+        System.println("QuizzView est visible");
+
         //récupérer un chiffre random pour choisir une fonction
         quest = quizzDelegate.random;
 
@@ -177,6 +179,8 @@ class QuizzView extends WatchUi.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
+        System.println("QuizzView est masquée");
     }
+
 
 }

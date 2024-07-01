@@ -86,9 +86,9 @@ module Rez {
         }
 
         function RunWalk(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_Timer = new WatchUi.Text({:identifier=>"Timer", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>((208 - dc.getFontHeight(Graphics.FONT_NUMBER_THAI_HOT)) * 0.5), :text=>"00:00", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_THAI_HOT});
+            var rez_cmp_local_text_Timer = new WatchUi.Text({:identifier=>"Timer", :backgroundColor=>Graphics.COLOR_TRANSPARENT, :color=>Graphics.COLOR_TRANSPARENT, :locX=>(208 * 0.5), :locY=>((208 - dc.getFontHeight(Graphics.FONT_NUMBER_THAI_HOT)) * 0.5), :text=>"00:00", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_THAI_HOT});
 
-            var rez_cmp_local_text_Message = new WatchUi.Text({:identifier=>"Message", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (20 / 100.0)), :text=>"Message", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
+            var rez_cmp_local_text_Message = new WatchUi.Text({:identifier=>"Message", :color=>Graphics.COLOR_WHITE, :locX=>(208 * 0.5), :locY=>(208 * (8 / 100.0)), :text=>"Message", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
 
             return [rez_cmp_local_text_Timer, rez_cmp_local_text_Message] as Array<WatchUi.Drawable>;
         }
